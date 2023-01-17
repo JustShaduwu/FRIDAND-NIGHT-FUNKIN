@@ -1,37 +1,31 @@
-# Friday Night Funkin' - Weird Engine
-This Engine adds new feature planed to be in the final version of the vanilla FNF game
-
-This modification was made with [Psych Engine With Extra Keys](https://gamebanana.com/mods/333373), intended to add extra keys to [Psych Engine](https://github.com/ShadowMario/FNF-PsychEngine).
+# FridAND Night Funkin' - Vs And Shadow's
+![image](https://user-images.githubusercontent.com/92767777/212960951-bb245e21-0c72-4e7b-a373-9cead64f76aa.png)
 
 ## Installation:
-You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
-
-Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
-
-To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit` on a Command prompt/PowerShell
-
-...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
-
-
-If you get an error about StatePointer when using Lua, run `haxelib remove linc_luajit` into Command Prompt/PowerShell, then re-install linc_luajit.
-
-If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
-
-otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
+Follow a Friday Night Funkin' Psych Engine source code compilation tutorial.
 
 ## Credits:
+### FridAnd Night Funkin' V1
+* Shaduwu - Programmer, Artist, Animator, Compositor, well...
+* AlexPlus - Compositor for "Shadow" Instrumental
+* Daniela La Marilena - Portal Background Design Helper
+* Tetoms - Gameplay Recorder n' Gameplay Tester
+* Bere Bear - GF Dialogue Voice Actress.
+* RTV Luego - Gameplay Tester
+
+![image](https://user-images.githubusercontent.com/92767777/212967928-27fb7b64-50cb-47ee-a3f0-a37365b86268.png)
+
+### Weird Engine:
 * TomyGamy - Programmer
 * The Reda - Artist
+* LORD-anton - Translater
 
-## Translation Credits:
-* LORD-anton - Swedish
+![image](https://user-images.githubusercontent.com/92767777/212968082-5c4e8918-2e8e-4ea5-97c1-553924265ade.png)
 
-## Psych Credits:
+### Psych Engine:
 * Shadow Mario - Programmer
 * RiverOaken - Artist
 * Yoshubs - Assistant Programmer
-
-### Special Thanks
 * bbpanzu - Ex-Programmer
 * shubs - New Input System
 * SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
@@ -41,86 +35,45 @@ otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 * Keoiki - Note Splash Animations
 * Smokey - Sprite Atlas Support
 * Nebula the Zorua - LUA JIT Fork and some Lua reworks
+
+![image](https://user-images.githubusercontent.com/92767777/212968211-9c09ad8c-8394-449d-8094-d8de7b559f14.png)
+
 _____________________________________
 
 # Features
 
-## Attractive animated dialogue boxes:
+## Most of Weird Engine and Psych Engine features XD
 
-![](https://user-images.githubusercontent.com/44785097/127706669-71cd5cdb-5c2a-4ecc-871b-98a276ae8070.gif)
+## English n' Spanish Language
+![image](https://user-images.githubusercontent.com/92767777/212961967-541ddadf-eb2d-4d73-9675-85139621d8f7.png)
 
+## New Hud for The Score Counter
+![image](https://user-images.githubusercontent.com/92767777/212965392-1a02ac6f-57d5-4b77-b990-b46c2a0861fd.png)
 
-## Mod Support
-* Probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
-* Comes with a Mod Organizing/Disabling Menu.
+## Play as The Opponent BETA Feature (Don't try pls) UNESTABLE
+![image](https://user-images.githubusercontent.com/92767777/212962407-ddbc0a1c-e30c-4de5-9dc2-84429c547506.png)
 
+## Character Selector with voice separation:
+![image](https://user-images.githubusercontent.com/92767777/212963312-895f6537-e01b-4b3c-ad60-0a24c6742244.png)
+* Only BF, for now...
 
-## Atleast one change to every week:
-### Week 1:
-  * New Dad Left sing sprite
-  * Unused stage lights are now used
-  * Spotlights event in Dadbattle
-### Week 2:
-  * Both BF and Skid & Pump does "Hey!" animations
-  * Thunders does a quick light flash and zooms the camera in slightly
-  * Added a quick transition/cutscene to Monster
-  * Subtitles for Monster
-### Week 3:
-  * BF does "Hey!" during Philly Nice
-  * Blammed has a cool new colors flash during that sick part of the song
-### Week 4:
-  * Better hair physics for Mom/Boyfriend (Maybe even slightly better than Week 7's :eyes:)
-  * Henchmen die during all songs. Yeah :(
-### Week 5:
-  * Bottom Boppers and GF does "Hey!" animations during Cocoa and Eggnog
-  * On Winter Horrorland, GF bops her head slower in some parts of the song.
-  * Subtitles for Winter Horrorland
-### Week 6:
-  * On Thorns, the HUD is hidden during the cutscene
-  * Also there's the Background girls being spooky during the "Hey!" parts of the Instrumental
-### Week 7:
-  * Subtitles for Cutscenes and this part on Stress
-
-## Cool new Chart Editor changes and countless bug fixes
-![](https://github.com/ShadowMario/FNF-PsychEngine/blob/main/docs/img/chart.png?raw=true)
-* You can now chart "Event" notes, which are bookmarks that trigger specific actions that usually were hardcoded on the vanilla version of the game.
-* Your song's BPM can now have decimal values
-* You can manually adjust a Note's strum time if you're really going for milisecond precision
-* You can change a note's type on the Editor, it comes with two example types:
-  * Alt Animation: Forces an alt animation to play, useful for songs like Ugh/Stress
-  * Hey: Forces a "Hey" animation instead of the base Sing animation, if Boyfriend hits this note, Girlfriend will do a "Hey!" too.
-* With voice separation, be able to hear a specific part to chart
-
-## Multiple editors to assist you in making your own Mod
-![Screenshot_3](https://user-images.githubusercontent.com/44785097/144629914-1fe55999-2f18-4cc1-bc70-afe616d74ae5.png)
-* Working both for Source code modding and Downloaded builds!
-
-## Story mode menu rework:
-![](https://i.imgur.com/UB2EKpV.png)
-* Added a different BG to every song (less Tutorial)
-* All menu characters are now in individual spritesheets, makes modding it easier.
-
-## Character Selector:
-![](https://i.imgur.com/pYo2Ocn.png)
-* Added a different BG to every song (less Tutorial)
-* All menu characters are now in individual spritesheets, makes modding it easier.
-
-## Credits menu
-![](https://i.imgur.com/M4QO4lH.png)
-* You can add a head icon, name, description and a Redirect link for when the player presses Enter while the item is currently selected.
-
-## Awards/Achievements
-* The engine comes with 17 example achievements that you can mess with and learn how it works (Check Achievements.hx and search for "checkForAchievement" on PlayState.hx)
+## Tutorial Remix? xd
+![image](https://user-images.githubusercontent.com/92767777/212967036-37df61b7-3aae-4e33-9a0d-5b54f013abe0.png)
 
 ## Options menu:
-* You can change Note colors, Delay and Combo Offset, Controls and Preferences there.
- * On Preferences you can toggle Downscroll, Middlescroll, Anti-Aliasing, Framerate, Low Quality, Note Splashes, Flashing Lights, etc.
- * Languages are realy implemented into the game
-![](https://i.imgur.com/FKsgtYi.png)
+* Selectionable Pause Music for the Mod.
+
+![image](https://user-images.githubusercontent.com/92767777/212961595-85ae9947-4ae6-456a-96e5-752c9593d405.png)
+
+* Exit State
+
+![image](https://user-images.githubusercontent.com/92767777/212967420-4b724e17-a2da-4fa8-a4cb-72b82ede442a.png)
 
 ## Other gameplay features:
-* When the enemy hits a note, their strum note also glows.
-* Lag doesn't impact the camera movement and player icon scaling anymore.
-* Some stuff based on Week 7's changes has been put in (Background colors on Freeplay, Note splashes)
-* You can reset your Score on Freeplay/Story Mode by pressing Reset button.
-* You can listen to a song by pressing space or adjust Scroll Speed/Damage taken/etc. on Freeplay by pressing Control.
+* GF Dead Icon
+* BF Pixel Dead Icon
+* Senpai Dead Icon
+* Unique 4 Achievements for the "And" Mod.
+* New Camera Movement
+* Combo Restored
+* GF Countdown
