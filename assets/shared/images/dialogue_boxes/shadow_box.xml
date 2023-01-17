@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="shadow_box.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CLOSE SHADOW0000" x="0" y="0" width="1263" height="509"/>
+	<SubTexture name="CLOSE SHADOW0001" x="1263" y="0" width="1263" height="509"/>
+	<SubTexture name="CLOSE SHADOW0002" x="2526" y="0" width="1263" height="509"/>
+	<SubTexture name="CLOSE SHADOW0003" x="0" y="509" width="1263" height="509"/>
+	<SubTexture name="CLOSE SHADOW0004" x="1263" y="509" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0000" x="1263" y="509" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0001" x="0" y="509" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0002" x="2526" y="0" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0003" x="1263" y="0" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0004" x="0" y="0" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0005" x="2526" y="509" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0006" x="2526" y="509" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0007" x="2526" y="509" width="1263" height="509"/>
+	<SubTexture name="OPEN SHADOW0008" x="2526" y="509" width="1263" height="509"/>
+	<SubTexture name="shadow normal MIRROR0000" x="0" y="1018" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0001" x="1200" y="1018" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0002" x="2400" y="1018" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0003" x="0" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0004" x="1200" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0005" x="2400" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0006" x="2400" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0007" x="2400" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0008" x="2400" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0009" x="2400" y="1430" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0010" x="0" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0011" x="0" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0012" x="0" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0013" x="0" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0014" x="1200" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0015" x="2400" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0016" x="2400" y="1842" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0017" x="0" y="2254" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0018" x="1200" y="2254" width="1200" height="412"/>
+	<SubTexture name="shadow normal MIRROR0019" x="2400" y="2254" width="1200" height="412"/>
+</TextureAtlas>

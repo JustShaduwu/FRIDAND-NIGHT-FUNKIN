@@ -1,0 +1,140 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-24,
+				19
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up_Happy"
+		},
+		{
+			"offsets": [
+				-9,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "Hey"
+		},
+		{
+			"offsets": [
+				-93,
+				-26
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Miss_Up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Happy Idle"
+		},
+		{
+			"offsets": [
+				17,
+				-20
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Left_Happy"
+		},
+		{
+			"offsets": [
+				-74,
+				-47
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Miss_Left"
+		},
+		{
+			"offsets": [
+				32,
+				2
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Down_Happy"
+		},
+		{
+			"offsets": [
+				-21,
+				-38
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Right_Happy"
+		},
+		{
+			"offsets": [
+				-70,
+				-36
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Miss_Down"
+		},
+		{
+			"offsets": [
+				-98,
+				-45
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Miss_Right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Playable-And-Og",
+	"position": [
+		10,
+		70
+	],
+	"healthicon": "and-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		81,
+		255,
+		56
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

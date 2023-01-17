@@ -1,0 +1,76 @@
+{
+	"song": {
+		"events": [
+			[
+				8400,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				8700,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				9000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				9150,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				9300,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				86400,
+				[
+					[
+						"Opponent Fade",
+						"20",
+						"0"
+					],
+					[
+						"Portal Fade",
+						"20",
+						"0"
+					],
+					[
+						"Portal Scar App",
+						"20",
+						"1"
+					]
+				]
+			]
+		]
+	}
+}

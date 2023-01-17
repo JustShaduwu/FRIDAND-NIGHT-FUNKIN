@@ -1,0 +1,193 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "LET'S GOO",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "and-og-1"
+		},
+		{
+			"expression": "happy",
+			"text": "This is really fun",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "and-og-1"
+		},
+		{
+			"expression": "happy",
+			"text": "Ahm.. ",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "and-og-1"
+		},
+		{
+			"expression": "happy",
+			"text": "Sorry for not asking before, but... what are your names guys?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "and-og-1"
+		},
+		{
+			"expression": "excited",
+			"text": "Bop Bieep >:D",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "Girlfriend Dearest ;D!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Oh, your two are dating"
+		},
+		{
+			"expression": "talk",
+			"text": "UwU",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "excited",
+			"text": ">:D",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Aww So Cutee"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Well, I am..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "...."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh right"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "sad",
+			"text": "I, don't know. Jeje..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "*Sad Boops*"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Uh?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "boop"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "baap beep?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What happen me before I got here??"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well, I got here knockout, tired and with no idea what was going on."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Also, I think I'm far from home"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "sad",
+			"text": "But"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "For some reason i started to hear a voice"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "And, I"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "and-og-1",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "I feel tha-..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Baap?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "?"
+		}
+	]
+}

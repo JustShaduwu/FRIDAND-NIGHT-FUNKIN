@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Bueno, es todo, verdad?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "excited",
+			"text": "Beep, bip beep skeep boops",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "shocked",
+			"text": "Quieres tres canciones?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "sad",
+			"text": "Supongo, que no tengo nada mejor que hacer...",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "sad",
+			"text": "Asi que, Vamoos..",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "sad",
+			"text": "De nuevo..",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "confused",
+			"text": "Bop",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		}
+	]
+}

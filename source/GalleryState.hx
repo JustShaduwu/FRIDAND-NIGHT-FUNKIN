@@ -1,0 +1,33 @@
+package; // supongo que no estas en una carpeta
+
+class GalleryState extends MusicBeatState //flixel.FlxState
+{
+// alo xd
+    var theImgs:Array<String> = ["assets/images/loadingscreens/vsandshadows.png","assets/images/loadingscreens/funkay.png"];
+    var curImage:Int = 0;
+    var Imagenlal:flixel.FlxSprite = new flixel.FlxSprite();
+    function changeImage(?diu:Int) {
+    curImage += diu;
+
+    if (curImage >= theImgs.length)
+    curImage = 0;
+    if (curImage <= -1)
+    curImage = theImgs.length - 1;
+    // si todo sale bien deberÃ­a aparecer
+    Imagenlal.loadGraphic(theImgs[curImage]);
+    Imagenlal.screenCenter();
+
+    }
+    override function create(){super.create();
+    //por ahora solo es la imagen jijiji 
+    add(Imagenlal);
+    }
+    override function update(elapsed:Float) {
+    super.update(elapsed);
+    // revisar si se presiona izquierda o derecha y cambiar la imagen
+    
+    if (flixel.FlxG.keys.anyJustPressed([LEFT,A,D,RIGHT]))
+        changeImage(flixel.FlxG.keys.anyJustPressed([LEFT,A]) ? -1 : 1);
+    }
+
+}

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Alone-Post.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DARK..0000" x="0" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0001" x="0" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0002" x="583" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0003" x="583" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0004" x="1166" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0005" x="1166" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0006" x="1749" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0007" x="1749" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0008" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0009" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0010" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0011" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0012" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0013" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0014" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="DARK..0015" x="2332" y="0" width="583" height="973"/>
+	<SubTexture name="OH NO TEST0000" x="2915" y="0" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0001" x="2915" y="0" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0002" x="3498" y="0" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0003" x="3498" y="0" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0004" x="0" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0005" x="0" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0006" x="583" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0007" x="583" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0008" x="1166" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0009" x="1166" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0010" x="1166" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0011" x="1166" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0012" x="1166" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0013" x="1166" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0014" x="1749" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0015" x="2332" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0016" x="2915" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0017" x="2915" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0018" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0019" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0020" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0021" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0022" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0023" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0024" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0025" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0026" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0027" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0028" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0029" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0030" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="OH NO TEST0031" x="3498" y="985" width="583" height="985"/>
+	<SubTexture name="idle0000" x="0" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0001" x="0" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0002" x="580" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0003" x="580" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0004" x="1160" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0005" x="1160" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0006" x="1740" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0007" x="1740" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0008" x="2320" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0009" x="2320" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0010" x="2320" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0011" x="2320" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0012" x="2320" y="1970" width="580" height="985"/>
+	<SubTexture name="idle0013" x="2320" y="1970" width="580" height="985"/>
+</TextureAtlas>

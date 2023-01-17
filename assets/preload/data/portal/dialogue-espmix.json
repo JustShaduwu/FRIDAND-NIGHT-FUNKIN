@@ -1,0 +1,142 @@
+{
+	"dialogue": [
+		{
+			"expression": "shocked",
+			"text": "OH?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05,
+			"sound": "iiii-es"
+		},
+		{
+			"expression": "shocked",
+			"text": "QUE?. DOND-",
+			"boxState": "normal",
+			"voiceline": "iiii-es",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "shocked",
+			"text": "DONDE ESTOY??",
+			"voiceline": "iiii",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "sad",
+			"text": "QUIEN SOY?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Eh?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Beep Boop",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Boop Bep",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Oh, Hola pequeño, señor, color azul",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Quieres cantar?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Pero...",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "sad",
+			"text": "No, todo es tan confuso, y debo intentar ",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Ohh. ¿Que diablos es esa grieta morada en la pared?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Boop bi Bap Beeep",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Que?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "A que te refieres con que tengo que aceptar?",
+			"boxState": "normal",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop",
+			"boxState": "normal",
+			"sound": "",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Es facil señor, solo mantente en ritmo",
+			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.05
+		},
+		{
+			"expression": "sad",
+			"text": "Bueno, supongo que no me queda de otra",
+			"boxState": "normal",
+			"sound": "aand1",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		},
+		{
+			"expression": "angry",
+			"text": "UNA CANCION, VAMOOS!",
+			"boxState": "angry",
+			"portrait": "and-og-1",
+			"speed": 0.05
+		}
+	]
+}

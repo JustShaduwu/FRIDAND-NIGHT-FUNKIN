@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="And-og-1.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Exited0000" x="0" y="0" width="525" height="943"/>
+	<SubTexture name="Ja0000" x="525" y="0" width="525" height="943"/>
+	<SubTexture name="angry 10000" x="1050" y="0" width="525" height="943"/>
+	<SubTexture name="happy0000" x="0" y="943" width="525" height="943"/>
+	<SubTexture name="hey0000" x="525" y="943" width="551" height="943"/>
+	<SubTexture name="mmm0000" x="1076" y="943" width="525" height="943"/>
+	<SubTexture name="sad 10000" x="0" y="1886" width="530" height="943"/>
+	<SubTexture name="what0000" x="530" y="1886" width="530" height="943"/>
+</TextureAtlas>

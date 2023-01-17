@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Dark-and-og.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CONFUSED0000" x="0" y="0" width="360" height="647"/>
+	<SubTexture name="CONFUSED0001" x="0" y="0" width="360" height="647"/>
+	<SubTexture name="CONFUSED0002" x="0" y="0" width="360" height="647"/>
+	<SubTexture name="CONFUSED0003" x="0" y="0" width="360" height="647"/>
+	<SubTexture name="CONFUSED0004" x="0" y="0" width="360" height="647"/>
+	<SubTexture name="I see0000" x="360" y="0" width="360" height="647"/>
+	<SubTexture name="I see0001" x="360" y="0" width="360" height="647"/>
+	<SubTexture name="I see0002" x="360" y="0" width="360" height="647"/>
+	<SubTexture name="I see0003" x="360" y="0" width="360" height="647"/>
+	<SubTexture name="I see0004" x="360" y="0" width="360" height="647"/>
+	<SubTexture name="fun0000" x="720" y="0" width="360" height="647"/>
+	<SubTexture name="fun0001" x="720" y="0" width="360" height="647"/>
+	<SubTexture name="fun0002" x="720" y="0" width="360" height="647"/>
+	<SubTexture name="fun0003" x="720" y="0" width="360" height="647"/>
+	<SubTexture name="fun0004" x="720" y="0" width="360" height="647"/>
+	<SubTexture name="funny0000" x="1080" y="0" width="360" height="647"/>
+	<SubTexture name="funny0001" x="1080" y="0" width="360" height="647"/>
+	<SubTexture name="funny0002" x="1080" y="0" width="360" height="647"/>
+	<SubTexture name="funny0003" x="1080" y="0" width="360" height="647"/>
+	<SubTexture name="funny0004" x="1080" y="0" width="360" height="647"/>
+	<SubTexture name="jaja0000" x="1440" y="0" width="360" height="647"/>
+	<SubTexture name="jaja0001" x="1440" y="0" width="360" height="647"/>
+	<SubTexture name="jaja0002" x="1440" y="0" width="360" height="647"/>
+	<SubTexture name="jaja0003" x="1440" y="0" width="360" height="647"/>
+	<SubTexture name="jaja0004" x="1440" y="0" width="360" height="647"/>
+	<SubTexture name="jsj0000" x="0" y="647" width="360" height="647"/>
+	<SubTexture name="jsj0001" x="0" y="647" width="360" height="647"/>
+	<SubTexture name="jsj0002" x="0" y="647" width="360" height="647"/>
+	<SubTexture name="jsj0003" x="0" y="647" width="360" height="647"/>
+	<SubTexture name="jsj0004" x="0" y="647" width="360" height="647"/>
+	<SubTexture name="laughf0000" x="360" y="647" width="360" height="647"/>
+	<SubTexture name="laughf0001" x="360" y="647" width="360" height="647"/>
+	<SubTexture name="laughf0002" x="360" y="647" width="360" height="647"/>
+	<SubTexture name="laughf0003" x="360" y="647" width="360" height="647"/>
+	<SubTexture name="laughf0004" x="360" y="647" width="360" height="647"/>
+	<SubTexture name="megalo0000" x="720" y="647" width="360" height="647"/>
+	<SubTexture name="megalo0001" x="720" y="647" width="360" height="647"/>
+	<SubTexture name="megalo0002" x="720" y="647" width="360" height="647"/>
+	<SubTexture name="megalo0003" x="720" y="647" width="360" height="647"/>
+	<SubTexture name="megalo0004" x="720" y="647" width="360" height="647"/>
+	<SubTexture name="mmm0000" x="1080" y="647" width="360" height="647"/>
+	<SubTexture name="mmm0001" x="1080" y="647" width="360" height="647"/>
+	<SubTexture name="mmm0002" x="1080" y="647" width="360" height="647"/>
+	<SubTexture name="mmm0003" x="1080" y="647" width="360" height="647"/>
+	<SubTexture name="mmm0004" x="1080" y="647" width="360" height="647"/>
+	<SubTexture name="nangry0000" x="1440" y="647" width="360" height="647"/>
+	<SubTexture name="nangry0001" x="1440" y="647" width="360" height="647"/>
+	<SubTexture name="nangry0002" x="1440" y="647" width="360" height="647"/>
+	<SubTexture name="nangry0003" x="1440" y="647" width="360" height="647"/>
+	<SubTexture name="nangry0004" x="1440" y="647" width="360" height="647"/>
+	<SubTexture name="nosehe0000" x="0" y="1294" width="360" height="647"/>
+	<SubTexture name="nosehe0001" x="0" y="1294" width="360" height="647"/>
+	<SubTexture name="nosehe0002" x="0" y="1294" width="360" height="647"/>
+	<SubTexture name="nosehe0003" x="0" y="1294" width="360" height="647"/>
+	<SubTexture name="nosehe0004" x="0" y="1294" width="360" height="647"/>
+	<SubTexture name="ohe0000" x="360" y="1294" width="360" height="647"/>
+	<SubTexture name="ohe0001" x="360" y="1294" width="360" height="647"/>
+	<SubTexture name="ohe0002" x="360" y="1294" width="360" height="647"/>
+	<SubTexture name="ohe0003" x="360" y="1294" width="360" height="647"/>
+	<SubTexture name="ohe0004" x="360" y="1294" width="360" height="647"/>
+</TextureAtlas>

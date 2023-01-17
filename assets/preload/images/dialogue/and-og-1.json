@@ -1,0 +1,115 @@
+{
+	"position": [
+		60,
+		-60
+	],
+	"dialogue_pos": "left",
+	"scale": 1.25,
+	"image": "And-og-1",
+	"animations": [
+		{
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "mmm",
+			"loop_name": "mmm"
+		},
+		{
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"anim": "shocked",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "what",
+			"loop_name": "what"
+		},
+		{
+			"loop_offsets": [
+				0,
+				-12
+			],
+			"anim": "angry",
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_name": "angry ",
+			"idle_name": "angry "
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "sad",
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_name": "sad",
+			"idle_name": "sad"
+		},
+		{
+			"loop_name": "Exited",
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"idle_name": "Exited",
+			"anim": "excited",
+			"loop_offsets": [
+				0,
+				-10
+			]
+		},
+		{
+			"loop_name": "happy",
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"idle_name": "happy",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "hey",
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"idle_name": "hey",
+			"anim": "hey",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Ja",
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"idle_name": "Ja",
+			"anim": "imcool",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	]
+}
