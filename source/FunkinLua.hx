@@ -40,6 +40,7 @@ import DialogueBoxPsych;
 #if hscript
 import hscript.Parser;
 import hscript.Interp;
+import hscript.Expr;
 #end
 
 #if desktop
@@ -63,6 +64,7 @@ class FunkinLua {
 
 	#if hscript
 	public static var haxeInterp:Interp = null;
+	public static var hscript:HScript = null;
 	#end
 	
 	public function new(script:String) {
@@ -93,6 +95,8 @@ class FunkinLua {
 			return;
 		}
 		scriptName = script;
+		initHaxeModule();
+		
 		trace('lua file loaded succesfully:' + script);
 
 		// Lua shit
@@ -208,6 +212,7 @@ class FunkinLua {
 		set('subtitlesActivated', ClientPrefs.subtitles);
 		set('soundEffectVolume', ClientPrefs.soundEffectVolume);
 		set('lang', ClientPrefs.language);
+		// set('nowplaying', ClientPrefs.nowplaying); // cajita de now playing..
 
 		set('scriptName', scriptName);
 
@@ -448,12 +453,15 @@ class FunkinLua {
 					{
 						Lua.newtable(lua);
 						var tableIdx = Lua.gettop(lua);
+
 						Lua.pushvalue(luaInstance.lua, Lua.LUA_GLOBALSINDEX);
 						Lua.pushnil(luaInstance.lua);
 						while(Lua.next(luaInstance.lua, -2) != 0) {
 							// key = -2
 							// value = -1
+
 							var pop:Int = 0;
+
 							// Manual conversion
 							// first we convert the key
 							if(Lua.isnumber(luaInstance.lua,-2)){
@@ -467,6 +475,8 @@ class FunkinLua {
 								pop++;
 							}
 							// TODO: table
+
+
 							// then the value
 							if(Lua.isnumber(luaInstance.lua,-1)){
 								Lua.pushnumber(lua, Lua.tonumber(luaInstance.lua, -1));
@@ -479,13 +489,16 @@ class FunkinLua {
 								pop++;
 							}
 							// TODO: table
+
 							if(pop==2)Lua.rawset(lua, tableIdx); // then set it
 							Lua.pop(luaInstance.lua, 1); // for the loop
 						}
 						Lua.pop(luaInstance.lua,1); // end the loop entirely
 						Lua.pushvalue(lua, tableIdx); // push the table onto the stack so it gets returned
+
 						return;
 					}
+
 				}
 			}
 			Lua.pushnil(lua);
@@ -623,35 +636,33 @@ class FunkinLua {
 		});
 
 		Lua_helper.add_callback(lua, "runHaxeCode", function(codeToRun:String) {
-			#if hscript
-			initHaxeInterp();
+			var retVal:Dynamic = null;
 
+			#if hscript
+			initHaxeModule();
 			try {
-				var myFunction:Dynamic = haxeInterp.expr(new Parser().parseString(codeToRun));
-				myFunction();
+				retVal = hscript.execute(codeToRun);
 			}
 			catch (e:Dynamic) {
-				switch(e)
-				{
-					case 'Null Function Pointer', 'SReturn':
-						//nothing
-					default:
-						luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false, FlxColor.RED);
-				}
+				luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false, FlxColor.RED);
 			}
+			#else
+			luaTrace("runHaxeCode: HScript isn't supported on this platform!", false, false, FlxColor.RED);
 			#end
+
+			if(retVal != null && !isOfTypes(retVal, [Bool, Int, Float, String, Array])) retVal = null;
+			return retVal;
 		});
 
-		Lua_helper.add_callback(lua, "addHaxeLibrary", function(libName:String, ?libFolder:String = '') {
+		Lua_helper.add_callback(lua, "addHaxeLibrary", function(libName:String, ?libPackage:String = '') {
 			#if hscript
-			initHaxeInterp();
-
+			initHaxeModule();
 			try {
 				var str:String = '';
-				if(libFolder.length > 0)
-					str = libFolder + '.';
+				if(libPackage.length > 0)
+					str = libPackage + '.';
 
-				haxeInterp.variables.set(libName, Type.resolveClass(str + libName));
+				hscript.variables.set(libName, Type.resolveClass(str + libName));
 			}
 			catch (e:Dynamic) {
 				luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false, FlxColor.RED);
@@ -2544,9 +2555,27 @@ class FunkinLua {
 		call('onCreate', []);
 		#end
 	}
-
+	
+	public static function isOfTypes(value:Any, types:Array<Dynamic>)
+	{
+		for (type in types)
+		{
+			if(Std.isOfType(value, type)) return true;
+		}
+		return false;
+	}
+	
 	#if hscript
-	public function initHaxeInterp()
+	public function initHaxeModule()
+	{
+		if(hscript == null)
+		{
+			trace('initializing haxe interp for: $scriptName');
+			hscript = new HScript(); //TO DO: Fix issue with 2 scripts not being able to use the same variable names
+		}
+	}
+	
+/*	public function initHaxeInterp()
 	{
 		if(haxeInterp == null)
 		{
@@ -2564,7 +2593,7 @@ class FunkinLua {
 			haxeInterp.variables.set('Character', Character);
 			haxeInterp.variables.set('Alphabet', Alphabet);
 			haxeInterp.variables.set('StringTools', StringTools);
-
+// ESTA PERRA MAMADA QEEEE
 			haxeInterp.variables.set('setVar', function(name:String, value:Dynamic)
 			{
 				PlayState.instance.variables.set(name, value);
@@ -2575,7 +2604,7 @@ class FunkinLua {
 				return PlayState.instance.variables.get(name);
 			});
 		}
-	}
+	} */ 
 	#end
 
 	public static function setVarInArray(instance:Dynamic, variable:String, value:Dynamic):Any
@@ -2985,3 +3014,66 @@ class DebugLuaText extends FlxText
 	}
 
 }
+
+#if hscript
+class HScript
+{
+	public static var parser:Parser = new Parser();
+	public var interp:Interp;
+
+	public var variables(get, never):Map<String, Dynamic>;
+
+	public function get_variables()
+	{
+		return interp.variables;
+	}
+
+	public function new()
+	{
+		interp = new Interp();
+		interp.variables.set('FlxG', FlxG);
+		interp.variables.set('FlxSprite', FlxSprite);
+		interp.variables.set('FlxCamera', FlxCamera);
+		interp.variables.set('FlxTimer', FlxTimer);
+		interp.variables.set('FlxTween', FlxTween);
+		interp.variables.set('FlxEase', FlxEase);
+		interp.variables.set('PlayState', PlayState);
+		interp.variables.set('game', PlayState.instance);
+		interp.variables.set('Paths', Paths);
+		interp.variables.set('Conductor', Conductor);
+		interp.variables.set('ClientPrefs', ClientPrefs);
+		interp.variables.set('Character', Character);
+		interp.variables.set('Alphabet', Alphabet);
+		interp.variables.set('ShaderFilter', openfl.filters.ShaderFilter);
+		interp.variables.set('StringTools', StringTools);
+
+		interp.variables.set('setVar', function(name:String, value:Dynamic)
+		{
+			PlayState.instance.variables.set(name, value);
+		});
+		interp.variables.set('getVar', function(name:String)
+		{
+			var result:Dynamic = null;
+			if(PlayState.instance.variables.exists(name)) result = PlayState.instance.variables.get(name);
+			return result;
+		});
+		interp.variables.set('removeVar', function(name:String)
+		{
+			if(PlayState.instance.variables.exists(name))
+			{
+				PlayState.instance.variables.remove(name);
+				return true;
+			}
+			return false;
+		});
+	}
+
+	public function execute(codeToRun:String):Dynamic
+	{
+		@:privateAccess
+		HScript.parser.line = 1;
+		HScript.parser.allowTypes = true;
+		return interp.execute(HScript.parser.parseString(codeToRun));
+	}
+}
+#end

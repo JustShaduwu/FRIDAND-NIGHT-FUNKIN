@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				470,
+				347
+			],
+			"loop": false,
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "BFSHADOWDEAD3",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-30,
+				-12
+			],
+			"loop": true,
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "BFSHADOWDEAD2",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-30,
+				27
+			],
+			"loop": false,
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "BFSHADOWDEADSTART",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/BF-SHADOW-DEAD",
+	"position": [
+		-175,
+		360
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		123,
+		214,
+		246
+	],
+	"camera_position": [
+		50,
+		-60
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

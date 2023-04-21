@@ -42,6 +42,7 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
+		// 'locker',
 	   // 'book',
 	    'series',
 		// #if MODS_ALLOWED 'mods', #end
@@ -270,9 +271,11 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new FreeplayState());
 									case 'book':
 										MusicBeatState.switchState(new RBMState());
-									// #if MODS_ALLOWED
+							   	 //   case 'locker':
+							         //	MusicBeatState.switchState(new PortalTunesState());
+									 // #if MODS_ALLOWED
 								//	case 'mods':
-									//	MusicBeatState.switchState(new ModsMenuState());
+									 // MusicBeatState.switchState(new CharSelectState());
 									// #end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());

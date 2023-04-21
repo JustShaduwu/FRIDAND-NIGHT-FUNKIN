@@ -1,5 +1,6 @@
 package;
 
+import flixel.util.FlxColor;
 import animateatlas.AtlasFrameMaker;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -298,7 +299,7 @@ class Character extends FlxSprite
 		{
 			if (heyTimer > 0)
 			{
-				heyTimer -= elapsed;
+				heyTimer -= elapsed * PlayState.instance.playbackRate;
 				if (heyTimer <= 0)
 				{
 					if (specialAnim && animation.curAnim.name == 'hey' || animation.curAnim.name == 'cheer')
@@ -349,7 +350,7 @@ class Character extends FlxSprite
 					holdTimer += elapsed;
 				}
 
-				if (holdTimer >= Conductor.stepCrochet * 0.0011 * singDuration)
+				if (holdTimer >= Conductor.stepCrochet * (0.0011 / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1)) * singDuration)
 				{
 					if (animAdaptedLoop.exists('idle' + idleSuffix))
 					{
@@ -408,6 +409,13 @@ class Character extends FlxSprite
 	public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void
 	{
 		specialAnim = false;
+		
+		if (AnimName.endsWith('miss') && animation.getByName(AnimName) == null)
+		{
+			AnimName = AnimName.split('miss')[0];
+				color = 0x424282;
+		}
+		
 		animation.play(AnimName, Force, Reversed, Frame);
 
 		if (animOffsets.exists(AnimName))

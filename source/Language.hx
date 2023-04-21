@@ -161,6 +161,8 @@ typedef LanguageFile =
 	var keyboardModeDesc:String;
 	var downScroll:String;
 	var downScrollDesc:String;
+	var nowplaying:String;
+	var nowplayingDesc:String;
 	var middleScroll:String;
 	var middleScrollDesc:String;
 	var ghostTapping:String;
@@ -330,6 +332,8 @@ class Language
 	public static var keyboardModeDesc:String;
 	public static var downScroll:String;
 	public static var downScrollDesc:String;
+	public static var nowplaying:String;
+	public static var nowplayingDesc:String;
 	public static var middleScroll:String;
 	public static var middleScrollDesc:String;
 	public static var ghostTapping:String;
@@ -560,6 +564,8 @@ class Language
 		keyboardModeDesc = languageJson.keyboardModeDesc;
 		downScroll = languageJson.downScroll;
 		downScrollDesc = languageJson.downScrollDesc;
+		nowplaying = languageJson.nowplaying;
+		nowplayingDesc = languageJson.nowplayingDesc;
 		middleScroll = languageJson.middleScroll;
 		middleScrollDesc = languageJson.middleScrollDesc;
 		ghostTapping = languageJson.ghostTapping;

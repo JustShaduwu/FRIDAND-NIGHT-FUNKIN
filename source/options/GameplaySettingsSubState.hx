@@ -87,6 +87,14 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false);
 		addOption(option); //now shut up before i put you in my basement
 		// PD: i dont have a basement
+		
+		// now playing para script
+		var option:Option = new Option(Language.nowplaying, //Name
+			Language.nowplayingDesc, //Description
+			'nowplaying', //Save data variable name
+			'bool', //Variable type
+			true); //Default value
+		addOption(option);
 
 		var option:Option = new Option(Language.soundEffectVolume, Language.soundEffectVolumeDesc, 'soundEffectVolume', 'percent', 1);
 		option.scrollSpeed = 1.6;

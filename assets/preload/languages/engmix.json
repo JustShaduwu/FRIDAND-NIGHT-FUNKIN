@@ -152,6 +152,8 @@
 	"keyboardModeDesc": "Check this if you want to play with\nyour keyboard instead of your\non screen hitbox (will hide the hitbox).",
 	"downScroll": "Downscroll",
 	"downScrollDesc": "If checked, notes go Down instead of Up, simple enough.",
+	"nowplaying": "Now playing",
+	"nowplayingDesc": "If checked, the song name and opponent icon appears starting the song.",
 	"middleScroll": "Middlescroll",
 	"middleScrollDesc": "If checked, your notes get centered.",
 	"ghostTapping": "Ghost Tapping",

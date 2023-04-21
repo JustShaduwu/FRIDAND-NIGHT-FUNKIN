@@ -59,13 +59,16 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		}
 		optionsArray.push(option);
 
-		/*var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
+		#if !html5
+		var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
 		option.scrollSpeed = 1;
 		option.minValue = 0.5;
-		option.maxValue = 2.5;
-		option.changeValue = 0.1;
+		option.maxValue = 3.0;
+		option.changeValue = 0.05;
 		option.displayFormat = '%vX';
-		optionsArray.push(option);*/
+		option.decimals = 2;
+		optionsArray.push(option);
+		#end
 
 		var option:GameplayOption = new GameplayOption(Language.healthgain, 'healthgain', 'float', 1);
 		option.scrollSpeed = 2.5;
@@ -92,8 +95,8 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		var option:GameplayOption = new GameplayOption(Language.botplay, 'botplay', 'bool', false);
 		optionsArray.push(option);
 		
-		var option:GameplayOption = new GameplayOption(Language.opponentplay, 'opponentplay', 'bool', false);
-		optionsArray.push(option);
+	//	var option:GameplayOption = new GameplayOption(Language.opponentplay, 'opponentplay', 'bool', false);
+	//	optionsArray.push(option);
 	}
 
 	public function getOptionByName(name:String)

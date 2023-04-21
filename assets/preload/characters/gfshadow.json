@@ -1,26 +1,26 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				57
 			],
-			"anim": "gf dead",
+			"loop": false,
 			"fps": 24,
-			"name": "GF Markov End",
+			"anim": "gf dead",
+			"adaptativeloop": false,
 			"indices": [],
-			"adaptativeloop": false
+			"name": "GF Markov End"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"anim": "danceLeft",
+			"loop": false,
 			"fps": 24,
-			"name": "IDLE SHADOW GF",
+			"anim": "danceLeft",
+			"adaptativeloop": false,
 			"indices": [
 				30,
 				0,
@@ -39,17 +39,17 @@
 				13,
 				14
 			],
-			"adaptativeloop": false
+			"name": "IDLE SHADOW GF"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"anim": "danceRight",
+			"loop": false,
 			"fps": 24,
-			"name": "IDLE SHADOW GF",
+			"anim": "danceRight",
+			"adaptativeloop": false,
 			"indices": [
 				15,
 				16,
@@ -67,82 +67,82 @@
 				28,
 				29
 			],
-			"adaptativeloop": false
+			"name": "IDLE SHADOW GF"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				41
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "LEFT SHADOW GF",
+			"anim": "singLEFT",
+			"adaptativeloop": false,
 			"indices": [],
-			"adaptativeloop": false
+			"name": "LEFT SHADOW GF"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				21
 			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "DOWN SHADOW GF",
-			"indices": [],
-			"adaptativeloop": false
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-2,
-				28
-			],
-			"anim": "scared",
-			"fps": 24,
-			"name": "GF AAA",
-			"indices": [],
-			"adaptativeloop": false
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-2,
-				28
-			],
-			"anim": "sad",
-			"fps": 24,
-			"name": "GF AAA",
-			"indices": [],
-			"adaptativeloop": false
-		},
-		{
 			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "DOWN SHADOW GF"
+		},
+		{
+			"offsets": [
+				-2,
+				28
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "scared",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "GF AAA"
+		},
+		{
+			"offsets": [
+				-2,
+				28
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "sad",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "GF AAA"
+		},
+		{
 			"offsets": [
 				0,
 				26
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "UP SHADOW GF",
+			"anim": "singUP",
+			"adaptativeloop": false,
 			"indices": [],
-			"adaptativeloop": false
+			"name": "UP SHADOW GF"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				9
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "RIGHT SHADOW GF",
+			"anim": "singRIGHT",
+			"adaptativeloop": false,
 			"indices": [],
-			"adaptativeloop": false
+			"name": "RIGHT SHADOW GF"
 		}
 	],
-	"no_antialiasing": true,
+	"no_antialiasing": false,
 	"image": "characters/shadowgf",
 	"position": [
 		-5,

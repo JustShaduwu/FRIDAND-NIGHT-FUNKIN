@@ -179,6 +179,12 @@ class FreeplayState extends MusicBeatState
 
 		add(scoreText);
 		
+		var modifierMenu = new FlxSprite().loadGraphic(Paths.image('freeplay/screeniu'));
+	//	modifierMenu.x = 12;
+	//	modifierMenu.y = -10;
+	    modifierMenu.screenCenter();
+		add(modifierMenu);
+
 		//replay
 	//	repText = new FlxText(FlxG.width * 0.7 - 270, scoreText.y + 65, 600, "", 20);
 	//	repText.text = 'Press ALT to show the replays of ${songs[curSelected].songName.toUpperCase()}';
@@ -373,7 +379,7 @@ class FreeplayState extends MusicBeatState
 		var downP = controls.UI_DOWN_P;
 		var accepted = controls.ACCEPT;
 		var space = FlxG.keys.justPressed.SPACE #if android || _virtualpad.buttonX.justPressed #end;
-		var ctrl = FlxG.keys.justPressed.CONTROL #if android || _virtualpad.buttonC.justPressed #end;
+		var m = FlxG.keys.justPressed.M #if android || _virtualpad.buttonC.justPressed #end;
 		var alt = FlxG.keys.justPressed.ALT;
 
 		var shiftMult:Int = 1;
@@ -442,7 +448,7 @@ class FreeplayState extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
-		if (ctrl)
+		if (m)
 		{
 			#if android
 			removeVirtualPad();

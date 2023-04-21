@@ -1,26 +1,32 @@
 package;
 
-#if desktop
-import Discord.DiscordClient;
-#end
 import flixel.FlxState;
 import flixel.FlxG;
 import flixel.FlxSprite;
 
-class PortalTunesState extends FlxState
+class PortalTunesState extends FlxState  //BORRAR ESTO DESPUES RB
 {
 	override public function create()
 	{
 		super.create();
-        FlxG.sound.playMusic(Paths.music('offsetSong'), 1, true);
+        var unu = new FlxSprite().loadGraphic(Paths.image('ourbook/RB3'));
+        unu.screenCenter();
+        add(unu);
+	    FlxG.sound.playMusic(Paths.music('Reality YearBook/AndWeekVer'), 1, true);
+        FlxG.sound.play(Paths.sound('Pagen', 'preload'));
 	}
 
 	override public function update(elapsed:Float):Void
 {
-    if (FlxG.keys.pressed.UP)
+    if (FlxG.keys.pressed.ESCAPE)
     {
-	         FlxG.sound.playMusic(Paths.music('offsetSong'), 1, false);
-             FlxG.sound.playMusic(Paths.music("freakyMenu"), 1, true);
+		    FlxG.sound.playMusic(Paths.music("freakyMenu"));
+            FlxG.switchState(new MainMenuState());
+    }
+
+    if (FlxG.keys.pressed.LEFT)
+    {
+            FlxG.switchState(new RgfbfState());
     }
 }
 }

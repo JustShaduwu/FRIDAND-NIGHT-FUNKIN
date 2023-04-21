@@ -258,7 +258,7 @@ class StoryMenuState extends MusicBeatState
 			else if (upP || downP)
 				changeDifficulty();
 
-			if(FlxG.keys.justPressed.CONTROL #if android || _virtualpad.buttonX.justPressed #end)
+			if(FlxG.keys.justPressed.M #if android || _virtualpad.buttonX.justPressed #end)
 			{
 				#if android
 				removeVirtualPad();

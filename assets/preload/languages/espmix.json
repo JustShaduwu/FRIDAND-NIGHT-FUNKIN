@@ -152,6 +152,8 @@
 	"keyboardModeDesc": "Check this if you want to play with\nyour keyboard instead of your\non screen hitbox (will hide the hitbox).",
 	"downScroll": "Downscroll",
 	"downScrollDesc": "Si lo activas, hace que las flechas vayan hacia abajo, en lugar de hacia arriba, lol.",
+	"nowplaying": "Reproduciendo..",
+	"nowplayingDesc": "Si lo activas, al iniciar la cancion aparecera el nombre de la cancion \ndel/los compositores y el icono del oponente.",
 	"middleScroll": "Middlescroll",
 	"middleScrollDesc": "Si lo activas, tus notas estaran centradas.",
 	"ghostTapping": "Ghost Tapping",
