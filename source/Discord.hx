@@ -46,7 +46,7 @@ class DiscordClient
 			details: "In the Menus",
 			state: null,
 			largeImageKey: 'icon',
-			largeImageText: "FridAND Night Funkin' PRE RELEASE BUILD"
+			largeImageText: "FridAND Night Funkin' VS AND SHADOW'S"
 		});
 	}
 
