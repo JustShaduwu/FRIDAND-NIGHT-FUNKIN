@@ -1,0 +1,129 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-60,
+		70
+	],
+	"no_antialiasing": false,
+	"scale": 1.25,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				-1,
+				144
+			],
+			"idle_offsets": [
+				-2,
+				143
+			],
+			"loop_name": "happy anim",
+			"idle_name": "happyanim0005"
+		},
+		{
+			"loop_offsets": [
+				-74,
+				161
+			],
+			"anim": "excited",
+			"idle_offsets": [
+				-74,
+				161
+			],
+			"loop_name": "exited anim",
+			"idle_name": "exited anim0005"
+		},
+		{
+			"loop_offsets": [
+				-10,
+				144
+			],
+			"anim": "pissed",
+			"idle_offsets": [
+				-10,
+				144
+			],
+			"loop_name": "angry anim",
+			"idle_name": "angry anim0005"
+		},
+		{
+			"loop_offsets": [
+				-78,
+				144
+			],
+			"anim": "shocked",
+			"idle_offsets": [
+				-80,
+				144
+			],
+			"loop_name": "what anim",
+			"idle_name": "what anim0005"
+		},
+		{
+			"idle_offsets": [
+				-80,
+				144
+			],
+			"anim": "confused",
+			"loop_offsets": [
+				-80,
+				144
+			],
+			"idle_name": "sad anim0005",
+			"loop_name": "sad anim"
+		},
+		{
+			"loop_name": "mmm anim",
+			"idle_offsets": [
+				-2,
+				144
+			],
+			"idle_name": "mmm anim0005",
+			"anim": "mmm",
+			"loop_offsets": [
+				-2,
+				144
+			]
+		},
+		{
+			"loop_name": "jaja anim",
+			"idle_offsets": [
+				-50,
+				359
+			],
+			"idle_name": "jaja anim0005",
+			"anim": "wtf",
+			"loop_offsets": [
+				-50,
+				359
+			]
+		},
+		{
+			"loop_name": "hey to bf",
+			"idle_offsets": [
+				8,
+				140
+			],
+			"idle_name": "hey to bf0005",
+			"anim": "cute",
+			"loop_offsets": [
+				8,
+				140
+			]
+		},
+		{
+			"loop_name": "hey000",
+			"idle_offsets": [
+				-90,
+				144
+			],
+			"idle_name": "hey0005",
+			"anim": "hey",
+			"loop_offsets": [
+				-90,
+				144
+			]
+		}
+	],
+	"image": "AND_Dialogue"
+}

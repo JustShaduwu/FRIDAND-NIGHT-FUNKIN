@@ -1,0 +1,32 @@
+{
+	"storyName": "Freeplay song",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "portal",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "andweek1",
+	"startUnlocked": false,
+	"weekCharacters": [
+		"and-og-first",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Habits",
+			"and-og",
+			[
+				0,
+				255,
+				0
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Habits",
+	"hiddenUntilUnlocked": true
+}

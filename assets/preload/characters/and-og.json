@@ -1,0 +1,92 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				-39
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Right_Happy"
+		},
+		{
+			"offsets": [
+				-17,
+				18
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up_Happy"
+		},
+		{
+			"offsets": [
+				-16,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "Hey"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "Happy Idle"
+		},
+		{
+			"offsets": [
+				58,
+				1
+			],
+			"indices": [],
+			"adaptativeloop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": true,
+			"name": "Down_Happy"
+		},
+		{
+			"offsets": [
+				11,
+				-19
+			],
+			"indices": [],
+			"adaptativeloop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": true,
+			"name": "Left_Happy"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/And-Og",
+	"position": [
+		10,
+		60
+	],
+	"healthicon": "and-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		81,
+		255,
+		56
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

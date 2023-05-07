@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SHADOWAND_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SHADOW ANGRY0000" x="0" y="0" width="537" height="949" frameX="-97" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW ANGRY0001" x="0" y="0" width="537" height="949" frameX="-97" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW ANGRY0002" x="537" y="0" width="683" height="985"/>
+	<SubTexture name="SHADOW ANGRY0003" x="537" y="0" width="683" height="985"/>
+	<SubTexture name="SHADOW ANGRY0004" x="1220" y="0" width="564" height="961" frameX="-81" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW ANGRY0005" x="1220" y="0" width="564" height="961" frameX="-81" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW Bodys0000" x="1784" y="0" width="537" height="949" frameX="-97" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW Bodys0001" x="1784" y="0" width="537" height="949" frameX="-97" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW Bodys0002" x="2321" y="0" width="683" height="985"/>
+	<SubTexture name="SHADOW Bodys0003" x="2321" y="0" width="683" height="985"/>
+	<SubTexture name="SHADOW Bodys0004" x="3004" y="0" width="564" height="961" frameX="-81" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW Bodys0005" x="3004" y="0" width="564" height="961" frameX="-81" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW JE0000" x="0" y="985" width="537" height="949" frameX="-110" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW JE0001" x="0" y="985" width="537" height="949" frameX="-110" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW JE0002" x="537" y="985" width="683" height="985"/>
+	<SubTexture name="SHADOW JE0003" x="537" y="985" width="683" height="985"/>
+	<SubTexture name="SHADOW JE0004" x="1220" y="985" width="564" height="961" frameX="-94" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW JE0005" x="1220" y="985" width="564" height="961" frameX="-94" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW LAUGH0000" x="1784" y="985" width="537" height="949" frameX="-97" frameY="-17" frameWidth="683" frameHeight="1005"/>
+	<SubTexture name="SHADOW LAUGH0001" x="1784" y="985" width="537" height="949" frameX="-97" frameY="-17" frameWidth="683" frameHeight="1005"/>
+	<SubTexture name="SHADOW LAUGH0002" x="2321" y="985" width="683" height="985" frameX="0" frameY="0" frameWidth="683" frameHeight="1005"/>
+	<SubTexture name="SHADOW LAUGH0003" x="2321" y="985" width="683" height="985" frameX="0" frameY="0" frameWidth="683" frameHeight="1005"/>
+	<SubTexture name="SHADOW LAUGH0004" x="3004" y="985" width="564" height="999" frameX="-81" frameY="-6" frameWidth="683" frameHeight="1005"/>
+	<SubTexture name="SHADOW LAUGH0005" x="3004" y="985" width="564" height="999" frameX="-81" frameY="-6" frameWidth="683" frameHeight="1005"/>
+	<SubTexture name="SHADOW MMM0000" x="0" y="1984" width="573" height="958" frameX="-83" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW MMM0001" x="0" y="1984" width="573" height="958" frameX="-83" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW MMM0002" x="573" y="1984" width="683" height="985"/>
+	<SubTexture name="SHADOW MMM0003" x="573" y="1984" width="683" height="985"/>
+	<SubTexture name="SHADOW MMM0004" x="1256" y="1984" width="585" height="974" frameX="-89" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW MMM0005" x="1256" y="1984" width="585" height="974" frameX="-89" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW TALK0000" x="1841" y="1984" width="564" height="950" frameX="-83" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW TALK0001" x="1841" y="1984" width="564" height="950" frameX="-83" frameY="-17" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW TALK0002" x="2405" y="1984" width="683" height="985"/>
+	<SubTexture name="SHADOW TALK0003" x="2405" y="1984" width="683" height="985"/>
+	<SubTexture name="SHADOW TALK0004" x="3088" y="1984" width="564" height="961" frameX="-94" frameY="-12" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="SHADOW TALK0005" x="3088" y="1984" width="564" height="961" frameX="-94" frameY="-12" frameWidth="683" frameHeight="985"/>
+</TextureAtlas>

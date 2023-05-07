@@ -1,0 +1,208 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				1,
+				1
+			],
+			"loop": false,
+			"anim": "cheer",
+			"fps": 24,
+			"name": "GF Cheer",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-2,
+				-21
+			],
+			"loop": false,
+			"anim": "sad",
+			"fps": 24,
+			"name": "gf sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-9
+			],
+			"loop": false,
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "GF Dancing Beat",
+			"indices": [
+				30,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-9
+			],
+			"loop": false,
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "GF Dancing Beat",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		},
+		{
+			"offsets": [
+				-2,
+				-17
+			],
+			"loop": true,
+			"anim": "scared",
+			"fps": 24,
+			"name": "GF FEAR",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "uwu",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "GF uwu"
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "countdownOnecountdownOne",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "GF countdown"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "countdown3",
+			"fps": 7,
+			"name": "GF countdown",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"adaptativeloop": false
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				16,
+				17,
+				18,
+				19,
+				20
+			],
+			"adaptativeloop": false,
+			"fps": 7,
+			"anim": "countdown1",
+			"loop": false,
+			"name": "GF countdown"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"adaptativeloop": false,
+			"fps": 7,
+			"anim": "countdown2",
+			"loop": false,
+			"name": "GF countdown"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gfonly",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

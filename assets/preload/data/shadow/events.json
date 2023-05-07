@@ -1,0 +1,166 @@
+{
+	"song": {
+		"events": [
+			[
+				39750,
+				[
+					[
+						"Camera Follow Pos",
+						"700",
+						"500"
+					],
+					[
+						"Dark Camera",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				39937.5,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				40000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"shadow-eyes"
+					],
+					[
+						"Change Character",
+						"gf",
+						"no"
+					],
+					[
+						"Change Character",
+						"bf",
+						"invbf"
+					]
+				]
+			],
+			[
+				71812.5,
+				[
+					[
+						"Dark Camera",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				71937.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"shadowand-og"
+					],
+					[
+						"Change Character",
+						"gf",
+						"gfe"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			],
+			[
+				72000,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					],
+					[
+						"Toggle Trail",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				72125,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				80125,
+				[
+					[
+						"Toggle Trail",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				128000,
+				[
+					[
+						"Set GF Speed",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				128500,
+				[
+					[
+						"Set GF Speed",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				129000,
+				[
+					[
+						"Set GF Speed",
+						"4",
+						""
+					]
+				]
+			],
+			[
+				129500,
+				[
+					[
+						"Set GF Speed",
+						"5",
+						""
+					]
+				]
+			],
+			[
+				130000,
+				[
+					[
+						"Screen Shake",
+						"7, 100",
+						"7, 100"
+					]
+				]
+			]
+		]
+	}
+}

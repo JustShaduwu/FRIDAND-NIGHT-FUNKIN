@@ -1,0 +1,83 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				20,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				290,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				10,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				90,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"adaptativeloop": false,
+			"indices": [],
+			"name": "up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/shadow-eyes-pov",
+	"position": [
+		100,
+		-40
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		-200,
+		-100
+	],
+	"sing_duration": 6,
+	"scale": 0.7
+}

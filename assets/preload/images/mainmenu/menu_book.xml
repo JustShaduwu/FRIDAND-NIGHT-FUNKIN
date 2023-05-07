@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_book.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="book basic 10000" x="0" y="0" width="1012" height="140"/>
+	<SubTexture name="book basic 10001" x="0" y="0" width="1012" height="140"/>
+	<SubTexture name="book basic 10002" x="0" y="0" width="1012" height="140"/>
+	<SubTexture name="book basic 10003" x="1012" y="0" width="1012" height="140"/>
+	<SubTexture name="book basic 10004" x="1012" y="0" width="1012" height="140"/>
+	<SubTexture name="book basic 10005" x="1012" y="0" width="1012" height="140"/>
+	<SubTexture name="book basic 10006" x="0" y="140" width="1012" height="140"/>
+	<SubTexture name="book basic 10007" x="0" y="140" width="1012" height="140"/>
+	<SubTexture name="book basic 10008" x="0" y="140" width="1012" height="140"/>
+	<SubTexture name="book white 10000" x="0" y="280" width="1176" height="169"/>
+	<SubTexture name="book white 10001" x="0" y="449" width="1176" height="169"/>
+	<SubTexture name="book white 10002" x="0" y="618" width="1176" height="169"/>
+</TextureAtlas>

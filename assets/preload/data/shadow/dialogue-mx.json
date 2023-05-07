@@ -1,0 +1,197 @@
+{
+	"dialogue": [
+		{
+			"expression": "laugh",
+			"text": "JA JA JA JA-",
+			"boxState": "angry",
+			"sound": "shadowandsound",
+			"speed": 0.05,
+			"portrait": "ShadowAnd"
+		},
+		{
+			"expression": "talk",
+			"text": "Finalmente..",
+			"boxState": "normal",
+			"voiceline": "iiii-es",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "confused",
+			"text": "Beep Boop",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "confused",
+			"text": "BAAP TAT",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "demon",
+			"text": "Grr",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf",
+			"sound": "gfsound"
+		},
+		{
+			"expression": "mmm",
+			"text": "Uh?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "shocked",
+			"text": "Veamos lo que tenemos aqui..",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "excited",
+			"text": "Un demonio y un humano.. Conseguir lo que el rarito y la idiota quieren, sera facil..",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "pissed",
+			"text": "Aunque parece que ustedes son nativos de aqui, no es asi?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "confused",
+			"text": "BEEP BIP BOP",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "mmm",
+			"text": "Quien soy?",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "mmm",
+			"text": "No, no. Creo que la pregunta es",
+			"boxState": "normal",
+			"speed": 0.08,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "laugh",
+			"text": "¿Que soy?..",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "shocked",
+			"text": ">:c",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "laugh",
+			"text": "JAJAJA vamos, disfruta tus ultimos momentos..",
+			"boxState": "angry",
+			"speed": 0.035,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "excited",
+			"text": "Sus cuerpos nos podrian ser utiles..",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "pissed",
+			"text": "Bep Bip Bo Biip",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "mmm",
+			"text": "Un enfrentamiento musical?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "pissed",
+			"text": "Acaso piensas que tu porqueria podra cambiar algo?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "pissed",
+			"text": "Bap Beep Bop Bi Bap",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "pissed",
+			"text": "JAJA, de acuerdo. Podemos hacer tiempo antes de la tragedia",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "talk",
+			"text": "Solo te advierto, que como puedo y quiero, existe la posibilidad de que te MATE en cualquier momento..",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "shocked",
+			"text": "Asi que, terminemos pronto!!",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "shadowand",
+			"sound": "shadowandsound"
+		},
+		{
+			"expression": "excited",
+			"text": "Yeah",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "excited",
+			"sound": "bfsound"
+		}
+	]
+}

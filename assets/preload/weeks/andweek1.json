@@ -1,0 +1,49 @@
+{
+	"storyName": "And drift go...",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "portal",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorialremix",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"and-og-first",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Portal",
+			"and-og",
+			[
+				0,
+				255,
+				0
+			]
+		],
+		[
+			"Alone",
+			"and-og",
+			[
+				0,
+				255,
+				0
+			]
+		],
+		[
+			"Shadow",
+			"shadowand-og",
+			[
+				255,
+				0,
+				13
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "andweek1"
+}

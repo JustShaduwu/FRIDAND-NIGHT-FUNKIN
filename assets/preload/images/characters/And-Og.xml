@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="And-Og.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Down_Happy0000" x="0" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0001" x="0" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0002" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0003" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0004" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0005" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0006" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0007" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0008" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0009" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0010" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0011" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0012" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Down_Happy0013" x="672" y="0" width="672" height="1009"/>
+	<SubTexture name="Happy Idle0000" x="1344" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0001" x="1344" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0002" x="1929" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0003" x="1929" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0004" x="2514" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0005" x="2514" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0006" x="3099" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0007" x="3099" y="0" width="585" height="985"/>
+	<SubTexture name="Happy Idle0008" x="0" y="1009" width="585" height="985"/>
+	<SubTexture name="Happy Idle0009" x="0" y="1009" width="585" height="985"/>
+	<SubTexture name="Happy Idle0010" x="0" y="1009" width="585" height="985"/>
+	<SubTexture name="Happy Idle0011" x="0" y="1009" width="585" height="985"/>
+	<SubTexture name="Happy Idle0012" x="0" y="1009" width="585" height="985"/>
+	<SubTexture name="Happy Idle0013" x="0" y="1009" width="585" height="985"/>
+	<SubTexture name="Hey0000" x="585" y="1009" width="559" height="974"/>
+	<SubTexture name="Hey0001" x="1144" y="1009" width="559" height="974"/>
+	<SubTexture name="Hey0002" x="1703" y="1009" width="559" height="974"/>
+	<SubTexture name="Hey0003" x="1703" y="1009" width="559" height="974"/>
+	<SubTexture name="Hey0004" x="2262" y="1009" width="559" height="974"/>
+	<SubTexture name="Hey0005" x="2262" y="1009" width="559" height="974"/>
+	<SubTexture name="Left_Happy0000" x="2821" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0001" x="2821" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0002" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0003" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0004" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0005" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0006" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0007" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0008" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0009" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0010" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0011" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0012" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Left_Happy0013" x="3421" y="1009" width="600" height="992"/>
+	<SubTexture name="Right_Happy0000" x="0" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0001" x="0" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0002" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0003" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0004" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0005" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0006" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0007" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0008" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0009" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Right_Happy0010" x="558" y="2001" width="558" height="952"/>
+	<SubTexture name="Up_Happy0000" x="1116" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0001" x="1116" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0002" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0003" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0004" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0005" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0006" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0007" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0008" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0009" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0010" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0011" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0012" x="1658" y="2001" width="542" height="1004"/>
+	<SubTexture name="Up_Happy0013" x="1658" y="2001" width="542" height="1004"/>
+</TextureAtlas>

@@ -1,0 +1,21 @@
+{
+	"songs": [
+		["Tutorial Remix", "gf", [165, 0, 77]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "portal",
+
+	"storyName": "How to Funk n' Mix",
+	"difficulties": "Hard",
+	"weekBefore": "tutorial",
+	"weekName": "Funky Mix",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
