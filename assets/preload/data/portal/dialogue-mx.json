@@ -134,8 +134,8 @@
 			"expression": "talk",
 			"text": "Es facil señor, solo mantente en ritmo",
 			"boxState": "normal",
-			"sound": "gfsound",
-			"speed": 0.05,
+			"sound": "gfvaportal1",
+			"speed": 0,
 			"portrait": "gf"
 		},
 		{
