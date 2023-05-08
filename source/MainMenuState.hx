@@ -29,7 +29,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.5.2h';
-	public static var shadowEngineVersion:String = '0.1.0'; //This is also used for Discord RPC
+	public static var shadowEngineVersion:String = '1.0.0'; //De hecho, aunque modifique un poco el source, no es un Engine propio, es Psych, y en su defecto, Weird Engine xd, solo le puse ShadowEngine por cuestiones de personalizacion lol
 	public static var shadowEngineBetaVersion:String = ''; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
@@ -145,11 +145,11 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "FridAND Night Funkin' v " + shadowEngineVersion + shadowEngineBetaVersion + ' (PE ${psychEngineVersion})', 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "FridAND Night Funkin' v " + shadowEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
+	//	var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);

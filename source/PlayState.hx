@@ -4620,10 +4620,6 @@ class PlayState extends MusicBeatState
                     {
                         FlxG.switchState(new End());
                     }
-					else
-                    {
-                        FlxG.switchState(new FreeplayState());
-                    }
 
 					cancelMusicFadeTween();
 					if (FlxTransitionableState.skipNextTransIn)
