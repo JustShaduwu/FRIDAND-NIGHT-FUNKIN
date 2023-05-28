@@ -44,4 +44,8 @@ _____________________________________
 
 ### Most of Weird Engine and Psych Engine features XD, oh, and obligatory win Icons, yey, PLAY IT PLAY IT!
 
+<<<<<<< HEAD
 ### ORIGINAL FRIDAY NIGHT FUNKIN': **[itch.io](https://ninja-muffin24.itch.io/funkin), [Newgrounds](https://www.newgrounds.com/portal/view/770371), [Vanilla Source Code](https://github.com/FunkinCrew/Funkin), [Website](https://funkin.me)** 
+=======
+### ORIGINAL FRIDAY NIGHT FUNKIN': **[itch.io](https://ninja-muffin24.itch.io/funkin), [Newgrounds](https://www.newgrounds.com/portal/view/770371), [Vanilla Source Code](https://github.com/FunkinCrew/Funkin), [Website](https://funkin.me)** 
+>>>>>>> 21fe90b43f1ffe095c39aee8f586daff378bd2f4
