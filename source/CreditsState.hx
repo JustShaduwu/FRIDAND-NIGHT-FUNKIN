@@ -41,7 +41,7 @@ class CreditsState extends MusicBeatState
 	{
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Credits Menus", null);
 		#end
 
 		persistentUpdate = true;
@@ -81,15 +81,17 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Fridand Night Funkin Mod'],
-			['Shaduwu', 			'shaduwu',			'All of the Mod Shit jeje..',                               	'https://twitter.com/AndShadow13', 	                        	'187104'],
+			['FridAND Night Funkin Mod'],
+			['Shaduwu', 			'shaduwu',			'All of the Mod Shit jeje..',                               	'https://twitter.com/JustShaduwu', 	                        	'187104'],
 			['Daniela la Marilena',	'dani',		        'Helper to the Portal BG desing',								'https://twitter.com/DaniTheBesto',								'73315C'],
-			['AlexPlus801',	        'alexplus',	    	'Shadow(Song)Instrumental Compositor',							'https://twitter.com/AlexPlus801',								'CC6F30'],
+			['AlexPlus801',	        'alexplus',	    	'Shadow (Song) Instrumental Compositor',							'https://twitter.com/AlexPlus801',								'CC6F30'],
 			['Bere Bear',	        'bere',	    	    'Girlfriend Noises n Voice Enjoyer of previews uwu',		    	'https://twitter.com/BerebearArt',								'2E3FB7'],
 			['Toms',	            'tetoms',	    	'Gameplay Recorder n Gameplay Tester',							'https://twitter.com/TomsjeffiaK',								'CF9642'],
 			['RtvLuego',	        'robert',	    	'Enjoyer of previews uwu',							            'https://twitter.com/RtvLuego',			      					'7DF3DF'],
+			['EXTRA THANKS'],
 			['Especial Thanks',	    'theguys',	    	'Not username lol, but thanks for the support guys: E,Y,D,M,S, J',			'nolink',						                    'F0DE93'],
-			['Fridand Night Funkin MUSIC!!'],
+			['SirDusterBuster',	    'duster',	    	'Designer of extra life bar icons for \nBF, GF, DAD, PICO, \nSPOOKY KIDS, SENPAI, BF VARIATIONS, \ntaken from DDTO!\nI like DDTO, good job team TBD',			'https://twitter.com/SirDusterBuster',						                    'F0DE93'],
+			['FridAND Night Funkin OST!!'],
 			['Gettin Shadow',       'and-og',	    	"Composed by Shaduwu\nInspired: In My Mind by Dynoro & Gigi D'Agostino",	'nolink',			      		                 	'00FF00'],
 			['Andnother Medium',    'and-og',	        'Original composed by Toby Fox\nPresents and Samples by AdielXD\nRewritten by Shaduwu',   'https://youtube.com/@AdielXD',    	'00FF00'],
 			['Portal',              'and-og',	    	'Composed by Shaduwu\nInspired in Dad Battle and MILF\nfrom Kawaisprite for Vanilla FNF',	'nolink',			      			'00FF00'],
@@ -97,8 +99,8 @@ class CreditsState extends MusicBeatState
 			['Shadow',            'shadow-and-body-og',	'Composed by AlexPlus801\nVoices and Mix by Shaduwu',	         'nolink',			      		                             	'FF000D'],
 			['Habits',              'and-og',	        'Composed by Shaduwu',                                            'nolink',			      		                             	'00FF00'],
 			['Andstranomical Countdown', 'and-og',	    'Composed by Shaduwu',                                      'nolink',			      		                             	'00FF00'],
-			['Voyager of The Portal (Cinematic Music)', 'and-og',	    'Composed by Shaduwu',                             'nolink',			      		                             	'00FF00'],
-	        ['Foreshadow Curse (Cinematic Music)',      'shadow-and-body-og',	'Composed by Shaduwu',                     'nolink',			      		                                'FF000D'],
+			['Voyager of The Portal (Cutscene Music)', 'and-og',	    'Composed by Shaduwu',                             'nolink',			      		                             	'00FF00'],
+	        ['Foreshadow Curse (Cutscene Music)',      'shadow-and-body-og',	'Composed by Shaduwu',                     'nolink',			      		                                'FF000D'],
 			[''],
 			['Weird Engine'],
 			['TomyGamy', 			'tomy',				'Main programmer of this Weird thing (Language, voice separation, etc...)', 			'https://linktr.ee/tomygamy', 					'DBC400'],

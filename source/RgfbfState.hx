@@ -35,9 +35,9 @@ class RgfbfState extends FlxState
             FlxG.switchState(new RBMState());
     }
 
-    if (FlxG.keys.pressed.RIGHT)
+    if (FlxG.keys.pressed.RIGHT && StoryMenuState.weekCompleted.get('andweek1'))
     {
-			FlxG.switchState(new RbandState());
-	}
+            FlxG.switchState(new RbandState());
+    }
 }
 }

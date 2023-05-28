@@ -82,7 +82,7 @@ class Character extends FlxSprite
 	public var healthColorArray:Array<Int> = [255, 0, 0];
 
 	public var inMenu:Bool = false;
-
+    public var missing:Bool = false;
 	public var hasAnAdaptativeLoop:Bool = false;
 	public var charType:String = 'dad';
 	public var camMoveX:Float = 0;
@@ -258,29 +258,15 @@ class Character extends FlxSprite
 		recalculateDanceIdle();
 		dance();
 
-		if (isPlayer)
-		{
+		if (isPlayer) {
 			flipX = !flipX;
-
-			/*// Doesn't flip for BF, since his are already in the right place???
-				if (!curCharacter.startsWith('bf'))
-				{
-					// var animArray
-					if(animation.getByName('singLEFT') != null && animation.getByName('singRIGHT') != null)
-					{
-						var oldRight = animation.getByName('singRIGHT').frames;
-						animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
-						animation.getByName('singLEFT').frames = oldRight;
-					}
-
-					// IF THEY HAVE MISS ANIMATIONS??
-					if (animation.getByName('singLEFTmiss') != null && animation.getByName('singRIGHTmiss') != null)
-					{
-						var oldMiss = animation.getByName('singRIGHTmiss').frames;
-						animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
-						animation.getByName('singLEFTmiss').frames = oldMiss;
-					}
-			}*/
+			if (!hasMissAnimations) {
+				animation.callback = function(name:String, frameNumber:Int, frameIndex:Int) {
+					if (!missing) return;
+					if (name.startsWith('sing'))
+						color = 0xffa89ef8;
+				}
+			}
 		}
 
 		switch(curCharacter)
@@ -381,15 +367,11 @@ class Character extends FlxSprite
 			{
 				playAnim('idle' + idleSuffix);
 			}
-
-			if (!inMenu){
-				if (PlayState.instance.cameraMoveOffset != 0 && ClientPrefs.cameraMovement){
-					camMoveX = 0;
-					camMoveY = 0;
-					if (charType == PlayState.instance.charToFolow && !PlayState.instance.isCameraOnForcedPos)
-					PlayState.instance.moveCamera();
-				}
-			}
+		if (color == 0xffa89ef8) 
+		{
+			missing = false;
+			color = 0xffffffff;
+		}
 		}
 	}
 

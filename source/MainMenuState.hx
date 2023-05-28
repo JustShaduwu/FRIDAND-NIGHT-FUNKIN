@@ -29,7 +29,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.5.2h';
-	public static var shadowEngineVersion:String = '1.0.0'; //De hecho, aunque modifique un poco el source, no es un Engine propio, es Psych, y en su defecto, Weird Engine xd, solo le puse ShadowEngine por cuestiones de personalizacion lol
+	public static var shadowEngineVersion:String = '1.1.0'; //De hecho, aunque modifique un poco el source, no es un Engine propio, es Psych, y en su defecto, Weird Engine xd, solo le puse ShadowEngine por cuestiones de personalizacion lol
 	public static var shadowEngineBetaVersion:String = ''; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
@@ -40,7 +40,8 @@ class MainMenuState extends MusicBeatState
 	
 	var optionShit:Array<String> = [
 		'story_mode',
-		'freeplay',
+		'freeplay',		
+		'book',
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		#if !switch 'donate', #end
@@ -101,12 +102,14 @@ class MainMenuState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		add(magenta);
 		
+		#if GAMEJOLT_ALLOWED
 		var gamejoltlogindraw = new FlxSprite().loadGraphic(Paths.image('GJ/screenlogin'));		
 		gamejoltlogindraw.scrollFactor.set();
 		gamejoltlogindraw.setGraphicSize(Std.int(gamejoltlogindraw.width * 1.175));
 		gamejoltlogindraw.updateHitbox();
 	    gamejoltlogindraw.screenCenter();
 		add(gamejoltlogindraw); // gamejolt jaja
+		#end
 		
 		// magenta.scrollFactor.set();
 
@@ -118,9 +121,9 @@ class MainMenuState extends MusicBeatState
 			scale = 6 / optionShit.length;
 		}*/
 		
-	    if(StoryMenuState.weekCompleted.get('andweek1')){
+	/*    if(StoryMenuState.weekCompleted.get('andweek1')){
 			optionShit.insert(2,"book");
-		}
+		} */
 
 		for (i in 0...optionShit.length)
 		{
@@ -221,12 +224,14 @@ class MainMenuState extends MusicBeatState
 				MusicBeatState.switchState(new TitleState());
 			}
 			
+			#if GAMEJOLT_ALLOWED
 		    if (g)
 	      	{
 		    	persistentUpdate = false;
 				FlxG.sound.play(Paths.themeSound('confirmMenu'));
 			    FlxG.switchState(new GameJoltLogin());	 // gamejolt 2 jaja				
 		    }
+			#end
 
 			if (controls.ACCEPT)
 			{

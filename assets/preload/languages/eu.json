@@ -132,7 +132,7 @@
 	"cameraMovement": "Camera Movements",
 	"cameraMovementDesc": "If checked, in some stage, the camera will move when characters sing.",
 	"subtitles": "Subtitles",
-	"subtitlesDesc": "Activates subtitles on some songs like \"Monster\", compatible with tanslations.",
+	"subtitlesDesc": "Activates subtitles on some songs like \"Tutorial Remix\", compatible with translations.",
 	"textZoom": "Score Text Zoom on Hit",
 	"textZoomDesc": "If unchecked, disables the Score text zooming\neverytime you hit a note.",
 	"HPbarAlpha": "Health Bar Transparency",
@@ -190,5 +190,7 @@
 	"shadowdesc": "Beat \"Shadow\" song",
 	"habitsdesc": "Beat \"Habits\" song",
     "countdowndesc": "Unlock \"Andstranomical Countdown\" song",
-	"achijaja": "Completed achievement "
+	"achijaja": "Completed achievement ",
+	
+	"rbadd": "As you complete weeks in STORY MODE, more pages will be unlocked!"
 }

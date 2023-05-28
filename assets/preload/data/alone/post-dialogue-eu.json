@@ -49,7 +49,7 @@
 			"speed": 0.05
 		},
 		{
-			"expression": "excited",
+			"expression": "talk",
 			"text": "Girlfriend Dearest, at your service ;D!",
 			"boxState": "normal",
 			"sound": "gfsound",
@@ -121,7 +121,7 @@
 		},
 		{
 			"expression": "confused",
-			"text": "*Boops Tristes*",
+			"text": "*Sad Boops*",
 			"boxState": "normal",
 			"sound": "bfsound",
 			"speed": 0.05,

@@ -2,7 +2,7 @@
 	"languageName": "Español Latino",
 	
 	
-	"flashingInfo": "Hey, tu!\nEste mod contiene Luces Brillantes!\nPresiona ENTER para desactivarlas o para ir al menu de opciones.\nPresiona ESCAPE para ignorar este mensaje.\nFuiste advertido!",
+	"flashingInfo": "Hey, tu!\nEste mod contiene Luces Intermitentes!\nPresiona ENTER para desactivarlas o para ir al menu de opciones.\nPresiona ESCAPE para ignorar este mensaje.\nFuiste advertido!",
 	
 
 	"updateInfoP1": "Oh hey, parece que estas usando una version anterior de este engine (",
@@ -107,10 +107,10 @@
 
 	"lowQuality": "Calidad Baja",
 	"lowQualityDesc": "Si lo activas, elimina algunos elementos del fondo,\ndisminuye tiempos de carga y aumenta la optimizacion.",
-	"globalAntialiasing": "Anti-Aliasing",
+	"globalAntialiasing": "Suavizado",
 	"globalAntialiasingDesc": "Si lo desmarcas, desactiva el anti-aliasing, lo cual aumenta el rendimiento\na costa de Calidad Visual.",
 	"persistentCachedData": "Cache Data Persistente",
-	"persistentCachedDataDesc": "If checked, images loaded will stay in memory\nuntil the game is closed, this increases memory usage,\nbut basically makes reloading times instant.",
+	"persistentCachedDataDesc": "Si está marcada, las imágenes cargadas permanecerán en la memoria\nhasta que se cierre el juego, esto aumenta el uso de la memoria,\npero básicamente hace que los tiempos de recarga sean instantáneos",
 	"framerate": "Tasa de Fotogramas:",
 	"framerateDesc": "Se explica solo, no es asi?",
 	"onUnfocuPause": "Pausa Automatica",
@@ -129,13 +129,13 @@
 	"flashingLights": "Luces Parpadeantes",
 	"flashingLightsDesc": "Desactivala si eres sensible a las Luces Parpadeantes!",
 	"cameraZoom": "Zoom de Camara",
-	"cameraZoomDesc": "If unchecked, the camera won't zoom in on a beat hit.",
+	"cameraZoomDesc": "Si no está marcada, la cámara no se acercará en un golpe de ritmo.",
 	"cameraMovement": "Movimiento de la Camara",
 	"cameraMovementDesc": "Si está marcado, en algún momento, la cámara se moverá cuando los personajes canten.",
 	"subtitles": "Subtitulos",
-	"subtitlesDesc": "Activa los Subtitulos en algunas canciones como \"Monster\", compatible con las traducciones.",
-	"textZoom": "Score Text Zoom on Hit",
-	"textZoomDesc": "If unchecked, disables the Score text zooming\neverytime you hit a note.",
+	"subtitlesDesc": "Activa los Subtitulos en algunas canciones como \"Tutorial Remix\", compatible con las traducciones.",
+	"textZoom": "Zoom del Texto de Score en ritmo",
+	"textZoomDesc": "Si lo desmarcas, deshabilita el zoom del texto de score \ncada vez que tocas una nota.",
 	"HPbarAlpha": "Transparencia de la Barra de Salud",
 	"HPbarAlphaDesc": "¿Qué tan transparentes deben ser la barra de salud y los íconos?",
 	"showFPS": "Contador de FPS",
@@ -193,5 +193,7 @@
 	"shadowdesc": "Vence la cancion \"Shadow\"",
 	"habitsdesc": "Vence la cancion \"Habits\"",
     "countdowndesc": "Desbloquea la cancion \"Andstranomical Countdown\"",
-	"achijaja": "Logro desbloqueado "
+	"achijaja": "Logro desbloqueado ",
+	
+	"rbadd": "A medida que completes semanas en el MODO HISTORIA, se desbloquearán más páginas!"
 }

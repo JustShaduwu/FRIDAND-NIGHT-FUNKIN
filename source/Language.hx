@@ -201,6 +201,8 @@ typedef LanguageFile =
 	var habitsdesc:String;
 	var countdowndesc:String;
 	var achijaja:String;
+	
+	var rbadd:String;
 }
 
 class Language
@@ -390,6 +392,8 @@ class Language
 	public static var habitsdesc:String;
 	public static var countdowndesc:String;
 	public static var achijaja:String;
+	
+	public static var rbadd:String;
 
 	public static var languagePath:String;
 
@@ -639,6 +643,9 @@ class Language
         shadowdesc = languageJson.shadowdesc;
         habitsdesc = languageJson.habitsdesc;
 		countdowndesc = languageJson.countdowndesc;
+		
 		achijaja = languageJson.achijaja;
+		rbadd = languageJson.rbadd;
+		
 	}
 }
