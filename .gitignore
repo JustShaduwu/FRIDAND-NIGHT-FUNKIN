@@ -6,6 +6,8 @@ art/build_x64-officialrelease.bat
 art/test_x64-debug-officialrelease.bat
 art/build_android-officialrelease.bat
 assets/themes/*
+# NO MAMES ME DOXXEABA YO SOLO LAS CLAVES JKSJAS
+source/GJKeys.hx
 
 ### VS Code
 export/*

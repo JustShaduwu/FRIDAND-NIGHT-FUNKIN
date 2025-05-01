@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				25,
+				208
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "and dead loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				25,
+				208
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "and dead retry confirm",
+			"indices": []
+		},
+		{
+			"offsets": [
+				128,
+				232
+			],
+			"indices": [],
+			"adaptativeloop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "and dead0"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/And-Og-DEAD",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

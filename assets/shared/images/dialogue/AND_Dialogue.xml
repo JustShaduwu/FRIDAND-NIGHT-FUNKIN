@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="AND_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angry anim0000" x="0" y="0" width="565" height="958" frameX="-82" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="angry anim0001" x="0" y="0" width="565" height="958" frameX="-82" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="angry anim0002" x="565" y="0" width="683" height="985"/>
+	<SubTexture name="angry anim0003" x="565" y="0" width="683" height="985"/>
+	<SubTexture name="angry anim0004" x="1248" y="0" width="585" height="974" frameX="-80" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="angry anim0005" x="1248" y="0" width="585" height="974" frameX="-80" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="exited anim0000" x="1833" y="0" width="581" height="1073" frameX="-3" frameY="0" frameWidth="592" frameHeight="1073"/>
+	<SubTexture name="exited anim0001" x="1833" y="0" width="581" height="1073" frameX="-3" frameY="0" frameWidth="592" frameHeight="1073"/>
+	<SubTexture name="exited anim0002" x="2414" y="0" width="581" height="1073" frameX="0" frameY="0" frameWidth="592" frameHeight="1073"/>
+	<SubTexture name="exited anim0003" x="2414" y="0" width="581" height="1073" frameX="0" frameY="0" frameWidth="592" frameHeight="1073"/>
+	<SubTexture name="exited anim0004" x="2995" y="0" width="585" height="974" frameX="-7" frameY="-25" frameWidth="592" frameHeight="1073"/>
+	<SubTexture name="exited anim0005" x="2995" y="0" width="585" height="974" frameX="-7" frameY="-25" frameWidth="592" frameHeight="1073"/>
+	<SubTexture name="happy anim0000" x="0" y="1073" width="573" height="958" frameX="-83" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="happy anim0001" x="0" y="1073" width="573" height="958" frameX="-83" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="happy anim0002" x="573" y="1073" width="683" height="985"/>
+	<SubTexture name="happy anim0003" x="573" y="1073" width="683" height="985"/>
+	<SubTexture name="happy anim0004" x="1256" y="1073" width="585" height="974" frameX="-89" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="happy anim0005" x="1256" y="1073" width="585" height="974" frameX="-89" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="hey0000" x="1841" y="1073" width="550" height="974" frameX="0" frameY="0" frameWidth="555" frameHeight="974"/>
+	<SubTexture name="hey0001" x="2391" y="1073" width="546" height="974" frameX="0" frameY="0" frameWidth="555" frameHeight="974"/>
+	<SubTexture name="hey0002" x="2937" y="1073" width="543" height="970" frameX="-8" frameY="-4" frameWidth="555" frameHeight="974"/>
+	<SubTexture name="hey0003" x="2937" y="1073" width="543" height="970" frameX="-8" frameY="-4" frameWidth="555" frameHeight="974"/>
+	<SubTexture name="hey0004" x="3480" y="1073" width="554" height="967" frameX="-1" frameY="-1" frameWidth="555" frameHeight="974"/>
+	<SubTexture name="hey0005" x="3480" y="1073" width="554" height="967" frameX="-1" frameY="-1" frameWidth="555" frameHeight="974"/>
+	<SubTexture name="hey to bf0000" x="0" y="2058" width="558" height="974" frameX="-116" frameY="0" frameWidth="779" frameHeight="974"/>
+	<SubTexture name="hey to bf0001" x="558" y="2058" width="591" height="974" frameX="-93" frameY="0" frameWidth="779" frameHeight="974"/>
+	<SubTexture name="hey to bf0002" x="1149" y="2058" width="779" height="970" frameX="0" frameY="-4" frameWidth="779" frameHeight="974"/>
+	<SubTexture name="hey to bf0003" x="1149" y="2058" width="779" height="970" frameX="0" frameY="-4" frameWidth="779" frameHeight="974"/>
+	<SubTexture name="hey to bf0004" x="1928" y="2058" width="579" height="967" frameX="-117" frameY="-2" frameWidth="779" frameHeight="974"/>
+	<SubTexture name="hey to bf0005" x="1928" y="2058" width="579" height="967" frameX="-117" frameY="-2" frameWidth="779" frameHeight="974"/>
+	<SubTexture name="jaja anim0000" x="2507" y="2058" width="735" height="1217" frameX="0" frameY="0" frameWidth="735" frameHeight="1231"/>
+	<SubTexture name="jaja anim0001" x="2507" y="2058" width="735" height="1217" frameX="0" frameY="0" frameWidth="735" frameHeight="1231"/>
+	<SubTexture name="jaja anim0002" x="3242" y="2058" width="664" height="1131" frameX="-2" frameY="-100" frameWidth="735" frameHeight="1231"/>
+	<SubTexture name="jaja anim0003" x="3242" y="2058" width="664" height="1131" frameX="-2" frameY="-100" frameWidth="735" frameHeight="1231"/>
+	<SubTexture name="jaja anim0004" x="0" y="4260" width="585" height="974" frameX="-34" frameY="-251" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="jaja anim0005" x="0" y="4260" width="585" height="974" frameX="-34" frameY="-251" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="mmm anim0000" x="0" y="1073" width="573" height="958" frameX="-83" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="mmm anim0001" x="0" y="1073" width="573" height="958" frameX="-83" frameY="-13" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="mmm anim0002" x="0" y="3275" width="683" height="985"/>
+	<SubTexture name="mmm anim0003" x="0" y="3275" width="683" height="985"/>
+	<SubTexture name="mmm anim0004" x="683" y="3275" width="585" height="974" frameX="-89" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="mmm anim0005" x="683" y="3275" width="585" height="974" frameX="-89" frameY="-5" frameWidth="683" frameHeight="985"/>
+	<SubTexture name="sad anim0000" x="1268" y="3275" width="552" height="958" frameX="-15" frameY="-13" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="sad anim0001" x="1268" y="3275" width="552" height="958" frameX="-15" frameY="-13" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="sad anim0002" x="1820" y="3275" width="565" height="985" frameX="-9" frameY="0" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="sad anim0003" x="1820" y="3275" width="565" height="985" frameX="-9" frameY="0" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="sad anim0004" x="2385" y="3275" width="585" height="974" frameX="0" frameY="-5" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="sad anim0005" x="2385" y="3275" width="585" height="974" frameX="0" frameY="-5" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="what anim0000" x="2970" y="3275" width="552" height="958" frameX="-15" frameY="-13" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="what anim0001" x="2970" y="3275" width="552" height="958" frameX="-15" frameY="-13" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="what anim0002" x="3522" y="3275" width="573" height="985" frameX="-1" frameY="0" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="what anim0003" x="3522" y="3275" width="573" height="985" frameX="-1" frameY="0" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="what anim0004" x="0" y="4260" width="585" height="974" frameX="0" frameY="-5" frameWidth="585" frameHeight="985"/>
+	<SubTexture name="what anim0005" x="0" y="4260" width="585" height="974" frameX="0" frameY="-5" frameWidth="585" frameHeight="985"/>
+</TextureAtlas>

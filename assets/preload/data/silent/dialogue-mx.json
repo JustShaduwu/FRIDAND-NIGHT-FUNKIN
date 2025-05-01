@@ -1,0 +1,343 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "Boyfriend, Girlfriend!",
+			"boxState": "normal",
+			"portrait": "and",
+			"speed": 0.05,
+			"sound": "andsound"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Tiempo sin verlos chicos!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Bap!"
+		},
+		{
+			"sound": "gfsound",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Hehe!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Bupipi Bap!"
+		},
+		{
+			"sound": "gfsound",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Parece que traes compañia."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Oh, sí!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Es una larga historia.. Pero pude encontrar la forma de manejar el portal por medio de un control."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Y recordando lo divertido que fue la primera vez que estuve aqui..."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Decidi volver y traer a unos amigos!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Chicos, conozcan a Girlfriend y Boyfriend!"
+		},
+		{
+			"sound": "allsound",
+			"speed": 0.05,
+			"portrait": "all",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Hola!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Beep!"
+		},
+		{
+			"sound": "gfsound",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Girlfriend Dearest, un gusto!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "BF, GF, ellos son"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "And",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Elsa"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Oliii."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Sofia"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Holiwis!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Yolo"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "Yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Hey!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Miguel."
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Holas! Que onda."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Y Dayami"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "H..hola, un gusto!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Bub Bep!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.07,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "mmm",
+			"text": "Y bueno, esperaba que pudieras cantar con ellos!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "BEP!! >:D"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "Hehe.. Genial!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Entonces, quien va primero?"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.005,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Yo qui-"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.03,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Yo quiero ir primero!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.045,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "Oye!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Bien! Tu primero Yolo!"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Preparate Boyfriend!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "Bip!"
+		},
+		{
+			"expression": "excited",
+			"text": "Beep, bip beep skeep boops",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "bfsound"
+		},
+		{
+			"expression": "talk",
+			"text": "coolswag mtf",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "bfsound"
+		}
+	]
+}

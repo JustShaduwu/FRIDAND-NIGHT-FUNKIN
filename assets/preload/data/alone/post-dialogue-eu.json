@@ -1,0 +1,227 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "LET'S GOO!",
+			"boxState": "normal",
+			"sound": "andsound",
+			"portrait": "and",
+			"speed": 0.05
+		},
+		{
+			"expression": "happy",
+			"text": "This time was really fun!!",
+			"boxState": "normal",
+			"sound": "andsound",
+			"portrait": "and",
+			"speed": 0.05
+		},
+		{
+			"expression": "excited",
+			"text": "Baap!",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Uhm... ",
+			"boxState": "normal",
+			"sound": "andsound",
+			"portrait": "and",
+			"speed": 0.05
+		},
+		{
+			"expression": "happy",
+			"text": "Sorry for not asking before, but... what are your names guys?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"portrait": "and",
+			"speed": 0.05
+		},
+		{
+			"expression": "excited",
+			"text": "Bop Bieep >:D",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Girlfriend Dearest, at your service ;D!",
+			"boxState": "normal",
+			"sound": "gfsound",
+			"portrait": "gf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Oh!, your two are dating.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"sound": "andsound",
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "UwU",
+			"boxState": "normal",
+			"sound": "gfsound",
+			"portrait": "gf",
+			"speed": 0.05
+		},
+		{
+			"expression": "excited",
+			"text": ">:D",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "cute",
+			"text": "That's cute!",
+			"boxState": "happy",
+			"sound": "andsound",
+			"portrait": "and",
+			"speed": 0.05
+		},
+		{
+			"expression": "happy",
+			"text": "Ehh.. Right! I am..",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "....",
+			"boxState": "normal",
+			"speed": 0,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "Oh right..",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "I, don't know. Jeje...",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.07,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "*Sad Boops*",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "confused",
+			"text": "... :c?",
+			"boxState": "normal",
+			"sound": "gfsound",
+			"speed": 0.06,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "boop!",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "baap beep?",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.065,
+			"portrait": "bf"
+		},
+		{
+			"expression": "mmm",
+			"text": "What I remember before arriving here?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "Well, it seems that weird, portal... in the wall brought me",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "I'm clearly not at my home..",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "But although..",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "wtf",
+			"text": "Auch!",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.00500000000000001,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "I..I",
+			"boxState": "normal",
+			"sound": "shadowandsound",
+			"speed": 0,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "FuC-",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.005,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "Baap?",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "shocked",
+			"text": "!",
+			"boxState": "normal",
+			"sound": "gfsound",
+			"speed": 0.05,
+			"portrait": "gf"
+		}
+	]
+}

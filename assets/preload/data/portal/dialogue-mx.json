@@ -1,0 +1,158 @@
+{
+	"dialogue": [
+		{
+			"expression": "shocked",
+			"text": "OH?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.145,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "QUE?. DOND-",
+			"boxState": "normal",
+			"voiceline": "iiii-es",
+			"sound": "andsound",
+			"speed": 0.03,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "DONDE ESTOY??",
+			"voiceline": "iiii",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "QUIEN SOY?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.07,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "Eh?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "excited",
+			"text": "Beep Boop",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Boop Bep",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "mmm",
+			"text": "Oh! Hola, pequeño señor, peliazul..",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "¿Eh? ¿Que quieres cantar?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "Pero...",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "No, todo es tan confuso, y debo intentar-",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "Ohh. ¿Que diablos es esa grieta morada en la pared?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "Boop bi Bap Beeep",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "pissed",
+			"text": "Que?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "A que te refieres con que tengo que aceptar?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "talk",
+			"text": "Es facil señor, solo mantente en ritmo",
+			"boxState": "normal",
+			"sound": "gfvaportal1",
+			"speed": 0,
+			"portrait": "gf"
+		},
+		{
+			"expression": "confused",
+			"text": "Bueno, supongo que no me queda de otra",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "and",
+			"sound": "andsound"
+		},
+		{
+			"expression": "excited",
+			"text": "UNA CANCION, VAMOOS!",
+			"boxState": "angry",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		}
+	]
+}

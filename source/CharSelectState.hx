@@ -120,16 +120,8 @@ class CharSelectState extends MusicBeatState
 
             if (PlayState.SONG.song.toLowerCase() == "test")
                 characters = "bf,dad,spooky,pico-player,mom,senpai,tankman-player";
-            else if (PlayState.SONG.song.toLowerCase() == "portal")
-                characters = "bf";
-            else if (PlayState.SONG.song.toLowerCase() == "alone")
-                characters = "bf";
-            else if (PlayState.SONG.song.toLowerCase() == "shadow")
-                characters = "bf";
             else if (WeekData.getCurrentWeek().weekPlayableCharacter == null || WeekData.getCurrentWeek().weekPlayableCharacter == "")
-                characters = "bf,pico-player,tankman-player";	
-            else if (FlxG.save.data.unlockedAndog)
-                characters = "bf,pico-player,tankman-player,and-og-player";	
+                characters = "bf,pico-player,tankman-player";
             else
                 characters = WeekData.getCurrentWeek().weekPlayableCharacter;
 

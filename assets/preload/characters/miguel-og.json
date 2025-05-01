@@ -1,0 +1,94 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				-2
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle_miguel",
+			"image": "characters/miguel-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				12
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left_miguel",
+			"image": "characters/miguel-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				11
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right_miguel",
+			"image": "characters/miguel-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				-13
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down_miguel",
+			"image": "characters/miguel-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				28,
+				22
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up_miguel",
+			"image": "characters/miguel-og",
+			"indices": [],
+			"adaptativeloop": false
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/miguel-og",
+	"position": [
+		80,
+		140
+	],
+	"healthicon": "miguel-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		252,
+		238,
+		86
+	],
+	"camera_position": [
+		110,
+		120
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

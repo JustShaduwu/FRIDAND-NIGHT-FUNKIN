@@ -1,0 +1,51 @@
+{
+	"position": [
+		-30,
+		90
+	],
+	"dialogue_pos": "left",
+	"no_antialiasing": false,
+	"scale": 1.25,
+	"image": "MIGUEL_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-114,
+				154
+			],
+			"anim": "talk",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "migueltalk0005",
+			"loop_name": "migueltalk"
+		},
+		{
+			"idle_offsets": [
+				-114,
+				154
+			],
+			"anim": "confused",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "confusedmiguel0005",
+			"loop_name": "confusedmiguel"
+		},
+		{
+			"idle_offsets": [
+				-114,
+				154
+			],
+			"anim": "happy",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "happymiguel0005",
+			"loop_name": "happymiguel"
+		}
+	]
+}

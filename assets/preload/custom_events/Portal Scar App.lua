@@ -8,9 +8,11 @@ function onEvent(name, value1, value2)
 
 		targetAlpha = tonumber(value2);
 		if duration == 0 then
-			setProperty('scar.alpha', targetAlpha);
+			setProperty('stageback.alpha', targetAlpha);
+			setProperty('light.alpha', targetAlpha);
 		else
-			doTweenAlpha('scarFadeEventTween', 'scar', targetAlpha, duration, 'linear');
+			doTweenAlpha('stagebackFadeEventTween', 'stageback', targetAlpha, duration, 'linear');
+			doTweenAlpha('lightFadeEventTween', 'light', targetAlpha, duration, 'linear');
 		end
 		--debugPrint('Event triggered: ', name, duration, targetAlpha);
 	end

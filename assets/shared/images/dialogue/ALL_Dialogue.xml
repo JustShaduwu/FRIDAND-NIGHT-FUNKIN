@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ALL_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="allidle0000" x="0" y="0" width="1097" height="724"/>
+	<SubTexture name="allidle0001" x="0" y="0" width="1097" height="724"/>
+	<SubTexture name="allidle0002" x="1097" y="0" width="1097" height="724"/>
+	<SubTexture name="allidle0003" x="1097" y="0" width="1097" height="724"/>
+	<SubTexture name="allidle0004" x="2194" y="0" width="1097" height="724"/>
+	<SubTexture name="allidle0005" x="2194" y="0" width="1097" height="724"/>
+	<SubTexture name="allwhat0000" x="0" y="724" width="1099" height="723"/>
+	<SubTexture name="allwhat0001" x="0" y="724" width="1099" height="723"/>
+	<SubTexture name="allwhat0002" x="1099" y="724" width="1099" height="723"/>
+	<SubTexture name="allwhat0003" x="1099" y="724" width="1099" height="723"/>
+	<SubTexture name="allwhat0004" x="2198" y="724" width="1099" height="723"/>
+	<SubTexture name="allwhat0005" x="2198" y="724" width="1099" height="723"/>
+</TextureAtlas>

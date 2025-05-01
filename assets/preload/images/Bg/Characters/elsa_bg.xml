@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="elsa_bg.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ELSA BG0000" x="0" y="0" width="340" height="616"/>
+	<SubTexture name="ELSA BG0001" x="0" y="0" width="340" height="616"/>
+	<SubTexture name="ELSA BG0002" x="340" y="0" width="340" height="616"/>
+	<SubTexture name="ELSA BG0003" x="340" y="0" width="340" height="616"/>
+	<SubTexture name="ELSA BG0004" x="680" y="0" width="340" height="616"/>
+	<SubTexture name="ELSA BG0005" x="680" y="0" width="340" height="616"/>
+	<SubTexture name="ELSA BG0006" x="0" y="616" width="340" height="616"/>
+	<SubTexture name="ELSA BG0007" x="0" y="616" width="340" height="616"/>
+	<SubTexture name="ELSA BG0008" x="340" y="616" width="340" height="616"/>
+	<SubTexture name="ELSA BG0009" x="340" y="616" width="340" height="616"/>
+	<SubTexture name="ELSA BG0010" x="340" y="616" width="340" height="616"/>
+	<SubTexture name="ELSA BG0011" x="340" y="616" width="340" height="616"/>
+</TextureAtlas>

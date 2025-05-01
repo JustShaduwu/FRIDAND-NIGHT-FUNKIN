@@ -2,6 +2,21 @@
 	"song": {
 		"events": [
 			[
+				39750,
+				[
+					[
+						"Camera Follow Pos",
+						"700",
+						"500"
+					],
+					[
+						"Dark Camera",
+						"3",
+						""
+					]
+				]
+			],
+			[
 				39937.5,
 				[
 					[
@@ -16,8 +31,48 @@
 				[
 					[
 						"Change Character",
-						"1",
+						"dad",
 						"shadow-eyes"
+					],
+					[
+						"Change Character",
+						"gf",
+						"no"
+					],
+					[
+						"Change Character",
+						"bf",
+						"invbf"
+					]
+				]
+			],
+			[
+				71812.5,
+				[
+					[
+						"Dark Camera",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				71937.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"shadowand-og"
+					],
+					[
+						"Change Character",
+						"gf",
+						"gfe"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bf"
 					]
 				]
 			],
@@ -32,6 +87,16 @@
 					[
 						"Toggle Trail",
 						"1",
+						""
+					]
+				]
+			],
+			[
+				72125,
+				[
+					[
+						"Camera Follow Pos",
+						"",
 						""
 					]
 				]

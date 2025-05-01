@@ -47,6 +47,7 @@ class LanguageState extends MusicBeatState
 
 	override function create()
 	{
+		
 		var langsLoaded:Map<String, Bool> = new Map();
 	
 		#if MODS_ALLOWED
@@ -110,6 +111,10 @@ class LanguageState extends MusicBeatState
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
+		
+		var incompleto = new FlxSprite().loadGraphic(Paths.image('languages/advertencia'));
+		incompleto.screenCenter();
+		add(incompleto);
 
 		grpLang = new FlxTypedGroup<Alphabet>();
 		add(grpLang);

@@ -1,4 +1,2 @@
-es
-en
-fr
-sv
+eu
+mx

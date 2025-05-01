@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MIGUEL_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="confusedmiguelx0000" x="0" y="0" width="330" height="604"/>
+	<SubTexture name="confusedmiguelx0001" x="0" y="0" width="330" height="604"/>
+	<SubTexture name="confusedmiguelx0002" x="330" y="0" width="330" height="604"/>
+	<SubTexture name="confusedmiguelx0003" x="330" y="0" width="330" height="604"/>
+	<SubTexture name="confusedmiguelx0004" x="660" y="0" width="330" height="604"/>
+	<SubTexture name="confusedmiguelx0005" x="660" y="0" width="330" height="604"/>
+	<SubTexture name="happymiguelx0000" x="0" y="604" width="329" height="604"/>
+	<SubTexture name="happymiguelx0001" x="0" y="604" width="329" height="604"/>
+	<SubTexture name="happymiguelx0002" x="329" y="604" width="329" height="604"/>
+	<SubTexture name="happymiguelx0003" x="329" y="604" width="329" height="604"/>
+	<SubTexture name="happymiguelx0004" x="658" y="604" width="329" height="604"/>
+	<SubTexture name="happymiguelx0005" x="658" y="604" width="329" height="604"/>
+	<SubTexture name="migueltalk0000" x="0" y="1208" width="329" height="604"/>
+	<SubTexture name="migueltalk0001" x="0" y="1208" width="329" height="604"/>
+	<SubTexture name="migueltalk0002" x="329" y="1208" width="329" height="604"/>
+	<SubTexture name="migueltalk0003" x="329" y="1208" width="329" height="604"/>
+	<SubTexture name="migueltalk0004" x="658" y="1208" width="329" height="604"/>
+	<SubTexture name="migueltalk0005" x="658" y="1208" width="329" height="604"/>
+</TextureAtlas>

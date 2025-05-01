@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="yolo_bg.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="YOLO BG0000" x="0" y="0" width="373" height="585"/>
+	<SubTexture name="YOLO BG0001" x="0" y="0" width="373" height="585"/>
+	<SubTexture name="YOLO BG0002" x="373" y="0" width="373" height="585"/>
+	<SubTexture name="YOLO BG0003" x="373" y="0" width="373" height="585"/>
+	<SubTexture name="YOLO BG0004" x="0" y="585" width="373" height="585"/>
+	<SubTexture name="YOLO BG0005" x="0" y="585" width="373" height="585"/>
+	<SubTexture name="YOLO BG0006" x="373" y="585" width="373" height="585"/>
+	<SubTexture name="YOLO BG0007" x="373" y="585" width="373" height="585"/>
+	<SubTexture name="YOLO BG0008" x="0" y="1170" width="373" height="585"/>
+	<SubTexture name="YOLO BG0009" x="0" y="1170" width="373" height="585"/>
+	<SubTexture name="YOLO BG0010" x="0" y="1170" width="373" height="585"/>
+	<SubTexture name="YOLO BG0011" x="0" y="1170" width="373" height="585"/>
+</TextureAtlas>

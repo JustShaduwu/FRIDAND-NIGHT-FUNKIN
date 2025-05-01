@@ -1,0 +1,106 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				13,
+				-16
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "yolo_left",
+			"indices": [],
+			"image": "characters/yolo-og"
+		},
+		{
+			"offsets": [
+				-18,
+				-24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/yolo-og",
+			"name": "yolo_down"
+		},
+		{
+			"offsets": [
+				-33,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/yolo-og",
+			"name": "yolo_right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/yolo-og",
+			"name": "yolo_up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-6
+			],
+			"anim": "pass",
+			"fps": 24,
+			"name": "yolo_dead",
+			"image": "characters/yolo-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-11
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "yolo_idle",
+			"image": "characters/yolo-og",
+			"indices": [],
+			"adaptativeloop": false
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/yolo-og",
+	"position": [
+		25,
+		145
+	],
+	"healthicon": "yolo-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		116,
+		59,
+		169
+	],
+	"camera_position": [
+		-170,
+		50
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 1
+}

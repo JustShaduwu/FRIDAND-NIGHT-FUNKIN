@@ -1,0 +1,64 @@
+{
+	"position": [
+		-60,
+		130
+	],
+	"dialogue_pos": "left",
+	"no_antialiasing": false,
+	"scale": 1.25,
+	"image": "SOFIA_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"anim": "talk",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "idle0005",
+			"loop_name": "idle"
+		},
+		{
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"anim": "angry",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "angryx0005",
+			"loop_name": "angry"
+		},
+		{
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"anim": "laugh",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "laugh0005",
+			"loop_name": "laugh"
+		},
+		{
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"anim": "shocked",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "what0005",
+			"loop_name": "what"
+		}
+	]
+}

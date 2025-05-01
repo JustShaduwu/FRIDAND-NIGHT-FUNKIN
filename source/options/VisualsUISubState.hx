@@ -89,10 +89,31 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.onChange = onChangeFPSCounter;
 		#end
 
-		var option:Option = new Option(Language.pauseMusic, Language.pauseMusicDesc, 'pauseMusic', 'string', 'Breakfast', ['None', 'Breakfast', 'Tea Time', 'Andnother Medium']);
+		var option:Option = new Option(Language.pauseMusic, Language.pauseMusicDesc, 'pauseMusic', 'string', 'Fuzzy Stance', ['None', 'Fuzzy Stance', 'Andnother Medium', 'Breakfast', 'Tea Time']);
 		addOption(option);
 		option.onChange = onChangePauseMusic;
-
+		
+		var option:Option = new Option('Intro icon',
+			"Show the name and credits of the current song at the start?",
+			'introIcon',
+			'bool',
+			true);
+		addOption(option);
+		
+		var option:Option = new Option('Combo Stacking',
+			"If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",
+			'comboStacking',
+			'bool',
+			true);
+		addOption(option);
+		
+		var option:Option = new Option('Combo Message',
+			"If unchecked, Combo animation and sound don't spawn",
+			'comboScript',
+			'bool',
+			true);
+		addOption(option);
+		
 		#if android
 		var option:Option = new Option(Language.vibration,
 			Language.vibrationDesc,
@@ -111,7 +132,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			'bool',
 			true);
 		addOption(option);
-
+		
 		var option:Option = new Option(Language.psychUpdates,
 			Language.psychUpdatesDesc,
 			'checkForPsychUpdates',

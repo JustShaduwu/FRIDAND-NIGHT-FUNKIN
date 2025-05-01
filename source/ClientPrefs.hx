@@ -10,19 +10,24 @@ import Controls;
 
 class ClientPrefs
 {
+	// Popups
+	public static var popupRealityAnd:Null<Bool> = false;
+	public static var popupRealityFriends:Null<Bool> = false;
+	
 	public static var vSyncFPS:Int = 60;
 	public static var curFramerate:Int = 60;
 
 	public static var language:String = null;
 	public static var downScroll:Bool = false;
 	public static var middleScroll:Bool = false;
+	public static var introIcon:Bool = true;
+	public static var comboScript:Bool = true;
 	public static var opponentStrums:Bool = true;
 	public static var showFPS:Bool = #if android false #else true #end;
 	public static var flashing:Bool = true;
 	public static var globalAntialiasing:Bool = true;
 	public static var unfocuPause:Bool = true;
 	public static var noteSplashes:Bool = true;
-	public static var shaders:Bool = false;
 	public static var lowQuality:Bool = false;
 	public static var framerate:Dynamic = #if desktop 'V-Sync' #else 60 #end;
 	//public static var framerate:Dynamic = 60;
@@ -64,13 +69,12 @@ class ClientPrefs
 	public static var keyboardMode:Bool = #if android false #else true #end;
 	public static var controllerMode:Bool = #if android true #else false #end;
 	public static var hitsoundVolume:Float = 0;
-	public static var pauseMusic:String = 'Breakfast';
+	public static var pauseMusic:String = 'Fuzzy Stance';
 	public static var subtitles:Bool = true;
 	public static var checkForUpdates:Bool = true;
 	public static var checkForPsychUpdates:Bool = true;
+	public static var comboStacking = true;
 	public static var soundEffectVolume:Float = 1;
-	public static var saveReplay:Bool = true;
-	// replay
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative',
@@ -204,7 +208,6 @@ class ClientPrefs
 		FlxG.save.data.globalAntialiasing = globalAntialiasing;
 		FlxG.save.data.unfocuPause = unfocuPause;
 		FlxG.save.data.noteSplashes = noteSplashes;
-		FlxG.save.data.shaders = shaders;
 		FlxG.save.data.lowQuality = lowQuality;
 		FlxG.save.data.framerate = framerate;
 		// FlxG.save.data.cursing = cursing;
@@ -236,10 +239,12 @@ class ClientPrefs
 		FlxG.save.data.keyboardMode = keyboardMode;
 		FlxG.save.data.controllerMode = controllerMode;
 		FlxG.save.data.hitsoundVolume = hitsoundVolume;
-		FlxG.save.data.saveReplay = saveReplay;
 		FlxG.save.data.pauseMusic = pauseMusic;
 		FlxG.save.data.subtitles = subtitles;
 		FlxG.save.data.checkForUpdates = checkForUpdates;
+		FlxG.save.data.comboStacking = comboStacking;
+		FlxG.save.data.introIcon = introIcon;
+		FlxG.save.data.comboScript = comboScript;
 		FlxG.save.data.checkForPsychUpdates = checkForPsychUpdates;
 		FlxG.save.data.soundEffectVolume = soundEffectVolume;
 
@@ -292,10 +297,6 @@ class ClientPrefs
 		{
 			noteSplashes = FlxG.save.data.noteSplashes;
 		}
-        if(FlxG.save.data.shaders != null) 
-		{
-        	shaders = FlxG.save.data.shaders;
-        }
 		if (FlxG.save.data.lowQuality != null)
 		{
 			lowQuality = FlxG.save.data.lowQuality;
@@ -415,10 +416,6 @@ class ClientPrefs
 		{
 			pauseMusic = FlxG.save.data.pauseMusic;
 		}
-		if(FlxG.save.data.saveReplay != null) 
-		{
-			saveReplay = FlxG.save.data.saveReplay;
-		}
 		if (FlxG.save.data.gameplaySettings != null)
 		{
 			var savedMap:Map<String, Dynamic> = FlxG.save.data.gameplaySettings;
@@ -426,7 +423,6 @@ class ClientPrefs
 			{
 				gameplaySettings.set(name, value);
 			}
-			gameplaySettings.set('opponentplay', false);
 		}
 
 		// flixel automatically saves your volume!
@@ -458,7 +454,22 @@ class ClientPrefs
 		{
 			checkForUpdates = FlxG.save.data.checkForUpdates;
 		}
-
+		
+		if (FlxG.save.data.comboStacking != null)
+		{
+			comboStacking = FlxG.save.data.comboStacking;
+        }
+		
+		if (FlxG.save.data.introIcon != null)
+		{
+			introIcon = FlxG.save.data.introIcon;
+        }
+		
+		if (FlxG.save.data.comboScript != null)
+		{
+			comboScript = FlxG.save.data.comboScript;
+        }
+		
 		if (FlxG.save.data.checkForPsychUpdates != null)
 		{
 			checkForPsychUpdates = FlxG.save.data.checkForPsychUpdates;

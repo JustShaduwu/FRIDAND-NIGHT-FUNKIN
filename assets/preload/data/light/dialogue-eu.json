@@ -1,0 +1,119 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Nice song!",
+			"boxState": "normal",
+			"portrait": "and",
+			"speed": 0.05,
+			"sound": "andsound"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Thank you!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Beep!  Bup Bep BapBapi!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Right, only Dayami left!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "Y..yeah! But.."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "What about you?? Until now we don't know how you sing!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "That's right!"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Yeaah!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.06,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "I don't know.  Would you like to sing with me again, Boyfriend?"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Beep!!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "C..come on, I promise to go after you!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Okay, let's go!"
+		},
+		{
+			"expression": "excited",
+			"text": "Beep, bip beep skeep boops",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "bfsound"
+		}
+	]
+}

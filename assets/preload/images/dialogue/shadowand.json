@@ -1,0 +1,90 @@
+{
+	"position": [
+		-60,
+		70
+	],
+	"dialogue_pos": "left",
+	"no_antialiasing": false,
+	"scale": 1.25,
+	"image": "SHADOWAND_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-12,
+				153
+			],
+			"loop_offsets": [
+				-12,
+				153
+			],
+			"anim": "talk",
+			"idle_name": "SHADOW TALK0005",
+			"loop_name": "SHADOW TALK"
+		},
+		{
+			"idle_offsets": [
+				-30,
+				154
+			],
+			"anim": "excited",
+			"loop_offsets": [
+				-30,
+				154
+			],
+			"idle_name": "SHADOW Bodys0005",
+			"loop_name": "SHADOW Bodys"
+		},
+		{
+			"idle_offsets": [
+				-30,
+				154
+			],
+			"anim": "pissed",
+			"loop_offsets": [
+				-30,
+				154
+			],
+			"idle_name": "SHADOW ANGRY0005",
+			"loop_name": "SHADOW ANGRY"
+		},
+		{
+			"idle_offsets": [
+				-19,
+				154
+			],
+			"anim": "shocked",
+			"loop_offsets": [
+				-19,
+				154
+			],
+			"idle_name": "SHADOW JE0005",
+			"loop_name": "SHADOW JE"
+		},
+		{
+			"loop_offsets": [
+				-19,
+				154
+			],
+			"anim": "mmm",
+			"idle_offsets": [
+				-19,
+				154
+			],
+			"loop_name": "SHADOW MMM",
+			"idle_name": "SHADOW MMM0005"
+		},
+		{
+			"loop_name": "SHADOW LAUGH",
+			"idle_offsets": [
+				-22,
+				153
+			],
+			"idle_name": "SHADOW LAUGH0005",
+			"anim": "laugh",
+			"loop_offsets": [
+				-21,
+				153
+			]
+		}
+	]
+}

@@ -26,9 +26,6 @@ import flixel.graphics.FlxGraphic;
 import flixel.effects.FlxFlicker;
 import Controls;
 
-import GameJolt.GameJoltLogin;
-import GameJolt;
-
 using StringTools;
 
 class OptionsState extends MusicBeatState
@@ -40,8 +37,7 @@ class OptionsState extends MusicBeatState
 		['Adjust Delay and Combo', Language.delayCombo],
 		['Graphics', Language.graphics],
 		['Visuals and UI', Language.visualsUI],
-		['Gameplay', Language.gameplay],
-		['GameJolt', 'Gamejolt Login']
+		['Gameplay', Language.gameplay]
 	];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 
@@ -89,8 +85,6 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.GameplaySettingsSubState());
 			case 'Adjust Delay and Combo':
 				LoadingState.loadAndSwitchState(new options.NoteOffsetState(), false);
-			case 'GameJolt':
-				MusicBeatState.switchState(new GameJoltLogin());
 		}
 	}
 

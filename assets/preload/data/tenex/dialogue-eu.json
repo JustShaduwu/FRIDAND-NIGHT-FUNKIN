@@ -1,0 +1,101 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "Bep!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "bfsound"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "That's how you do it!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Thanks!"
+		},
+		{
+			"expression": "angry",
+			"text": "Well, it wasn't that bad...",
+			"boxState": "normal",
+			"portrait": "yolo",
+			"speed": 0.06,
+			"sound": "yolosound"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "But mine was better!"
+		},
+		{
+			"sound": "angryelsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "Shut Up!"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "happy",
+			"text": "It's my turn???"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Sure!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "Well, at least I was able to finish my song without fainting."
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Right YOLO???"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "angry",
+			"text": ".i."
+		}
+	]
+}

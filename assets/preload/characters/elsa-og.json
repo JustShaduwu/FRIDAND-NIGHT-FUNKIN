@@ -1,0 +1,94 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"image": "characters/elsa-og",
+			"name": "idle",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				8
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RIGHT",
+			"image": "characters/elsa-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				55,
+				78
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UP",
+			"image": "characters/elsa-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				55,
+				-3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LEFT C",
+			"image": "characters/elsa-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				19
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DOWN",
+			"image": "characters/elsa-og",
+			"indices": [],
+			"adaptativeloop": false
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/elsa-og",
+	"position": [
+		30,
+		90
+	],
+	"healthicon": "elsa-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		228,
+		60,
+		56
+	],
+	"camera_position": [
+		60,
+		100
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 1
+}

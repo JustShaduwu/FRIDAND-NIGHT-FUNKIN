@@ -1,0 +1,85 @@
+{
+	"dialogue": [
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Bien hecho Miguel!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "bup"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "happy",
+			"text": "Gracias :D!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Quien sigue?"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "...!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "D..deberia ir Sofia!"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "Y..yo?? Ehehe.. No lo se..."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "Vamos Sof-"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Muy bien, lo hare! n.n"
+		}
+	]
+}

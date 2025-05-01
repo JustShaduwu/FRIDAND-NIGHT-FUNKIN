@@ -108,7 +108,6 @@ class Note extends FlxSprite
 
 	public var tail:Array<Note> = []; // for sustains
 	public var parent:Note;
-	public var blockHit:Bool = false;
 
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
@@ -224,8 +223,10 @@ class Note extends FlxSprite
 		colorSwap.saturation = ClientPrefs.arrowHSV.get(Note.keysShit.get(mania).get('letters')[noteData])[1] / 100;
 		colorSwap.brightness = ClientPrefs.arrowHSV.get(Note.keysShit.get(mania).get('letters')[noteData])[2] / 100;
 
-		if(noteData > -1 && noteType != value) {
-			switch(value) {
+		if(noteData > -1 && noteType != value) 
+		{
+			switch(value) 
+			{
 				case 'Hurt Note':
 					ignoreNote = mustPress;
 					reloadNote('HURT', '', '');
@@ -246,6 +247,26 @@ class Note extends FlxSprite
 					noAnimation = true;
 				case 'GF Sing':
 					gfNote = true;
+		        case 'Elsa Note':
+				    reloadNote('Elsa', '', '');
+					noteSplashTexture = 'noteSplashes';
+					noAnimation = true;
+		        case 'Sofia Note':
+				    reloadNote('Sofia', '', '');
+					noteSplashTexture = 'noteSplashes';
+					noAnimation = true;
+			    case 'Yolo Note':
+				    reloadNote('Yolo', '', '');
+					noteSplashTexture = 'noteSplashes';
+					noAnimation = true;
+		        case 'Miguel Note':
+				    reloadNote('Miguel', '', '');
+					noteSplashTexture = 'noteSplashes';
+					noAnimation = true;
+				case 'Dayami Note':
+				    reloadNote('Dayami', '', '');
+					noteSplashTexture = 'noteSplashes';
+					noAnimation = true;
 			}
 			noteType = value;
 		}

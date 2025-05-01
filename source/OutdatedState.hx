@@ -25,7 +25,7 @@ class OutdatedState extends MusicBeatState
 
 		warnText = new FlxText(0, 0, FlxG.width,
 			Language.updateInfoP1
-			+ MainMenuState.shadowEngineVersion + MainMenuState.weirdEngineBetaVersion +
+			+ MainMenuState.shadowEngineVersion + MainMenuState.shadowEngineBetaVersion +
 			Language.updateInfoP2
 			+ TitleState.updateVersion +
 			Language.updateInfoP3
@@ -46,7 +46,7 @@ class OutdatedState extends MusicBeatState
 		if(!leftState) {
 			if (controls.ACCEPT) {
 				leftState = true;
-				CoolUtil.browserLoad("https://github.com/TomyGamy/FNF-WeirdEngine/releases");
+				CoolUtil.browserLoad("https://github.com/JustShaduwu/FRIDAND-NIGHT-FUNKIN/releases");
 			}
 			else if(controls.BACK) {
 				leftState = true;

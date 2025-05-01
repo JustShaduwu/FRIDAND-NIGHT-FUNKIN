@@ -43,7 +43,7 @@ class LoadingState extends MusicBeatState
 	{
 		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, 0xffcaff4d);
 		add(bg);
-		funkay = new FlxSprite(0, 0).loadGraphic(Paths.getPath('images/loadingscreens/vsandshadows.png', IMAGE));
+		funkay = new FlxSprite(0, 0).loadGraphic(Paths.getPath('images/funkay.png', IMAGE));
 		funkay.setGraphicSize(0, FlxG.height);
 		funkay.updateHitbox();
 		funkay.antialiasing = ClientPrefs.globalAntialiasing;
@@ -116,6 +116,13 @@ class LoadingState extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
+		funkay.setGraphicSize(Std.int(0.88 * FlxG.width + 0.9 * (funkay.width - 0.88 * FlxG.width)));
+		funkay.updateHitbox();
+		if (controls.ACCEPT)
+		{
+			funkay.setGraphicSize(Std.int(funkay.width + 60));
+			funkay.updateHitbox();
+		}
 
 		if (callbacks != null)
 		{
@@ -128,8 +135,8 @@ class LoadingState extends MusicBeatState
 	{
 		if (stopMusic && FlxG.sound.music != null)
 			FlxG.sound.music.stop();
-
 		MusicBeatState.switchState(target);
+  Paths.clearUnusedMemory(); // test
 	}
 
 	static function getSongPath()
@@ -159,6 +166,7 @@ class LoadingState extends MusicBeatState
 		Paths.setCurrentLevel(directory);
 		trace('Setting asset folder to ' + directory);
 
+		#if NO_PRELOAD_ALL
 		var loaded:Bool = false;
 		if (PlayState.SONG != null)
 		{
@@ -170,12 +178,14 @@ class LoadingState extends MusicBeatState
 
 		if (!loaded)
 			return new LoadingState(target, stopMusic, directory);
+		#end
 		if (stopMusic && FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 
 		return target;
 	}
 
+	#if NO_PRELOAD_ALL
 	static function isSoundLoaded(path:String):Bool
 	{
 		return Assets.cache.hasSound(path);
@@ -185,6 +195,7 @@ class LoadingState extends MusicBeatState
 	{
 		return Assets.getLibrary(library) != null;
 	}
+	#end
 
 	override function destroy()
 	{

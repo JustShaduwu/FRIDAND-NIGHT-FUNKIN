@@ -1,0 +1,175 @@
+{
+	"dialogue": [
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Thoughs?"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": ":v "
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "Now you see it Yolo? Now you see it??  He did it great!"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "But if he also did it better than you!!"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Not bad!"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.04,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "happy",
+			"text": "Show me how to do it just as well!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "Hahaha, thank you all!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Okay Dayami, it's your turn."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.065,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "Uhm.. I can't do it!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.035,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "I..have throatdache"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "But, you sound good!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "MIGUEL!!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "confused",
+			"text": "We've all already do it... And you promised me!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "confused",
+			"text": "Baip..."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "... I-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "mmm",
+			"text": "No, it's true. If you don't want you don't need to do it.."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "E..eh.. *sigh*.. Alright.."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Let's go.."
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Yeah!"
+		}
+	]
+}

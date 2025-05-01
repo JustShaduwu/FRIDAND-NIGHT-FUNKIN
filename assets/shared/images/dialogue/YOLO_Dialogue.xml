@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="YOLO_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angryx0000" x="0" y="0" width="394" height="594"/>
+	<SubTexture name="angryx0001" x="0" y="0" width="394" height="594"/>
+	<SubTexture name="angryx0002" x="394" y="0" width="394" height="594"/>
+	<SubTexture name="angryx0003" x="394" y="0" width="394" height="594"/>
+	<SubTexture name="angryx0004" x="788" y="0" width="394" height="594"/>
+	<SubTexture name="idlex0000" x="1182" y="0" width="394" height="593"/>
+	<SubTexture name="idlex0001" x="1182" y="0" width="394" height="593"/>
+	<SubTexture name="idlex0002" x="1576" y="0" width="394" height="593"/>
+	<SubTexture name="idlex0003" x="1576" y="0" width="394" height="593"/>
+	<SubTexture name="idlex0004" x="0" y="594" width="394" height="593"/>
+	<SubTexture name="idlex0005" x="0" y="594" width="394" height="593"/>
+	<SubTexture name="mmm0000" x="394" y="594" width="395" height="594"/>
+	<SubTexture name="mmm0001" x="394" y="594" width="395" height="594"/>
+	<SubTexture name="mmm0002" x="789" y="594" width="395" height="594"/>
+	<SubTexture name="mmm0003" x="789" y="594" width="395" height="594"/>
+	<SubTexture name="mmm0004" x="1184" y="594" width="395" height="594"/>
+	<SubTexture name="mmm0005" x="1184" y="594" width="395" height="594"/>
+	<SubTexture name="what0000" x="1579" y="594" width="395" height="593"/>
+	<SubTexture name="what0001" x="1579" y="594" width="395" height="593"/>
+	<SubTexture name="what0002" x="0" y="1188" width="395" height="593"/>
+	<SubTexture name="what0003" x="0" y="1188" width="395" height="593"/>
+	<SubTexture name="what0004" x="395" y="1188" width="395" height="593"/>
+	<SubTexture name="what0005" x="395" y="1188" width="395" height="593"/>
+</TextureAtlas>

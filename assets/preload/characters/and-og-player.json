@@ -1,128 +1,93 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				-24,
-				19
-			],
 			"loop": true,
-			"fps": 24,
+			"offsets": [
+				-30,
+				18
+			],
 			"anim": "singUP",
-			"indices": [],
-			"name": "Up_Happy"
+			"fps": 24,
+			"image": "characters/And-Og",
+			"name": "Up_Happy",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-9,
-				-4
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "hey",
-			"indices": [],
-			"name": "Hey"
-		},
-		{
 			"offsets": [
-				-93,
-				-26
+				-16,
+				-5
 			],
-			"loop": true,
+			"anim": "hey",
 			"fps": 24,
-			"anim": "singUPmiss",
-			"indices": [],
-			"name": "Miss_Up"
+			"image": "characters/And-Og",
+			"name": "Hey",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				0,
+				-7,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"adaptativeloop": false,
+			"fps": 24,
+			"image": "characters/And-Og",
+			"name": "Happy Idle",
 			"indices": [],
-			"name": "Happy Idle"
+			"adaptativeloop": false
 		},
 		{
-			"offsets": [
-				17,
-				-20
-			],
 			"loop": true,
-			"fps": 24,
+			"offsets": [
+				11,
+				-19
+			],
 			"anim": "singDOWN",
-			"adaptativeloop": false,
-			"indices": [],
-			"name": "Left_Happy"
-		},
-		{
-			"offsets": [
-				-74,
-				-47
-			],
-			"loop": true,
 			"fps": 24,
-			"anim": "singDOWNmiss",
-			"adaptativeloop": false,
+			"image": "characters/And-Og",
+			"name": "Left_Happy",
 			"indices": [],
-			"name": "Miss_Left"
+			"adaptativeloop": false
 		},
 		{
 			"offsets": [
-				32,
-				2
+				25,
+				1
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "singLEFT",
+			"image": "characters/And-Og",
 			"adaptativeloop": false,
 			"indices": [],
 			"name": "Down_Happy"
 		},
 		{
-			"offsets": [
-				-21,
-				-38
-			],
 			"loop": true,
-			"fps": 24,
+			"offsets": [
+				-30,
+				-39
+			],
 			"anim": "singRIGHT",
-			"adaptativeloop": false,
-			"indices": [],
-			"name": "Right_Happy"
-		},
-		{
-			"offsets": [
-				-70,
-				-36
-			],
-			"loop": true,
 			"fps": 24,
-			"anim": "singLEFTmiss",
-			"adaptativeloop": false,
+			"image": "characters/And-Og",
+			"name": "Right_Happy",
 			"indices": [],
-			"name": "Miss_Down"
-		},
-		{
-			"offsets": [
-				-98,
-				-45
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "singRIGHTmiss",
-			"adaptativeloop": false,
-			"indices": [],
-			"name": "Miss_Right"
+			"adaptativeloop": false
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Playable-And-Og",
+	"gameover_properties": [
+		"and-og-dead",
+		"and_loss_sfx",
+		"gameOverAnd",
+		"gameOverAndEnd"
+	],
+	"image": "characters/And-Og",
 	"position": [
 		10,
-		70
+		60
 	],
 	"healthicon": "and-og",
 	"flip_x": true,
@@ -132,7 +97,7 @@
 		56
 	],
 	"camera_position": [
-		0,
+		120,
 		0
 	],
 	"sing_duration": 6.1,

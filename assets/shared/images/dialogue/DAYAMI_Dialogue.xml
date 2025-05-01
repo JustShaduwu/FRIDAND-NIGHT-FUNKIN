@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DAYAMI_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="hahax0000" x="0" y="0" width="407" height="598"/>
+	<SubTexture name="hahax0001" x="0" y="0" width="407" height="598"/>
+	<SubTexture name="hahax0002" x="407" y="0" width="407" height="598"/>
+	<SubTexture name="hahax0003" x="407" y="0" width="407" height="598"/>
+	<SubTexture name="hahax0004" x="814" y="0" width="407" height="598"/>
+	<SubTexture name="hahax0005" x="814" y="0" width="407" height="598"/>
+	<SubTexture name="idledayx0000" x="1221" y="0" width="407" height="598"/>
+	<SubTexture name="idledayx0001" x="1221" y="0" width="407" height="598"/>
+	<SubTexture name="idledayx0002" x="1628" y="0" width="407" height="598"/>
+	<SubTexture name="idledayx0003" x="1628" y="0" width="407" height="598"/>
+	<SubTexture name="idledayx0004" x="0" y="598" width="407" height="598"/>
+	<SubTexture name="idledayx0005" x="0" y="598" width="407" height="598"/>
+	<SubTexture name="worryx0000" x="407" y="598" width="408" height="597"/>
+	<SubTexture name="worryx0001" x="407" y="598" width="408" height="597"/>
+	<SubTexture name="worryx0002" x="815" y="598" width="408" height="597"/>
+	<SubTexture name="worryx0003" x="815" y="598" width="408" height="597"/>
+	<SubTexture name="worryx0004" x="1223" y="598" width="408" height="597"/>
+	<SubTexture name="worryx0005" x="1223" y="598" width="408" height="597"/>
+</TextureAtlas>

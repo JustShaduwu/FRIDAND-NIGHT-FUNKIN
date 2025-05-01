@@ -20,7 +20,7 @@ import lime.app.Application;
 import Achievements;
 import editors.MasterEditorMenu;
 import flixel.input.keyboard.FlxKey;
-
+import flixel.util.FlxSave;
 import GameJolt.GameJoltAPI;
 import GameJolt;
 
@@ -28,10 +28,9 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var shadowEngineVersion:String = '1.0.0'; //This is also used for Discord RPC
-	public static var psychEngineVersion:String = '0.6.2';
-	public static var weirdEngineVersion:String = '0.2.0b'; //This is also used for Discord RPC
-	public static var weirdEngineBetaVersion:String = ''; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = '0.5.2';
+	public static var shadowEngineVersion:String = '2.0.0'; //De hecho, aunque modifique un poco el source, no es un Engine propio, es Psych, y en su defecto, Weird Engine xd, solo le puse ShadowEngine por cuestiones de personalizacion lol
+	public static var shadowEngineBetaVersion:String = '2.0.0'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 
@@ -41,11 +40,8 @@ class MainMenuState extends MusicBeatState
 	
 	var optionShit:Array<String> = [
 		'story_mode',
-		'freeplay',
-		// 'locker',
-	   // 'book',
-	    'series',
-		// #if MODS_ALLOWED 'mods', #end
+		'freeplay',		
+		'book',
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		#if !switch 'donate', #end
@@ -59,10 +55,11 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
+		Paths.clearUnusedMemory();
 		WeekData.loadTheFirstEnabledMod();
 		
 		GameJoltAPI.connect();
-		GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken);
+        GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken);
 
 		#if desktop
 		// Updating Discord Rich Presence
@@ -106,16 +103,14 @@ class MainMenuState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		add(magenta);
 		
-		var sideBg:FlxSprite = new FlxSprite(0).loadGraphic(Paths.themeImage('menuSide'));
-		sideBg.scrollFactor.set(0, 0);
-		//sideBg.setGraphicSize(Std.int(sideBg.width * 1.175));
-		sideBg.updateHitbox();
-		sideBg.screenCenter(Y);
-		if (ThemeLoader.antialiasing)
-			sideBg.antialiasing = ClientPrefs.globalAntialiasing;
-		else
-			sideBg.antialiasing = false;
-		add(sideBg);
+		#if GAMEJOLT_ALLOWED
+		var gamejoltlogindraw = new FlxSprite().loadGraphic(Paths.image('GJ/screenlogin'));		
+		gamejoltlogindraw.scrollFactor.set();
+		gamejoltlogindraw.setGraphicSize(Std.int(gamejoltlogindraw.width * 1.175));
+		gamejoltlogindraw.updateHitbox();
+	    gamejoltlogindraw.screenCenter();
+		add(gamejoltlogindraw); // gamejolt jaja
+		#end
 		
 		// magenta.scrollFactor.set();
 
@@ -127,10 +122,10 @@ class MainMenuState extends MusicBeatState
 			scale = 6 / optionShit.length;
 		}*/
 		
-	    if(StoryMenuState.weekCompleted.get('andweek1')){
+	/*    if(StoryMenuState.weekCompleted.get('andweek1')){
 			optionShit.insert(2,"book");
-		}
-		
+		} */
+
 		for (i in 0...optionShit.length)
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
@@ -142,7 +137,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
-			menuItem.x = 20;
+			menuItem.screenCenter(X);
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
@@ -154,11 +149,11 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "FRIDAND NIGHT FUNKIN" + shadowEngineVersion, 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "FridAND Night Funkin' v " + shadowEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
+	//	var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -207,7 +202,25 @@ class MainMenuState extends MusicBeatState
 
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
 		camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
+		var g = FlxG.keys.justPressed.G;
+		var m = FlxG.keys.justPressed.M;
+		var l = FlxG.keys.justPressed.L;
+	
+/*	
+		if (FlxG.save.data.whenevertrue != null && !StoryMenuState.weekCompleted.get('friendsweek2'))
+		{
+			trace('No Friends Week Completed & No cutscene viewed data');
+			FlxG.switchState(new MainMenuState());
+		}
+	
+    if (StoryMenuState.weekCompleted.get('friendsweek2') && !FlxG.save.data.whenevertrue)
+    {
+			trace('Week Beated and no cutscene viewed data');
+            FlxG.switchState(new BayBayOldGame());
+    }
 
+*/
+	
 		if (!selectedSomethin)
 		{
 			if (controls.UI_UP_P)
@@ -226,18 +239,37 @@ class MainMenuState extends MusicBeatState
 			{
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.themeSound('cancelMenu'));
-				MusicBeatState.switchState(new GameExitState());
+				MusicBeatState.switchState(new TitleState());
 			}
-
+			
+			#if GAMEJOLT_ALLOWED
+		    if (g)
+	      	{
+		    	persistentUpdate = false;
+				FlxG.sound.play(Paths.themeSound('confirmMenu'));
+			    FlxG.switchState(new GameJoltLogin());	 // gamejolt 2 jaja				
+		    }
+			#end
+			
+		    if (m)
+	      	{
+		    	persistentUpdate = false;
+				FlxG.sound.play(Paths.themeSound('confirmMenu'));
+			    FlxG.switchState(new BayBayOldGame());	
+		    }
+			
+		    if (l)
+	      	{
+		    	persistentUpdate = false;
+				FlxG.sound.play(Paths.themeSound('confirmMenu'));
+			    FlxG.switchState(new PortalTunesLALState());		
+		    }
+			
 			if (controls.ACCEPT)
 			{
 				if (optionShit[curSelected] == 'donate')
 				{
 					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
-				}
-				if (optionShit[curSelected] == 'series')
-				{
-					CoolUtil.browserLoad('https://youtube.com/andshadow13');
 				}
 				else
 				{
@@ -263,6 +295,7 @@ class MainMenuState extends MusicBeatState
 							FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
 							{
 								var daChoice:String = optionShit[curSelected];
+
 								switch (daChoice)
 								{
 									case 'story_mode':
@@ -271,16 +304,14 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new FreeplayState());
 									case 'book':
 										MusicBeatState.switchState(new RBMState());
-							   	 //   case 'locker':
-							         //	MusicBeatState.switchState(new PortalTunesState());
-									 // #if MODS_ALLOWED
-								//	case 'mods':
-									 // MusicBeatState.switchState(new CharSelectState());
-									// #end
+									#if MODS_ALLOWED
+									case 'mods':
+										MusicBeatState.switchState(new ModsMenuState());
+									#end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
 									case 'credits':
-										MusicBeatState.switchState(new CreditsState());
+									    MusicBeatState.switchState(new CustomCreditsState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
 								}

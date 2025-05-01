@@ -1,0 +1,64 @@
+{
+	"position": [
+		-60,
+		100
+	],
+	"dialogue_pos": "left",
+	"no_antialiasing": false,
+	"scale": 1.25,
+	"image": "ELSA_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"anim": "talk",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "idlex0005",
+			"loop_name": "idlex"
+		},
+		{
+			"loop_name": "angry",
+			"idle_offsets": [
+				-114,
+				162
+			],
+			"idle_name": "angry0005",
+			"anim": "angry",
+			"loop_offsets": [
+				-114,
+				162
+			]
+		},
+		{
+			"loop_name": "laughx",
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "laughx0005",
+			"anim": "laugh",
+			"loop_offsets": [
+				-114,
+				153
+			]
+		},
+		{
+			"loop_name": "whatx",
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "whatx0005",
+			"anim": "shocked",
+			"loop_offsets": [
+				-114,
+				153
+			]
+		}
+	]
+}

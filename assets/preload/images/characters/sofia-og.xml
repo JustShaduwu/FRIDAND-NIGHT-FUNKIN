@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sofia-og.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down_sofia0000" x="0" y="0" width="362" height="627"/>
+	<SubTexture name="down_sofia0001" x="0" y="0" width="362" height="627"/>
+	<SubTexture name="down_sofia0002" x="362" y="0" width="362" height="627"/>
+	<SubTexture name="down_sofia0003" x="362" y="0" width="362" height="627"/>
+	<SubTexture name="down_sofia0004" x="362" y="0" width="362" height="627"/>
+	<SubTexture name="idle_sofia0000" x="724" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0001" x="724" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0002" x="1108" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0003" x="1108" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0004" x="1492" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0005" x="1492" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0006" x="1876" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0007" x="1876" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0008" x="2260" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0009" x="2260" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0010" x="2644" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0011" x="2644" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0012" x="2260" y="0" width="384" height="632"/>
+	<SubTexture name="idle_sofia0013" x="2260" y="0" width="384" height="632"/>
+	<SubTexture name="left_sofia0000" x="3028" y="0" width="368" height="627"/>
+	<SubTexture name="left_sofia0001" x="3028" y="0" width="368" height="627"/>
+	<SubTexture name="left_sofia0002" x="0" y="632" width="368" height="627"/>
+	<SubTexture name="left_sofia0003" x="0" y="632" width="368" height="627"/>
+	<SubTexture name="left_sofia0004" x="368" y="632" width="368" height="627"/>
+	<SubTexture name="left_sofia0005" x="368" y="632" width="368" height="627"/>
+	<SubTexture name="left_sofia0006" x="368" y="632" width="368" height="627"/>
+	<SubTexture name="left_sofia0007" x="368" y="632" width="368" height="627"/>
+	<SubTexture name="right_sofia0000" x="736" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0001" x="736" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0002" x="1134" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0003" x="1134" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0004" x="1532" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0005" x="1532" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0006" x="1532" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0007" x="1532" y="632" width="398" height="634"/>
+	<SubTexture name="right_sofia0008" x="1532" y="632" width="398" height="634"/>
+	<SubTexture name="up_sofia0000" x="1930" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0001" x="1930" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0002" x="2345" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0003" x="2345" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0004" x="2760" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0005" x="2760" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0006" x="2760" y="632" width="415" height="646"/>
+	<SubTexture name="up_sofia0007" x="2760" y="632" width="415" height="646"/>
+</TextureAtlas>

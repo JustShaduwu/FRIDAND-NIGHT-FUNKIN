@@ -1,0 +1,119 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Buena cancion!",
+			"boxState": "normal",
+			"portrait": "and",
+			"speed": 0.05,
+			"sound": "andsound"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Gracias!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Beep!  Bup Bep BapBapi!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Cierto, solo falta Dayami!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "S..si! Pero.."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Que hay de ti?? Hasta ahora no sabemos como cantas!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Es cierto!"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Siii!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.06,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "No lo se.  Te gustaria volver a cantar conmigo Boyfriend??"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Beep!!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "V..vamos, te prometo ir despues!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "Muy bien, demosle!"
+		},
+		{
+			"expression": "excited",
+			"text": "Beep, bip beep skeep boops",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "bfsound"
+		}
+	]
+}

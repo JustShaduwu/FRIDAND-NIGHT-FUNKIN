@@ -1,12 +1,14 @@
 package;
 
-import flixel.util.FlxColor;
+import flixel.graphics.frames.FlxFramesCollection;
+import flixel.animation.FlxAnimationController;
 import animateatlas.AtlasFrameMaker;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.effects.FlxTrail;
 import flixel.animation.FlxBaseAnimation;
 import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxSort;
 import Section.SwagSection;
@@ -34,6 +36,8 @@ typedef CharacterFile =
 	var flip_x:Bool;
 	var no_antialiasing:Bool;
 	var healthbar_colors:Array<Int>;
+	
+	var gameover_properties:Array<String>;
 }
 
 typedef AnimArray =
@@ -45,6 +49,7 @@ typedef AnimArray =
 	var adaptativeloop:Bool;
 	var indices:Array<Int>;
 	var offsets:Array<Int>;
+    var image:String;
 }
 
 class Character extends FlxSprite
@@ -52,6 +57,16 @@ class Character extends FlxSprite
 	public var animOffsets:Map<String, Array<Dynamic>>;
 	public var animAdaptedLoop:Map<String, Int>;
 	public var debugMode:Bool = false;
+	
+	// For swapping out huge sheets
+	public var framesList:Map<String, FlxFramesCollection>; // Image, Frames
+	public var imageNames:Map<String, String>; // Anim Name, Image
+	public var animStates:Map<String, FlxAnimationController>; // Image, Anim Controller
+	public var curFrames:String; // Current image name
+	public static var tempAnimState:FlxAnimationController; // Just so that the real one won't be cleared (It crashes if it's null)
+
+	public var spriteType:String;
+
 
 	public var isPlayer:Bool = false;
 	public var curCharacter:String = DEFAULT_CHARACTER;
@@ -68,12 +83,20 @@ class Character extends FlxSprite
 	public var skipDance:Bool = false;
 
 	public var healthIcon:String = 'face';
+	public var doMissThing:Bool = false;
 	public var animationsArray:Array<AnimArray> = [];
 
 	public var positionArray:Array<Float> = [0, 0];
 	public var cameraPosition:Array<Float> = [0, 0];
 
 	public var hasMissAnimations:Bool = false;
+	
+	//Used for Game Over Properties
+	public var deathChar:String = 'bf-dead';
+	public var deathSound:String = 'fnf_loss_sfx';
+	public var deathConfirm:String = 'gameOverEnd';
+	public var deathMusic:String = 'gameOver';
+
 
 	// Used on Character Editor
 	public var imageFile:String = '';
@@ -83,7 +106,7 @@ class Character extends FlxSprite
 	public var healthColorArray:Array<Int> = [255, 0, 0];
 
 	public var inMenu:Bool = false;
-
+    public var missing:Bool = false;
 	public var hasAnAdaptativeLoop:Bool = false;
 	public var charType:String = 'dad';
 	public var camMoveX:Float = 0;
@@ -101,10 +124,20 @@ class Character extends FlxSprite
 		#if (haxe >= "4.0.0")
 		animOffsets = new Map();
 		animAdaptedLoop = new Map();
+		framesList = new Map();
+		imageNames = new Map();
+		animStates = new Map();
 		#else
 		animOffsets = new Map<String, Array<Dynamic>>();
 		animAdaptedLoop = new Map<String, Int>();
+		framesList = new Map<String, FlxFramesCollection>();
+		imageNames = new Map<String, String>();
+		animStates = new Map<String, FlxAnimationController>();
 		#end
+		if (tempAnimState != null) {
+			tempAnimState.destroy();
+		}
+		tempAnimState = new FlxAnimationController(this);
 		curCharacter = character;
 		this.inMenu = inMenu;
 		this.isPlayer = isPlayer;
@@ -143,7 +176,8 @@ class Character extends FlxSprite
 				#end
 
 				var json:CharacterFile = cast Json.parse(rawJson);
-				var spriteType = "sparrow";
+			//	var spriteType = "sparrow";
+                spriteType = "sparrow";
 				// sparrow
 				// packer
 				// texture
@@ -181,12 +215,48 @@ class Character extends FlxSprite
 				{
 					case "packer":
 						frames = Paths.getPackerAtlas(json.image);
-
+						curFrames = json.image;
+						framesList.set(json.image, frames);
+						animStates.set(json.image, animation);
+						for (anim in json.animations) {
+							if (anim.image != null && anim.image.length > 0 && !framesList.exists(anim.image)) {
+								framesList.set(anim.image, Paths.getPackerAtlas(anim.image));
+								animStates.set(anim.image, new FlxAnimationController(this));
+							}
+							else if (anim.image == null || anim.image.length == 0)
+								anim.image = json.image;
+							imageNames.set(anim.anim, anim.image);
+						}
+						
 					case "sparrow":
 						frames = Paths.getSparrowAtlas(json.image);
-
+						curFrames = json.image;
+						framesList.set(json.image, frames);
+						animStates.set(json.image, animation);
+						for (anim in json.animations) {
+							if (anim.image != null && anim.image.length > 0 && !framesList.exists(anim.image)) {
+								framesList.set(anim.image, Paths.getSparrowAtlas(anim.image));
+								animStates.set(anim.image, new FlxAnimationController(this));
+							}
+							else if (anim.image == null || anim.image.length == 0)
+								anim.image = json.image;
+							imageNames.set(anim.anim, anim.image);
+						}
+						
 					case "texture":
 						frames = AtlasFrameMaker.construct(json.image);
+						curFrames = json.image;
+						framesList.set(json.image, frames);
+						animStates.set(json.image, animation);
+						for (anim in json.animations) {
+							if (anim.image != null && anim.image.length > 0 && !framesList.exists(anim.image)) {
+								framesList.set(anim.image, AtlasFrameMaker.construct(anim.image));
+								animStates.set(anim.image, new FlxAnimationController(this));
+							}
+							else if (anim.image == null || anim.image.length == 0)
+								anim.image = json.image;
+							imageNames.set(anim.anim, anim.image);
+						}
 				}
 				imageFile = json.image;
 
@@ -208,7 +278,15 @@ class Character extends FlxSprite
 					antialiasing = false;
 					noAntialiasing = true;
 				}
-
+				
+				if (json.gameover_properties != null)
+				{
+					deathChar = json.gameover_properties[0];
+					deathSound = json.gameover_properties[1];
+					deathMusic = json.gameover_properties[2];
+					deathConfirm = json.gameover_properties[3];
+				}
+				
 				if (json.healthbar_colors != null && json.healthbar_colors.length > 2)
 					healthColorArray = json.healthbar_colors;
 
@@ -231,6 +309,15 @@ class Character extends FlxSprite
 							hasAnAdaptativeLoop = true;
 						}
 						var animIndices:Array<Int> = anim.indices;
+						{
+						if (anim.image != curFrames) 
+						{
+							animation = tempAnimState;
+							frames = framesList.get(anim.image);
+							animation = animStates.get(anim.image);
+							curFrames = anim.image;
+						}
+
 						if (animIndices != null && animIndices.length > 0)
 						{
 							animation.addByIndices(animAnim, animName, animIndices, "", animFps, animLoop);
@@ -246,12 +333,18 @@ class Character extends FlxSprite
 						}
 					}
 				}
+			}
 				else
 				{
 					quickAnimAdd('idle', 'BF idle dance');
 				}
+				animation = tempAnimState;
+				frames = framesList.get(json.image);
+				animation = animStates.get(json.image);
+				curFrames = json.image;
 				// trace('Loaded file to character ' + curCharacter);
 		}
+			
 		originalFlipX = flipX;
 
 		if (animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss'))
@@ -259,29 +352,15 @@ class Character extends FlxSprite
 		recalculateDanceIdle();
 		dance();
 
-		if (isPlayer)
-		{
+		if (isPlayer) {
 			flipX = !flipX;
-
-			/*// Doesn't flip for BF, since his are already in the right place???
-				if (!curCharacter.startsWith('bf'))
-				{
-					// var animArray
-					if(animation.getByName('singLEFT') != null && animation.getByName('singRIGHT') != null)
-					{
-						var oldRight = animation.getByName('singRIGHT').frames;
-						animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
-						animation.getByName('singLEFT').frames = oldRight;
-					}
-
-					// IF THEY HAVE MISS ANIMATIONS??
-					if (animation.getByName('singLEFTmiss') != null && animation.getByName('singRIGHTmiss') != null)
-					{
-						var oldMiss = animation.getByName('singRIGHTmiss').frames;
-						animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
-						animation.getByName('singLEFTmiss').frames = oldMiss;
-					}
-			}*/
+			if (!hasMissAnimations) {
+				animation.callback = function(name:String, frameNumber:Int, frameIndex:Int) {
+					if (!missing) return;
+					if (name.startsWith('sing'))
+						color = 0xffa89ef8;
+				}
+			}
 		}
 
 		switch(curCharacter)
@@ -299,7 +378,7 @@ class Character extends FlxSprite
 		{
 			if (heyTimer > 0)
 			{
-				heyTimer -= elapsed * PlayState.instance.playbackRate;
+				heyTimer -= elapsed;
 				if (heyTimer <= 0)
 				{
 					if (specialAnim && animation.curAnim.name == 'hey' || animation.curAnim.name == 'cheer')
@@ -333,24 +412,12 @@ class Character extends FlxSprite
 
 			if (!isPlayer)
 			{
-//playeropp		if (!PlayState.opponentChart || curCharacter.startsWith('gf')) {
 				if (animation.curAnim.name.startsWith('sing'))
 				{
 					holdTimer += elapsed;
 				}
 
-						if (holdTimer >= Conductor.stepCrochet * 0.001 * singDuration)
-				{
-					dance();
-					holdTimer = 0;
-				}
-				} else {
-				if (animation.curAnim.name.startsWith('sing'))
-				{
-					holdTimer += elapsed;
-				}
-
-				if (holdTimer >= Conductor.stepCrochet * (0.0011 / (FlxG.sound.music != null ? FlxG.sound.music.pitch : 1)) * singDuration)
+				if (holdTimer >= Conductor.stepCrochet * 0.0011 * singDuration)
 				{
 					if (animAdaptedLoop.exists('idle' + idleSuffix))
 					{
@@ -394,30 +461,35 @@ class Character extends FlxSprite
 			{
 				playAnim('idle' + idleSuffix);
 			}
-
-			if (!inMenu){
-				if (PlayState.instance.cameraMoveOffset != 0 && ClientPrefs.cameraMovement){
-					camMoveX = 0;
-					camMoveY = 0;
-					if (charType == PlayState.instance.charToFolow && !PlayState.instance.isCameraOnForcedPos)
-					PlayState.instance.moveCamera();
-				}
-			}
+		if (color == 0xffa89ef8) 
+		{
+			missing = false;
+			color = 0xffffffff;
+		}
 		}
 	}
+	
+var missed:Bool = false;
 
 	public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void
 	{
-		specialAnim = false;
-		
-		if (AnimName.endsWith('miss') && animation.getByName(AnimName) == null)
+		var prevFrames = imageNames.get(AnimName);
+		if (prevFrames != curFrames) 
 		{
-			AnimName = AnimName.split('miss')[0];
-				color = 0x424282;
+			animation = tempAnimState;
+			frames = framesList.get(prevFrames);
+			animation = animStates.get(prevFrames);
+			curFrames = prevFrames;
 		}
-		
-		animation.play(AnimName, Force, Reversed, Frame);
 
+		specialAnim = false;
+		animation.play(AnimName, Force, Reversed, Frame);
+		
+	/*	if (missed)
+			color = 0xCFAFFF;
+		else if (color != FlxColor.WHITE && doMissThing)
+			color = FlxColor.WHITE; */
+			
 		if (animOffsets.exists(AnimName))
 		{
 			var daOffset = animOffsets.get(AnimName);

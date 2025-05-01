@@ -1,0 +1,328 @@
+{
+	"dialogue": [
+		{
+			"sound": "dayamisound",
+			"speed": 0.065,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Uff... I did it!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "Hey! You did it fantastic!"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "I don't understand why you were so scared. You shined!"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "happy",
+			"text": "It's true, it was great!"
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Thanks!!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Even Dayami could YOLO!! *laughs*"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "confused",
+			"text": "Shut up..."
+		},
+		{
+			"sound": "dayamisound",
+			"speed": 0.05,
+			"portrait": "dayami",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Haha. That was hard but I did it!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.09,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "mmm",
+			"text": "H..hard?"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "Come on, it's like it's done automatically. No?"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.065,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "No."
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.035,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "Alright, make fun of us And. As if you weren't always the best at everything.."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "mmm",
+			"text": "What the heck are you talking about?"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Well, you knew how to get us here!"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "And you convinced us all to sing!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "And the truth is you are the best at that..."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "mmm",
+			"text": "W..well thanks. But I don't know if I'm the best at all that..."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "Or maybe.."
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "excited",
+			"text": "YOU ALL ARE POINTLESS!!!"
+		},
+		{
+			"sound": "allsound",
+			"speed": 0.05,
+			"portrait": "all",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "confused",
+			"text": "WHAT?"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.065,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "You heard me, maybe I'm getting tired of also being the best and the only one to put up with your dorky things.."
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "confused",
+			"text": "N..no, don't fight! That's bad"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "confused",
+			"text": "ba-"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.07,
+			"portrait": "Sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "He is right, what if we solve this better in another way?"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "mmm",
+			"text": "Right, but how?"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "Or must I also be the best at understanding your ambiguities????"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "Shh. Hush! Hear me."
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "What if the five of us sing against you?"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "wtf",
+			"text": "THATS UNFAIR!!!"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Are you scared?"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "Of course not!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "You know what? Good! I'm in!!!"
+		},
+		{
+			"sound": "allsound",
+			"speed": 0.05,
+			"portrait": "all",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "FINE!"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "FINE!"
+		},
+		{
+			"sound": "gfsound",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "We must leave they the stage Sweetie!"
+		},
+		{
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "pissed",
+			"text": "Bip!!"
+		}
+	]
+}

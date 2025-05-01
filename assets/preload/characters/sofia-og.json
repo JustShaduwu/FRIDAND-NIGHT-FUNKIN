@@ -1,0 +1,94 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle_sofia",
+			"image": "characters/sofia-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				18,
+				-5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left_sofia",
+			"image": "characters/sofia-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-11,
+				2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right_sofia",
+			"image": "characters/sofia-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-5
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down_sofia",
+			"image": "characters/sofia-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"loop": false,
+			"offsets": [
+				55,
+				20
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up_sofia",
+			"image": "characters/sofia-og",
+			"indices": [],
+			"adaptativeloop": false
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/sofia-og",
+	"position": [
+		60,
+		110
+	],
+	"healthicon": "sofia-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		35,
+		73,
+		148
+	],
+	"camera_position": [
+		100,
+		120
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SOFIA_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angryx0000" x="0" y="0" width="373" height="632"/>
+	<SubTexture name="angryx0001" x="0" y="0" width="373" height="632"/>
+	<SubTexture name="angryx0002" x="373" y="0" width="373" height="632"/>
+	<SubTexture name="angryx0003" x="373" y="0" width="373" height="632"/>
+	<SubTexture name="angryx0004" x="746" y="0" width="373" height="632"/>
+	<SubTexture name="angryx0005" x="746" y="0" width="373" height="632"/>
+	<SubTexture name="idle0000" x="1119" y="0" width="373" height="632"/>
+	<SubTexture name="idle0001" x="1119" y="0" width="373" height="632"/>
+	<SubTexture name="idle0002" x="1492" y="0" width="373" height="632"/>
+	<SubTexture name="idle0003" x="1492" y="0" width="373" height="632"/>
+	<SubTexture name="idle0004" x="0" y="632" width="373" height="632"/>
+	<SubTexture name="idle0005" x="0" y="632" width="373" height="632"/>
+	<SubTexture name="laugh0000" x="373" y="632" width="374" height="632"/>
+	<SubTexture name="laugh0001" x="373" y="632" width="374" height="632"/>
+	<SubTexture name="laugh0002" x="747" y="632" width="374" height="632"/>
+	<SubTexture name="laugh0003" x="747" y="632" width="374" height="632"/>
+	<SubTexture name="laugh0004" x="1121" y="632" width="374" height="632"/>
+	<SubTexture name="laugh0005" x="1121" y="632" width="374" height="632"/>
+	<SubTexture name="what0000" x="1495" y="632" width="373" height="632"/>
+	<SubTexture name="what0001" x="1495" y="632" width="373" height="632"/>
+	<SubTexture name="what0002" x="0" y="1264" width="373" height="632"/>
+	<SubTexture name="what0003" x="0" y="1264" width="373" height="632"/>
+	<SubTexture name="what0004" x="373" y="1264" width="373" height="632"/>
+	<SubTexture name="what0005" x="373" y="1264" width="373" height="632"/>
+</TextureAtlas>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="WavesDoodles.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="wavesdraws0000" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0001" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0002" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0003" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0004" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0005" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0006" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0007" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0008" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0009" x="0" y="0" width="1280" height="720" frameX="0" frameY="0" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0010" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0011" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0012" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0013" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0014" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0015" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0016" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0017" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0018" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0019" x="0" y="720" width="1280" height="720" frameX="-2" frameY="-4" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0020" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0021" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0022" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0023" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0024" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0025" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0026" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0027" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0028" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+	<SubTexture name="wavesdraws0029" x="0" y="1440" width="1280" height="720" frameX="-2" frameY="-3" frameWidth="1282" frameHeight="724"/>
+</TextureAtlas>

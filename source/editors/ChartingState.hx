@@ -18,7 +18,6 @@ import flixel.addons.ui.FlxUI;
 import flixel.addons.ui.FlxUICheckBox;
 import flixel.addons.ui.FlxUIInputText;
 import flixel.addons.ui.FlxUINumericStepper;
-import flixel.addons.ui.FlxUISlider;
 import flixel.addons.ui.FlxUITabMenu;
 import flixel.addons.ui.FlxUITooltip.FlxUITooltipStyle;
 import flixel.addons.transition.FlxTransitionableState;
@@ -66,7 +65,12 @@ class ChartingState extends MusicBeatState
 		'Hey!',
 		'Hurt Note',
 		'GF Sing',
-		'No Animation'
+		'No Animation',
+		'Elsa Note',
+		'Sofia Note',
+		'Yolo Note',
+		'Miguel Note',
+		'Dayami Note'
 	];
 	private var noteTypeIntMap:Map<Int, String> = new Map<Int, String>();
 	private var noteTypeMap:Map<String, Null<Int>> = new Map<String, Null<Int>>();
@@ -92,7 +96,8 @@ class ChartingState extends MusicBeatState
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Subtitles', "Value 1:\n   0: Desactivate\n   Any other number: The line to read\n\nValue 2: The color in HEX (if null, white)"],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
-		['Change Mania', "Work in progress\nValue 1: The new mania value (min: 0; max: 9)"]
+		['Change Mania', "Work in progress\nValue 1: The new mania value (min: 0; max: 9)"],
+		['Change Icon', "Vaule 1: Character, dad or bf\nValue 2: Icon"],
 	];
 
 	var _file:FileReference;
@@ -146,7 +151,6 @@ class ChartingState extends MusicBeatState
 	var curSelectedNote:Array<Dynamic> = null;
 
 	var tempBpm:Float = 0;
-    var playbackSpeed:Float = 1;
 
 	var vocals:FlxSound = null;
 	var oppVocals:FlxSound = null;
@@ -348,8 +352,6 @@ class ChartingState extends MusicBeatState
 		\nA/D - Go to the previous/next section
 		\nLeft/Right - Change Snap
 		\nUp/Down - Change Conductor's Strum Time with Snapping
-		\nLeft Bracket / Right Bracket - Change Song Playback Rate (SHIFT to go Faster)
-		\nALT + Left Bracket / Right Bracket - Reset Song Playback Rate
 		\nHold Shift to move 4x faster
 		\nHold Control and click on an arrow to select it
 		\nZ/X - Zoom in/out
@@ -407,7 +409,6 @@ class ChartingState extends MusicBeatState
 	var noteSkinInputText:FlxUIInputText;
 	var noteSplashesInputText:FlxUIInputText;
 	var stageDropDown:FlxUIDropDownMenuCustom;
-	var sliderRate:FlxUISlider;
 	function addSongUI():Void
 	{
 		UI_songTitle = new FlxUIInputText(10, 10, 70, _song.song, 8);
@@ -1339,12 +1340,6 @@ class ChartingState extends MusicBeatState
 		voicesVolume.value = vocals.volume;
 		voicesVolume.name = 'voices_volume';
 		blockPressWhileTypingOnStepper.push(voicesVolume);
-		
-		#if !html5
-		sliderRate = new FlxUISlider(this, 'playbackSpeed', 120, 120, 0.5, 3, 150, null, 5, FlxColor.WHITE, FlxColor.BLACK);
-		sliderRate.nameLabel.text = 'Playback Rate';
-		tab_group_chart.add(sliderRate);
-		#end
 
 		tab_group_chart.add(new FlxText(metronomeStepper.x, metronomeStepper.y - 15, 0, 'BPM:'));
 		tab_group_chart.add(new FlxText(metronomeOffsetStepper.x, metronomeOffsetStepper.y - 15, 0, 'Offset (ms):'));
@@ -1534,14 +1529,6 @@ class ChartingState extends MusicBeatState
 					curSelectedNote[0] = value;
 					updateGrid();
 				}
-			}
-		}
-		else if (id == FlxUISlider.CHANGE_EVENT && (sender is FlxUISlider))
-		{
-			switch (sender)
-			{
-				case 'playbackSpeed':
-					playbackSpeed = Std.int(sliderRate.value);
 			}
 		}
 
@@ -2125,29 +2112,6 @@ class ChartingState extends MusicBeatState
 			strumLineNotes.members[i].y = strumLine.y;
 			strumLineNotes.members[i].alpha = FlxG.sound.music.playing ? 1 : 0.35;
 		}
-		
-		// PLAYBACK SPEED CONTROLS //
-		var holdingShift = FlxG.keys.pressed.SHIFT;
-		var holdingLB = FlxG.keys.pressed.LBRACKET;
-		var holdingRB = FlxG.keys.pressed.RBRACKET;
-		var pressedLB = FlxG.keys.justPressed.LBRACKET;
-		var pressedRB = FlxG.keys.justPressed.RBRACKET;
-
-		if (!holdingShift && pressedLB || holdingShift && holdingLB)
-			playbackSpeed -= 0.01;
-		if (!holdingShift && pressedRB || holdingShift && holdingRB)
-			playbackSpeed += 0.01;
-		if (FlxG.keys.pressed.ALT && (pressedLB || pressedRB || holdingLB || holdingRB))
-			playbackSpeed = 1;
-		//
-
-		if (playbackSpeed <= 0.5)
-			playbackSpeed = 0.5;
-		if (playbackSpeed >= 3)
-			playbackSpeed = 3;
-
-		FlxG.sound.music.pitch = playbackSpeed;
-		vocals.pitch = playbackSpeed;
 
 		bpmTxt.text =
 		Std.string(FlxMath.roundDecimal(Conductor.songPosition / 1000, 2)) + " / " + Std.string(FlxMath.roundDecimal(FlxG.sound.music.length / 1000, 2)) +
@@ -2179,7 +2143,7 @@ class ChartingState extends MusicBeatState
 					var noteDataToCheck:Int = note.noteData;
 					if(noteDataToCheck > -1 && note.mustPress != _song.notes[curSec].mustHitSection) noteDataToCheck += Note.ammo[_song.mania];
 						strumLineNotes.members[noteDataToCheck].playAnim('confirm', true);
-						strumLineNotes.members[noteDataToCheck].resetAnim = ((note.sustainLength / 1000) + 0.15) / playbackSpeed;
+						strumLineNotes.members[noteDataToCheck].resetAnim = (note.sustainLength / 1000) + 0.15;
 					if(!playedSound[data]) {
 						if((playSoundBf.checked && note.mustPress) || (playSoundDad.checked && !note.mustPress)){
 							var soundToPlay = 'hitsound';

@@ -44,7 +44,6 @@ typedef LanguageFile =
 	var instakill:String;
 	var practice:String;
 	var botplay:String;
-	var opponentplay:String;
 
 	//pause
 	var resume:String;
@@ -60,6 +59,7 @@ typedef LanguageFile =
 	var pauseOption:String;
 	var pauseCharSel:String;
 	var restartCut:String;
+	var deathblue:String;
 
 	//options
 	var language:String;
@@ -105,6 +105,11 @@ typedef LanguageFile =
 	var controlPrtScrn:String;
 	var controlEnter:String;
 	var controlEscape:String;
+	
+	//rating
+	var score:String;
+	var misses:String;
+	var rating:String;
 
 	//delay and combo
 	var comboMenu:String;
@@ -161,8 +166,6 @@ typedef LanguageFile =
 	var keyboardModeDesc:String;
 	var downScroll:String;
 	var downScrollDesc:String;
-	var nowplaying:String;
-	var nowplayingDesc:String;
 	var middleScroll:String;
 	var middleScrollDesc:String;
 	var ghostTapping:String;
@@ -183,6 +186,23 @@ typedef LanguageFile =
 	var hitWindowDesc:String;
 	var safeFrames:String;
 	var safeFramesDesc:String;
+	
+	// achievements
+	var fnfch:String;
+	var portalch:String;
+	var alonech:String;
+	var shadowch:String;
+	var habitsch:String;
+	var countdownch:String;
+	var fnfdesc:String;
+	var portaldesc:String;
+	var alonedesc:String;
+	var shadowdesc:String;
+	var habitsdesc:String;
+	var countdowndesc:String;
+	var achijaja:String;
+	
+	var rbadd:String;
 }
 
 class Language
@@ -215,7 +235,6 @@ class Language
 	public static var instakill:String;
 	public static var practice:String;
 	public static var botplay:String;
-	public static var opponentplay:String;
 
 	//pause
 	public static var resume:String;
@@ -231,6 +250,7 @@ class Language
 	public static var pauseOption:String;
 	public static var pauseCharSel:String;
 	public static var restartCut:String;
+	public static var deathblue:String;
 
 	//options
 	public static var language:String;
@@ -276,6 +296,11 @@ class Language
 	public static var controlPrtScrn:String;
 	public static var controlEnter:String;
 	public static var controlEscape:String;
+	
+	//rating
+	public static var score:String;
+	public static var misses:String;
+	public static var rating:String;
 
 	//delay and combo
 	public static var comboMenu:String;
@@ -332,8 +357,6 @@ class Language
 	public static var keyboardModeDesc:String;
 	public static var downScroll:String;
 	public static var downScrollDesc:String;
-	public static var nowplaying:String;
-	public static var nowplayingDesc:String;
 	public static var middleScroll:String;
 	public static var middleScrollDesc:String;
 	public static var ghostTapping:String;
@@ -354,6 +377,23 @@ class Language
 	public static var hitWindowDesc:String;
 	public static var safeFrames:String;
 	public static var safeFramesDesc:String;
+	
+	// achievements
+	public static var fnfch:String;
+	public static var portalch:String;
+	public static var alonech:String;
+	public static var shadowch:String;
+	public static var habitsch:String;
+	public static var countdownch:String;
+	public static var fnfdesc:String;
+	public static var portaldesc:String;
+	public static var alonedesc:String;
+	public static var shadowdesc:String;
+	public static var habitsdesc:String;
+	public static var countdowndesc:String;
+	public static var achijaja:String;
+	
+	public static var rbadd:String;
 
 	public static var languagePath:String;
 
@@ -445,7 +485,6 @@ class Language
 		instakill = languageJson.instakill;
 		practice = languageJson.practice;
 		botplay = languageJson.botplay;
-		opponentplay = languageJson.opponentplay;
 
 		//pause
 		resume = languageJson.resume;
@@ -461,6 +500,7 @@ class Language
 		pauseOption = languageJson.pauseOption;
 		pauseCharSel = languageJson.pauseCharSel;
 		restartCut = languageJson.restartCut;
+	    deathblue = languageJson.deathblue;
 
 		//options
 		language = languageJson.language;
@@ -508,6 +548,11 @@ class Language
 		controlPrtScrn = languageJson.controlPrtScrn;
 		controlEnter = languageJson.controlEnter;
 		controlEscape = languageJson.controlEscape;
+		
+		//rating
+		score = languageJson.score;
+		misses = languageJson.misses;
+		rating = languageJson.rating;
 
 		//delay and combo
 		comboMenu = languageJson.comboMenu;
@@ -564,8 +609,6 @@ class Language
 		keyboardModeDesc = languageJson.keyboardModeDesc;
 		downScroll = languageJson.downScroll;
 		downScrollDesc = languageJson.downScrollDesc;
-		nowplaying = languageJson.nowplaying;
-		nowplayingDesc = languageJson.nowplayingDesc;
 		middleScroll = languageJson.middleScroll;
 		middleScrollDesc = languageJson.middleScrollDesc;
 		ghostTapping = languageJson.ghostTapping;
@@ -586,5 +629,23 @@ class Language
 		hitWindowDesc = languageJson.hitWindowDesc;
 		safeFrames = languageJson.safeFrames;
 		safeFramesDesc = languageJson.safeFramesDesc;
+		
+	    // achievements
+	    fnfch = languageJson.fnfch;
+		portalch = languageJson.portalch;
+        alonech = languageJson.alonech;
+        shadowch = languageJson.shadowch;
+        habitsch = languageJson.habitsch;
+		countdownch = languageJson.countdownch;
+	    fnfdesc = languageJson.fnfdesc;
+		portaldesc = languageJson.portaldesc;
+        alonedesc = languageJson.alonedesc;
+        shadowdesc = languageJson.shadowdesc;
+        habitsdesc = languageJson.habitsdesc;
+		countdowndesc = languageJson.countdowndesc;
+		
+		achijaja = languageJson.achijaja;
+		rbadd = languageJson.rbadd;
+		
 	}
 }

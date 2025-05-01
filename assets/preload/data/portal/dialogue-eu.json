@@ -1,0 +1,158 @@
+{
+	"dialogue": [
+		{
+			"expression": "shocked",
+			"text": "OH?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.145,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "WHAT?. WHER-",
+			"boxState": "normal",
+			"voiceline": "iiii-es",
+			"sound": "andsound",
+			"speed": 0.03,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "WHERE I AM??",
+			"voiceline": "iiii",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "WHO I AM?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.07,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "Eh?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "excited",
+			"text": "Beep Boop",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Boop Bep",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "mmm",
+			"text": "Oh! Hello little, bluehaired sir..",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "¿Eh? ¿Do you want to sing?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "But...",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "No, Everything it's all so confusing, and I should try-",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "shocked",
+			"text": "Ohh. ¿What the hell is that purple crack in the wall?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "Boop bi Bap Beeep",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "pissed",
+			"text": "Wha-?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "mmm",
+			"text": "What do you mean I have to accept?",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf",
+			"sound": "bfsound"
+		},
+		{
+			"expression": "talk",
+			"text": "Easy sir! Just stay in beat",
+			"boxState": "normal",
+			"sound": "gfsound",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "confused",
+			"text": "No another choice?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "and",
+			"sound": "andsound"
+		},
+		{
+			"expression": "excited",
+			"text": "ONE SONG, NOOW!",
+			"boxState": "angry",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"storyName": "Eclypsium Time",
+	"difficulties": "Eclipsed",
+	"hideFreeplay": false,
+	"weekBackground": "portal",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "friendsweek2",
+	"startUnlocked": false,
+	"weekCharacters": [
+		"and-og-first",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Portal Eclipsed",
+			"and-og",
+			[
+				0,
+				255,
+				0
+			]
+		],
+		[
+			"Alone Eclipsed",
+			"and-og",
+			[
+				0,
+				255,
+				0
+			]
+		],
+		[
+			"Shadow Eclipsed",
+			"shadowand-og",
+			[
+				255,
+				0,
+				13
+			]
+		],
+		[
+			"Habits Eclipsed",
+			"and-og",
+			[
+				0,
+				255,
+				0
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "andweek (eclipsed)",
+	"hiddenUntilUnlocked": true
+}

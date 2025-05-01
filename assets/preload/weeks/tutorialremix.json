@@ -10,7 +10,8 @@
 	],
 	"weekBackground": "portal",
 
-	"storyName": "",
+	"storyName": "How to Funk n' Mix",
+	"difficulties": "Hard",
 	"weekBefore": "tutorial",
 	"weekName": "Funky Mix",
 	"startUnlocked": true,

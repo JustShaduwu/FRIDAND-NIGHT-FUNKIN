@@ -40,7 +40,6 @@ import DialogueBoxPsych;
 #if hscript
 import hscript.Parser;
 import hscript.Interp;
-import hscript.Expr;
 #end
 
 #if desktop
@@ -64,7 +63,6 @@ class FunkinLua {
 
 	#if hscript
 	public static var haxeInterp:Interp = null;
-	public static var hscript:HScript = null;
 	#end
 	
 	public function new(script:String) {
@@ -95,8 +93,6 @@ class FunkinLua {
 			return;
 		}
 		scriptName = script;
-		initHaxeModule();
-		
 		trace('lua file loaded succesfully:' + script);
 
 		// Lua shit
@@ -192,6 +188,8 @@ class FunkinLua {
 		// Some settings, no jokes
 		set('downscroll', ClientPrefs.downScroll);
 		set('middlescroll', ClientPrefs.middleScroll);
+		set('introIcon', ClientPrefs.introIcon);
+		set('comboScript', ClientPrefs.comboScript);
 		set('hideOpponentStrums', !ClientPrefs.opponentStrums);
 		set('framerate', ClientPrefs.framerate);
 		set('ghostTapping', ClientPrefs.ghostTapping);
@@ -208,11 +206,15 @@ class FunkinLua {
 		set('effectVolume', ClientPrefs.soundEffectVolume);
 		set('noResetButton', ClientPrefs.noReset);
 		set('lowQuality', ClientPrefs.lowQuality);
+		#if android
+		set('vibrations', ClientPrefs.vibration);
+		#else
+		set('vibrations', false);
+		#end
 		set('raitingInStage', ClientPrefs.raitingInStage);
 		set('subtitlesActivated', ClientPrefs.subtitles);
 		set('soundEffectVolume', ClientPrefs.soundEffectVolume);
 		set('lang', ClientPrefs.language);
-		// set('nowplaying', ClientPrefs.nowplaying); // cajita de now playing..
 
 		set('scriptName', scriptName);
 
@@ -636,33 +638,35 @@ class FunkinLua {
 		});
 
 		Lua_helper.add_callback(lua, "runHaxeCode", function(codeToRun:String) {
-			var retVal:Dynamic = null;
-
 			#if hscript
-			initHaxeModule();
+			initHaxeInterp();
+
 			try {
-				retVal = hscript.execute(codeToRun);
+				var myFunction:Dynamic = haxeInterp.expr(new Parser().parseString(codeToRun));
+				myFunction();
 			}
 			catch (e:Dynamic) {
-				luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false, FlxColor.RED);
+				switch(e)
+				{
+					case 'Null Function Pointer', 'SReturn':
+						//nothing
+					default:
+						luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false, FlxColor.RED);
+				}
 			}
-			#else
-			luaTrace("runHaxeCode: HScript isn't supported on this platform!", false, false, FlxColor.RED);
 			#end
-
-			if(retVal != null && !isOfTypes(retVal, [Bool, Int, Float, String, Array])) retVal = null;
-			return retVal;
 		});
 
-		Lua_helper.add_callback(lua, "addHaxeLibrary", function(libName:String, ?libPackage:String = '') {
+		Lua_helper.add_callback(lua, "addHaxeLibrary", function(libName:String, ?libFolder:String = '') {
 			#if hscript
-			initHaxeModule();
+			initHaxeInterp();
+
 			try {
 				var str:String = '';
-				if(libPackage.length > 0)
-					str = libPackage + '.';
+				if(libFolder.length > 0)
+					str = libFolder + '.';
 
-				hscript.variables.set(libName, Type.resolveClass(str + libName));
+				haxeInterp.variables.set(libName, Type.resolveClass(str + libName));
 			}
 			catch (e:Dynamic) {
 				luaTrace(scriptName + ":" + lastCalledFunction + " - " + e, false, false, FlxColor.RED);
@@ -2555,27 +2559,9 @@ class FunkinLua {
 		call('onCreate', []);
 		#end
 	}
-	
-	public static function isOfTypes(value:Any, types:Array<Dynamic>)
-	{
-		for (type in types)
-		{
-			if(Std.isOfType(value, type)) return true;
-		}
-		return false;
-	}
-	
+
 	#if hscript
-	public function initHaxeModule()
-	{
-		if(hscript == null)
-		{
-			trace('initializing haxe interp for: $scriptName');
-			hscript = new HScript(); //TO DO: Fix issue with 2 scripts not being able to use the same variable names
-		}
-	}
-	
-/*	public function initHaxeInterp()
+	public function initHaxeInterp()
 	{
 		if(haxeInterp == null)
 		{
@@ -2593,7 +2579,7 @@ class FunkinLua {
 			haxeInterp.variables.set('Character', Character);
 			haxeInterp.variables.set('Alphabet', Alphabet);
 			haxeInterp.variables.set('StringTools', StringTools);
-// ESTA PERRA MAMADA QEEEE
+
 			haxeInterp.variables.set('setVar', function(name:String, value:Dynamic)
 			{
 				PlayState.instance.variables.set(name, value);
@@ -2604,7 +2590,7 @@ class FunkinLua {
 				return PlayState.instance.variables.get(name);
 			});
 		}
-	} */ 
+	}
 	#end
 
 	public static function setVarInArray(instance:Dynamic, variable:String, value:Dynamic):Any
@@ -3014,66 +3000,3 @@ class DebugLuaText extends FlxText
 	}
 
 }
-
-#if hscript
-class HScript
-{
-	public static var parser:Parser = new Parser();
-	public var interp:Interp;
-
-	public var variables(get, never):Map<String, Dynamic>;
-
-	public function get_variables()
-	{
-		return interp.variables;
-	}
-
-	public function new()
-	{
-		interp = new Interp();
-		interp.variables.set('FlxG', FlxG);
-		interp.variables.set('FlxSprite', FlxSprite);
-		interp.variables.set('FlxCamera', FlxCamera);
-		interp.variables.set('FlxTimer', FlxTimer);
-		interp.variables.set('FlxTween', FlxTween);
-		interp.variables.set('FlxEase', FlxEase);
-		interp.variables.set('PlayState', PlayState);
-		interp.variables.set('game', PlayState.instance);
-		interp.variables.set('Paths', Paths);
-		interp.variables.set('Conductor', Conductor);
-		interp.variables.set('ClientPrefs', ClientPrefs);
-		interp.variables.set('Character', Character);
-		interp.variables.set('Alphabet', Alphabet);
-		interp.variables.set('ShaderFilter', openfl.filters.ShaderFilter);
-		interp.variables.set('StringTools', StringTools);
-
-		interp.variables.set('setVar', function(name:String, value:Dynamic)
-		{
-			PlayState.instance.variables.set(name, value);
-		});
-		interp.variables.set('getVar', function(name:String)
-		{
-			var result:Dynamic = null;
-			if(PlayState.instance.variables.exists(name)) result = PlayState.instance.variables.get(name);
-			return result;
-		});
-		interp.variables.set('removeVar', function(name:String)
-		{
-			if(PlayState.instance.variables.exists(name))
-			{
-				PlayState.instance.variables.remove(name);
-				return true;
-			}
-			return false;
-		});
-	}
-
-	public function execute(codeToRun:String):Dynamic
-	{
-		@:privateAccess
-		HScript.parser.line = 1;
-		HScript.parser.allowTypes = true;
-		return interp.execute(HScript.parser.parseString(codeToRun));
-	}
-}
-#end

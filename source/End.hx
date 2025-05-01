@@ -29,10 +29,22 @@ class End extends MusicBeatState
 	{
 		super.update(elapsed);
 		
-		
-		if (controls.ACCEPT){
-		FlxG.sound.playMusic(Paths.music("freakyMenu"));
-			FlxG.switchState(new FreeplayState());
-		}
+	if (controls.ACCEPT)
+	{
+	FlxG.sound.playMusic(Paths.music("freakyMenu"));
+		FlxG.switchState(new FreeplayState());
+	}
+    if (FlxG.keys.pressed.ESCAPE)
+    {
+    FlxG.sound.playMusic(Paths.music("freakyMenu"));
+        FlxG.switchState(new FreeplayState());
+    }
+	
+	if (FlxG.keys.pressed.BACKSPACE)
+    {
+    FlxG.sound.playMusic(Paths.music("freakyMenu"));
+        FlxG.switchState(new FreeplayState());
+    }
+	
 	}
 }

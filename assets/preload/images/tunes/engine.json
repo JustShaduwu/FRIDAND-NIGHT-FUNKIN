@@ -1,0 +1,96 @@
+{
+    "name": "FRIDGE NITE FUCKING",
+    "image": "engine",
+    "tracks": [
+        {
+            "file": "freakyMenu",
+            "name": "Gettin' Shadow",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+		{
+            "file": "andnother-medium",
+            "name": "Andnother Medium (Pause Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "aloneinst",
+            "name": "Alone (Instrumental)",
+            "rgb": [255, 131, 0],
+            "bpm": 150
+        },
+        {
+            "file": "habitsinst",
+            "name": "Habits (Instrumental)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+		{
+            "file": "gameoverand1",
+            "name": "Shine in the Rainbow (And Game Over)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "Reality YearBook/NoVer",
+            "name": "Reality YearBook",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "cutscene-and",
+            "name": "Voyager of the Portal (And's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 140
+        },
+        {
+            "file": "cutscene-shadow-and",
+            "name": "Foreshadow Curse (Shadow And's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 200
+        },
+        {
+            "file": "cutscene-yolo",
+            "name": "Silencious But Noisy (Yolo's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "cutscene-elsa",
+            "name": "Angry With Laugh (Elsa's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "cutscene-miguel",
+            "name": "Brillaint in his own way (Miguel's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "cutscene-sofia",
+            "name": "Smart as a Lie (Sofia's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "cutscene-dayami",
+            "name": "Temporaly Nervous (Dayami's Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "cutscene-together-whenever",
+            "name": "Together Whenever (Cutscene Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        },
+        {
+            "file": "fuzzy-stance",
+            "name": "Fuzzy Stance (Pause Music)",
+            "rgb": [28, 30, 32],
+            "bpm": 110
+        }
+    ]
+}

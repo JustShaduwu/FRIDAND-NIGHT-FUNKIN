@@ -1,0 +1,85 @@
+{
+	"storyName": "The Comeback!",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "portal",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "andweek1",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"and-og-first",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Silent",
+			"yolo-og",
+			[
+				135,
+				13,
+				255
+			]
+		],
+		[
+			"Waves",
+			"elsa-og",
+			[
+				255,
+				0,
+				60
+			]
+		],
+		[
+			"Tenex",
+			"miguel-og",
+			[
+				235,
+				255,
+				0
+			]
+		],
+		[
+			"Hikaru",
+			"sofia-og",
+			[
+				0,
+				20,
+				253
+			]
+		],
+		[
+			"Light",
+			"and-og",
+			[
+				55,
+				255,
+				15
+			]
+		],
+		[
+			"Chan",
+			"dayami-og",
+			[
+				195,
+				195,
+				235
+			]
+		],
+		[
+			"Portalgedon",
+			"no",
+			[
+				175,
+				0,
+				195
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "andweek1"
+}

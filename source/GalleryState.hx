@@ -3,7 +3,7 @@ package; // supongo que no estas en una carpeta
 class GalleryState extends MusicBeatState //flixel.FlxState
 {
 // alo xd
-    var theImgs:Array<String> = ["assets/images/loadingscreens/vsandshadows.png","assets/images/loadingscreens/funkay.png"];
+    var theImgs:Array<String> = ["assets/images/creditslayer/shaduwuvoice.png","assets/images/creditslayer/berevoice.png","assets/images/creditslayer/sharonvoice.png"];
     var curImage:Int = 0;
     var Imagenlal:flixel.FlxSprite = new flixel.FlxSprite();
     function changeImage(?diu:Int) {
@@ -26,8 +26,8 @@ class GalleryState extends MusicBeatState //flixel.FlxState
     super.update(elapsed);
     // revisar si se presiona izquierda o derecha y cambiar la imagen
     
-    if (flixel.FlxG.keys.anyJustPressed([LEFT,A,D,RIGHT]))
-        changeImage(flixel.FlxG.keys.anyJustPressed([LEFT,A]) ? -1 : 1);
+    if (flixel.FlxG.keys.anyJustPressed([DOWN, UP]))
+        changeImage(flixel.FlxG.keys.anyJustPressed([UP]) ? -1 : 1);
     }
 
 }

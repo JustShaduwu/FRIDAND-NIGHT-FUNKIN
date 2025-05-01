@@ -1,0 +1,320 @@
+{
+	"peeps": [
+		{
+			"realName": "Shaduwu",
+			"iconName": "shaduwu",
+			"description": "Creator and Main: \nArtist, Musician, Animator, \nProgrammer, Written, etc..",
+			"twitter": "https://twitter.com/JustShaduwu",
+			"whichrole": 0
+		},
+		{
+			"realName": "DanyTubman",
+			"iconName": "dani",
+			"description": "Portal Background Desing Helper",
+			"twitter": "https://twitter.com/DanyTubman_",
+			"whichrole": 0
+		},
+		{
+			"realName": "Tetoms",
+			"iconName": "tetoms",
+			"description": "1.0 (Vs And Shadow's) Gameplay Recorder\nComposition Helper\nand General extra help uwu",
+			"twitter": "https://twitter.com/TomsjeffiaK",
+			"whichrole": 0
+		},
+		{
+			"realName": "Shaduwu",
+			"iconName": "shaduwu",
+			"description": "Musician",
+			"twitter": "https://twitter.com/JustShaduwu",
+			"whichrole": 2
+		},
+		{
+			"realName": "AlexPlus801",
+			"iconName": "alexplus",
+			"description": "Musician",
+			"twitter": "https://twitter.com/AlexPlus801",
+			"whichrole": 2
+		},
+		{
+			"realName": "Gettin' Shadow",
+			"iconName": "and-og",
+			"description": "Remix Composed by Shaduwu\nOriginal Song by KawaiSprite",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Tutorial Remix",
+			"iconName": "gf",
+			"description": "Remix Composed by Shaduwu\nOriginal Song by KawaiSprite",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Portal",
+			"iconName": "and-og",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Alone",
+			"iconName": "and-og",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Shadow",
+			"iconName": "shadow-and-body-og",
+			"description": "Instrumental composed by AlexPlus801\nEdited and Voices by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Habits",
+			"iconName": "and-og",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Andstranomical Countdown",
+			"iconName": "and-og",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Voyager of the Portal",
+			"iconName": "and-og",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Foreshadow Curse",
+			"iconName": "shadow-and-body-og",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Andnother Medium (Pause Music)",
+			"iconName": "and-og",
+			"description": "Remix Composed by Shaduwu\nOriginal Song by Toby Fox",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Silent",
+			"iconName": "yolo",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Waves",
+			"iconName": "elsa",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Tenex",
+			"iconName": "miguel",
+			"description": "Composed by Shaduwu\nAditional Voices by RtvLuego",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Hikaru",
+			"iconName": "sofia",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Light",
+			"iconName": "and-og",
+			"description": "Composed by AlexPlus301 ft. Shaduwu\nArranqued and Remix by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Chan",
+			"iconName": "dayami",
+			"description": "Composed by Shaduwu\nAditional Voices by DanyTubman",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Portalgedon",
+			"iconName": "portal",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Tesuto",
+			"iconName": "portal",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Silencious but noisy",
+			"iconName": "yolo",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Angry of the laugh",
+			"iconName": "elsa",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Brillaint in his own way",
+			"iconName": "miguel",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Smart as a lie",
+			"iconName": "sofia",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Temporaly nerveous",
+			"iconName": "dayami",
+			"description": "Composed by Shaduwu",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Together Whenever",
+			"iconName": "portal",
+			"description": "Composed by Shaduwu ",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Together Whenever (Remix)",
+			"iconName": "portal",
+			"description": "Compuesta por Shaduwu ",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Fuzzy Stance (Pause Music)",
+			"iconName": "portal",
+			"description": "Compuesta por Shaduwu ",
+			"twitter": "",
+			"whichrole": 3
+		},
+		{
+			"realName": "Shaduwu",
+			"iconName": "shaduwu",
+			"description": "And & Shadow And\nChromatic and Speaking Voice\n(Latinoamerican Spanish)",
+			"twitter": "https://twitter.com/JustShaduwu",
+			"whichrole": 1
+		},
+		{
+			"realName": "Bere Bear",
+			"iconName": "bere",
+			"description": "Elsa & Girlfriend\nSpeaking Voice\n(Latinoamerican Spanish)",
+			"twitter": "https://twitter.com/Bere_Dolly_Art",
+			"whichrole": 1
+		},
+		{
+			"realName": "RH: Celestial Canvas",
+			"iconName": "robert",
+			"description": "Miguel Speaking Voice",
+			"twitter": "https://x.com/Rh_Canvas",
+			"whichrole": 1
+		},
+		{
+			"realName": "DanyTubman",
+			"iconName": "dani",
+			"description": "Dayami Speaking Voice\n(Latinoamerican Spanish)",
+			"twitter": "https://twitter.com/DanyTubman_",
+			"whichrole": 1
+		},
+		{
+			"realName": "Ninjamuffin99",
+			"iconName": "ninjamuffin99",
+			"description": "Programmer of Friday Night Funkin'",
+			"twitter": "https://twitter.com/ninja_muffin99",
+			"whichrole": 4
+		},
+		{
+			"realName": "Phantomarcade",
+			"iconName": "phantomarcade",
+			"description": "Animator of Friday Night Funkin'",
+			"twitter": "https://twitter.com/PhantomArcade3K",
+			"whichrole": 4
+		},
+		{
+			"realName": "Evilsk8r",
+			"iconName": "evilsk8r",
+			"description": "Artist of Friday Night Funkin'",
+			"twitter": "https://twitter.com/evilsk8r",
+			"whichrole": 4
+		},
+		{
+			"realName": "Kawaisprite",
+			"iconName": "kawaisprite",
+			"description": "Composer of Friday Night Funkin'",
+			"twitter": "https://twitter.com/kawaisprite",
+			"whichrole": 4
+		},
+		{
+			"realName": "Shadow Mario",
+			"iconName": "shadowmario",
+			"description": "Main Programmer of Psych Engine",
+			"twitter": "https://twitter.com/Shadow_Mario_",
+			"whichrole": 5
+		},
+		{
+			"realName": "RiverOaken",
+			"iconName": "river",
+			"description": "Main Artist/Animator of Psych Engine",
+			"twitter": "https://twitter.com/RiverOaken",
+			"whichrole": 5
+		},
+		{
+			"realName": "Shubs",
+			"iconName": "shubs",
+			"description": "Additional Programmer of Psych Engine",
+			"twitter": "https://twitter.com/yoshubs",
+			"whichrole": 5
+		},
+		{
+			"realName": "Extras Psych Engine Contributor's",
+			"iconName": "bf",
+			"description": "bb-panzu, iFlicky, SqirraRNG,\nPolybiusProxy, KadeDev,\nKeoiki, Nebula the Zorua, Smokey",
+			"twitter": "",
+			"whichrole": 5
+		},
+		{
+			"realName": "Playtesters",
+			"iconName": "portal",
+			"description": "Tetoms, Shaduwu,\n RH: Celestial Canvas",
+			"twitter": "",
+			"whichrole": 6
+		},
+		{
+			"realName": "Special Thanks!",
+			"iconName": "portal",
+			"description": "SirDusterBuster and Team TBD,\nTomyGamy and Weird Engine Team,\ntposejank, Azika C, Maxialberto, Andrespros,\nStuart D.higashikata, Pyiolotzin, Tenexcraft, Jhoanna,\nMarshmello, Skillet, The Living Tomsbtone,\nCaramella Girls, BTS, IZ*ONE, Epic Games,\nSaruky n DatDavi, Vince Kaichan,\nPamela Argijo, and you, the player <3",
+			"twitter": "",
+			"whichrole": 6
+		}
+	],
+	"listoroles": ["< Director and HELPERS >", "< Voices >", "< Musicians > ", "< Music >", "< Funkin' Crew >", "< Psych Engine Credits >", "< Additional Credits >"]
+}

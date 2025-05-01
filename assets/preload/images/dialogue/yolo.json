@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-80,
+		50
+	],
+	"scale": 1.25,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				-152,
+				26
+			],
+			"idle_offsets": [
+				-152,
+				26
+			],
+			"loop_name": "idle",
+			"idle_name": "idlex0005"
+		},
+		{
+			"loop_offsets": [
+				-152,
+				26
+			],
+			"anim": "shocked",
+			"idle_offsets": [
+				-152,
+				26
+			],
+			"loop_name": "what",
+			"idle_name": "what0005"
+		},
+		{
+			"idle_offsets": [
+				-152,
+				26
+			],
+			"anim": "confused",
+			"loop_offsets": [
+				-152,
+				26
+			],
+			"idle_name": "mmm0005",
+			"loop_name": "mmm"
+		},
+		{
+			"loop_name": "angry",
+			"idle_offsets": [
+				-152,
+				26
+			],
+			"idle_name": "angryx0005",
+			"anim": "angry",
+			"loop_offsets": [
+				-152,
+				26
+			]
+		}
+	],
+	"image": "YOLO_Dialogue"
+}

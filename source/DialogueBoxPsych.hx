@@ -225,15 +225,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.visible = false;
 		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
-		// fridand night funkin dialogue boxs
-		// and og
-		// box.frames = Paths.getSparrowAtlas('dialogue_boxes/and_og_box');
-		// box.scrollFactor.set();
-		// box.antialiasing = ClientPrefs.globalAntialiasing;
-		// box.animation.addByPrefix('normal', 'and bubble normal MIRROR', 24);
-		// box.animation.addByPrefix('normalOpen', 'OPEN AND', 24, false);
-		// box.animation.addByPrefix('normalOpen', 'CLOSE AND', 24, false);
-		// esto no se va a quedar asi lol
 		add(box);
 
 		startNextDialog();

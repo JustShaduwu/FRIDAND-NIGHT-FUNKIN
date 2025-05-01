@@ -1,0 +1,101 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "Bep!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "bfsound"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "cute",
+			"text": "Asi se hace!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Gracias!"
+		},
+		{
+			"expression": "angry",
+			"text": "Pues, no estuvo tan mal..",
+			"boxState": "normal",
+			"portrait": "yolo",
+			"speed": 0.06,
+			"sound": "yolosound"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Pero la mia estuvo mejor!"
+		},
+		{
+			"sound": "angryelsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "angry",
+			"text": "Callate!"
+		},
+		{
+			"sound": "miguelsound",
+			"speed": 0.05,
+			"portrait": "miguel",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "happy",
+			"text": "Es mi turno???"
+		},
+		{
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "talk",
+			"text": "Claro!"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "shocked",
+			"text": "Bueno, al menos yo pude terminar mi cancion sin desmayarme"
+		},
+		{
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Verdad YOLO???"
+		},
+		{
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo",
+			"boxState": "angry",
+			"voiceline": false,
+			"expression": "angry",
+			"text": ".i."
+		}
+	]
+}

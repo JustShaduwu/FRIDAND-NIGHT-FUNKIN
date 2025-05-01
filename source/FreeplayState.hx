@@ -40,7 +40,6 @@ class FreeplayState extends MusicBeatState
 
 	var scoreBG:FlxSprite;
 	var scoreText:FlxText;
-	var repText:FlxText;
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
 	var lerpRating:Float = 0;
@@ -179,17 +178,12 @@ class FreeplayState extends MusicBeatState
 
 		add(scoreText);
 		
-		var modifierMenu = new FlxSprite().loadGraphic(Paths.image('freeplay/screeniu'));
+   	    var modifierMenu = new FlxSprite().loadGraphic(Paths.image('freeplay/screeniu' + '-eu'/* + ClientPrefs.language + ".png"*/));
+		//var modifierMenu:FlxSprite = new FlxSprite().loadGraphic(Paths.image("freeplay/screeniu"));
 	//	modifierMenu.x = 12;
 	//	modifierMenu.y = -10;
 	    modifierMenu.screenCenter();
 		add(modifierMenu);
-
-		//replay
-	//	repText = new FlxText(FlxG.width * 0.7 - 270, scoreText.y + 65, 600, "", 20);
-	//	repText.text = 'Press ALT to show the replays of ${songs[curSelected].songName.toUpperCase()}';
-	//	repText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT);
-	//	add(repText);
 		
 		if (curSelected >= songs.length)
 			curSelected = 0;
@@ -313,6 +307,7 @@ class FreeplayState extends MusicBeatState
 
 	var holdTime:Float = 0;
 	var teclas:Float = 0;
+	var teclastesuto:Float = 0;
 	override function update(elapsed:Float)
 	{
         switch (teclas){
@@ -346,8 +341,35 @@ class FreeplayState extends MusicBeatState
               PlayState.isStoryMode = false;
               PlayState.storyDifficulty = 0;
               LoadingState.loadAndSwitchState(new PlayState());
+			  FlxG.sound.play(Paths.themeSound('confirmMenu'), 0.7);
+		//	  #if ACHIEVEMENTS_ALLOWED
+			//	Achievements.unlockAchievement('countdownfree');
+		//		if (!GameJoltAPI.checkTrophy(192308))
+			//	GameJoltAPI.getTrophy(192308, '#00FFDE', 'Extra Countdown', 'Unlock Andstranomical Countdown!!!');
+			//   #end
               }
-        }
+		}
+        switch (teclastesuto)
+		{
+         case 0:
+            if (FlxG.keys.justPressed.T)
+                teclastesuto += 1;
+         case 1:
+            if (FlxG.keys.justPressed.E)
+                teclastesuto += 1;
+         case 2:
+            if (FlxG.keys.justPressed.S)
+                teclastesuto += 1;
+         case 3:
+            if (FlxG.keys.justPressed.T)
+			  {
+              PlayState.SONG = Song.loadFromJson('tesuto-hard', 'tesuto');
+              PlayState.isStoryMode = false;
+              PlayState.storyDifficulty = 0;
+              LoadingState.loadAndSwitchState(new PlayState());
+			  FlxG.sound.play(Paths.themeSound('confirmMenu'), 0.7);
+              }
+		}
 		if (FlxG.sound.music.volume < 0.7)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -380,7 +402,6 @@ class FreeplayState extends MusicBeatState
 		var accepted = controls.ACCEPT;
 		var space = FlxG.keys.justPressed.SPACE #if android || _virtualpad.buttonX.justPressed #end;
 		var m = FlxG.keys.justPressed.M #if android || _virtualpad.buttonC.justPressed #end;
-		var alt = FlxG.keys.justPressed.ALT;
 
 		var shiftMult:Int = 1;
 		if (FlxG.keys.pressed.SHIFT)
@@ -426,8 +447,6 @@ class FreeplayState extends MusicBeatState
 			changeDiff(1);
 		else if (upP || downP)
 			changeDiff();
-//replay
-        else if (alt && ClientPrefs.saveReplay) MusicBeatState.switchState(new ReplaySelectState(songs[curSelected].songName));
 
 		if (controls.BACK)
 		{
@@ -619,8 +638,6 @@ class FreeplayState extends MusicBeatState
 
 	function changeSelection(change:Int = 0, playSound:Bool = true)
 	{
-	//replay
-		// for replay, in a future xd repText.text = 'Press ALT to show the replays of ${songs[curSelected].songName.toUpperCase()}';
 		if (playSound)
 			FlxG.sound.play(Paths.themeSound('scrollMenu'), 0.4);
 

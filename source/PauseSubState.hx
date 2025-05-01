@@ -49,7 +49,7 @@ class PauseSubState extends MusicBeatSubstate
 		else
 			songFolder = '';*/
 
-		menuItemsOG = [['Resume', Language.resume], ['Restart Song', Language.restart], ['Select Character', Language.pauseCharSel],  ['Options', Language.pauseOption] #if android , ['Chart Editor', Language.chartEdit] #end, ['Exit to menu', Language.exit2Menu]];
+		menuItemsOG = [['Resume', Language.resume], ['Restart Song', Language.restart], ['Options', Language.pauseOption] #if android , ['Chart Editor', Language.chartEdit] #end, ['Exit to menu', Language.exit2Menu]];
 
 		if(PlayState.chartingMode || CoolUtil.difficulties.length > 1) {
 			menuItemsOG.insert(2, ['Change Difficulty', Language.changeDiff]);
@@ -123,7 +123,7 @@ class PauseSubState extends MusicBeatSubstate
 		add(levelDifficulty);
 
 		var blueballedTxt:FlxText = new FlxText(20, 15 + 64, 0, "", 32);
-		blueballedTxt.text = "Blueballed: " + PlayState.deathCounter;
+		blueballedTxt.text = Language.deathblue + PlayState.deathCounter; // aqui 
 		blueballedTxt.scrollFactor.set();
 		blueballedTxt.setFormat(Paths.font('vcr.ttf'), 32);
 		blueballedTxt.updateHitbox();

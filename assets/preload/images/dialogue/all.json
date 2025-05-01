@@ -1,0 +1,38 @@
+{
+	"position": [
+		-60,
+		70
+	],
+	"dialogue_pos": "left",
+	"no_antialiasing": false,
+	"scale": 1.25,
+	"image": "ALL_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-114,
+				153
+			],
+			"anim": "talk",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "allidle0005",
+			"loop_name": "allidle"
+		},
+		{
+			"idle_offsets": [
+				-114,
+				150
+			],
+			"anim": "confused",
+			"loop_offsets": [
+				-114,
+				153
+			],
+			"idle_name": "allwhat0005",
+			"loop_name": "allwhat"
+		}
+	]
+}

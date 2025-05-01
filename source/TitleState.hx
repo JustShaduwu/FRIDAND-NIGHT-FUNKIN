@@ -78,7 +78,7 @@ class TitleState extends MusicBeatState
 	var wackyImage:FlxSprite;
 
 	#if TITLE_SCREEN_EASTER_EGG
-	var easterEggKeys:Array<String> = ['SHADOWMARIO', 'RIVER', 'SHUBS', 'BBPANZU', 'TOMY', 'REDA', 'PIKA'];
+	var easterEggKeys:Array<String> = ['SHADOW', 'RIVER', 'SHUBS', 'BBPANZU', 'TOMY', 'REDA', 'PIKA'];
 	var allowedKeys:String = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	var easterEggKeysBuffer:String = '';
 	#end
@@ -151,15 +151,15 @@ class TitleState extends MusicBeatState
 		{
 			trace('checking for update');
 
-			var http = new haxe.Http("https://raw.githubusercontent.com/TomyGamy/FNF-WeirdEngine/master/gitVersion.txt");
+			var http = new haxe.Http("https://raw.githubusercontent.com/JustShaduwu/FRIDAND-NIGHT-FUNKIN/master/gitVersion.txt");
 
 			http.onData = function(data:String)
 			{
-				if(MainMenuState.weirdEngineBetaVersion == '')
+				if(MainMenuState.shadowEngineBetaVersion == '')
 					updateVersion = data.split('\n')[0].trim();
 				else
 					updateVersion = data.split('\n')[1].trim();
-				var curVersion:String = (MainMenuState.shadowEngineVersion + MainMenuState.weirdEngineBetaVersion).trim();
+				var curVersion:String = (MainMenuState.shadowEngineVersion + MainMenuState.shadowEngineBetaVersion).trim();
 				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
 				if (updateVersion != curVersion)
 				{
@@ -206,7 +206,7 @@ class TitleState extends MusicBeatState
 			FlxG.save.data.psychDevsEasterEgg = ''; // Crash prevention
 		switch (FlxG.save.data.psychDevsEasterEgg.toUpperCase())
 		{
-			case 'SHADOWMARIO':
+			case 'SHADOW':
 				titleJSON.gfx += 210;
 				titleJSON.gfy += 40;
 			case 'RIVER':
@@ -345,6 +345,7 @@ class TitleState extends MusicBeatState
 
 		Conductor.changeBPM(titleJSON.bpm);
 		persistentUpdate = true;
+		
 
 		var bg:FlxSprite = new FlxSprite();
 
@@ -384,7 +385,7 @@ class TitleState extends MusicBeatState
 		switch (easterEgg.toUpperCase())
 		{
 			#if TITLE_SCREEN_EASTER_EGG
-			case 'SHADOWMARIO':
+			case 'SHADOW':
 				gfDance.frames = Paths.getSparrowAtlas('ShadowBump');
 				gfDance.animation.addByPrefix('danceLeft', 'Shadow Title Bump', 24);
 				gfDance.animation.addByPrefix('danceRight', 'Shadow Title Bump', 24);
@@ -431,6 +432,11 @@ class TitleState extends MusicBeatState
 		gfDance.shader = swagShader.shader;
 		add(logoBl);
 		logoBl.shader = swagShader.shader;
+		
+		var screntv = new FlxSprite().loadGraphic(Paths.image('bgt2'));
+	//	tilin sirve pls
+	    screntv.screenCenter();
+		add(screntv);
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
 		#if (desktop && MODS_ALLOWED)
@@ -443,7 +449,7 @@ class TitleState extends MusicBeatState
 		// trace(path, FileSystem.exists(path));
 		if (!FileSystem.exists(path))
 		{
-			path = SUtil.getPath() + "assets/images/titleEnter.png";
+			path = SUtil.getPath() + "assets/images/titleEnter" + '-' + ClientPrefs.language + ".png";
 		}
 		// trace(path, FileSystem.exists(path));
 		titleText.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path), File.getContent(StringTools.replace(path, ".png", ".xml")));
@@ -549,7 +555,7 @@ class TitleState extends MusicBeatState
 			if (FlxG.sound.music != null)
 				Conductor.songPosition = FlxG.sound.music.time;
 			// FlxG.watch.addQuick('amp', FlxG.sound.music.amplitude);
-	
+
 			var pressedEnter:Bool = FlxG.keys.justPressed.ENTER || controls.ACCEPT;
 	
 			#if mobile
@@ -561,7 +567,14 @@ class TitleState extends MusicBeatState
 				}
 			}
 			#end
-
+			
+			if (FlxG.keys.justPressed.L)
+				{
+        FlxG.save.data.whenevertrue;
+        FlxG.save.data.whenevertrue;
+        FlxG.save.flush();
+				}
+				
 			#if html5
 			if (FlxG.keys.justPressed.F)
 				{
@@ -632,7 +645,7 @@ class TitleState extends MusicBeatState
 						}
 						else
 						{
-							MusicBeatState.switchState(new TestandState());
+							MusicBeatState.switchState(new MainMenuState());
 						}
 						closedState = true;
 					});
@@ -800,18 +813,19 @@ class TitleState extends MusicBeatState
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
 					#if PSYCH_WATERMARKS
-					createCoolText(['OH YEAH'], 15);
+					weird.visible = true;
+					createCoolText(['', '', '', '']);
 					#else
-					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er', 'shaduwu']);
+					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
 					#if PSYCH_WATERMARKS
-					addMoreText('SHADUWU N COMPANY', 15);
+					addMoreText('Thanks Psych n Weird Engines', 15);
 					#end
 				case 4:
 					#if PSYCH_WATERMARKS
-					addMoreText('PRESENT', 15);
+					addMoreText('Shaduwu', 15);
 					#else
 					addMoreText('present');
 					#end
@@ -827,12 +841,12 @@ class TitleState extends MusicBeatState
 				// credTextShit.screenCenter();
 				case 6:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Maybe not associated', 'with'], -40);
+					createCoolText(['No associated', 'with'], -40);
 					#else
-					createCoolText(['In desassociation', 'with'], -40);
+					createCoolText(['No association', 'with'], -40);
 					#end
 				case 8:
-					addMoreText('NewgroAnds', -40);
+					addMoreText('Oldgrounds', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 9:
@@ -851,10 +865,10 @@ class TitleState extends MusicBeatState
 				case 13:
 					deleteCoolText();
 				// credTextShit.visible = false;
-				// credTextShit.text = "Fridand";
+				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 14:
-					addMoreText('FridAnd');
+					addMoreText('FridAND');
 				// credTextShit.visible = true;
 				case 15:
 					addMoreText('Night');
@@ -889,7 +903,7 @@ class TitleState extends MusicBeatState
 						sound = FlxG.sound.play(Paths.sound('JingleRiver'));
 					case 'SHUBS':
 						sound = FlxG.sound.play(Paths.sound('JingleShubs'));
-					case 'SHADOWMARIO':
+					case 'SHADOW':
 						FlxG.sound.play(Paths.sound('JingleShadow'));
 					case 'BBPANZU':
 						sound = FlxG.sound.play(Paths.sound('JingleBB'));
@@ -914,7 +928,7 @@ class TitleState extends MusicBeatState
 				}
 
 				transitioning = true;
-				if (easteregg == 'SHADOWMARIO')
+				if (easteregg == 'SHADOW')
 				{
 					new FlxTimer().start(3.2, function(tmr:FlxTimer)
 					{
@@ -952,7 +966,7 @@ class TitleState extends MusicBeatState
 					easteregg = '';
 				easteregg = easteregg.toUpperCase();
 				#if TITLE_SCREEN_EASTER_EGG
-				if (easteregg == 'SHADOWMARIO')
+				if (easteregg == 'SHADOW')
 				{
 					FlxG.sound.music.fadeOut();
 					if(FreeplayState.vocals != null)

@@ -1,0 +1,107 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				100
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "dayami_idle",
+			"image": "characters/dayami-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"offsets": [
+				-47,
+				100
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/dayami-og",
+			"name": "dayami_left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				105
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dayami_up",
+			"image": "characters/dayami-og",
+			"indices": [],
+			"adaptativeloop": false
+		},
+		{
+			"offsets": [
+				-25,
+				83
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/dayami-og",
+			"name": "dayami_down"
+		},
+		{
+			"offsets": [
+				-11,
+				85
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/dayami-og",
+			"name": "dayami_right"
+		},
+		{
+			"offsets": [
+				0,
+				95
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "Wait",
+			"adaptativeloop": false,
+			"indices": [],
+			"image": "characters/dayami-og",
+			"name": "cutscene_chan"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/dayami-og",
+	"position": [
+		0,
+		257
+	],
+	"healthicon": "dayami-og",
+	"flip_x": true,
+	"healthbar_colors": [
+		178,
+		194,
+		204
+	],
+	"camera_position": [
+		115,
+		-5
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

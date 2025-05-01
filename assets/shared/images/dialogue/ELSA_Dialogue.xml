@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ELSA_Dialogue.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="angry0000" x="0" y="0" width="524" height="691"/>
+	<SubTexture name="angry0001" x="524" y="0" width="524" height="691"/>
+	<SubTexture name="angry0002" x="1048" y="0" width="524" height="691"/>
+	<SubTexture name="angry0003" x="0" y="691" width="524" height="691"/>
+	<SubTexture name="angry0004" x="524" y="691" width="524" height="691"/>
+	<SubTexture name="angry0005" x="1048" y="691" width="524" height="691"/>
+	<SubTexture name="idlex0000" x="1572" y="691" width="459" height="723"/>
+	<SubTexture name="idlex0001" x="1572" y="691" width="459" height="723"/>
+	<SubTexture name="idlex0002" x="0" y="1414" width="459" height="723"/>
+	<SubTexture name="idlex0003" x="0" y="1414" width="459" height="723"/>
+	<SubTexture name="idlex0004" x="459" y="1414" width="459" height="723"/>
+	<SubTexture name="idlex0005" x="459" y="1414" width="459" height="723"/>
+	<SubTexture name="laughx0000" x="918" y="1414" width="459" height="723"/>
+	<SubTexture name="laughx0001" x="918" y="1414" width="459" height="723"/>
+	<SubTexture name="laughx0002" x="1377" y="1414" width="459" height="723"/>
+	<SubTexture name="laughx0003" x="1377" y="1414" width="459" height="723"/>
+	<SubTexture name="laughx0004" x="0" y="2137" width="459" height="723"/>
+	<SubTexture name="laughx0005" x="0" y="2137" width="459" height="723"/>
+	<SubTexture name="whatx0000" x="459" y="2137" width="459" height="723"/>
+	<SubTexture name="whatx0001" x="459" y="2137" width="459" height="723"/>
+	<SubTexture name="whatx0002" x="918" y="2137" width="459" height="723"/>
+	<SubTexture name="whatx0003" x="918" y="2137" width="459" height="723"/>
+	<SubTexture name="whatx0004" x="1377" y="2137" width="459" height="723"/>
+	<SubTexture name="whatx0005" x="1377" y="2137" width="459" height="723"/>
+</TextureAtlas>

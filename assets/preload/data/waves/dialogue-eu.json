@@ -1,0 +1,100 @@
+{
+	"dialogue": [
+		{
+			"expression": "shocked",
+			"text": "Yolo!",
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "confused",
+			"text": "Beep-",
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "confused",
+			"text": "I..I'M Fine-",
+			"boxState": "normal",
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo"
+		},
+		{
+			"expression": "angry",
+			"text": "Just, I'll rest here, you know...",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo"
+		},
+		{
+			"expression": "laugh",
+			"text": "Ha! I can do it much better..",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa"
+		},
+		{
+			"expression": "angry",
+			"text": "Of course not!",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "yolosound",
+			"speed": 0.05,
+			"portrait": "yolo"
+		},
+		{
+			"expression": "talk",
+			"text": "Do you want to go now, Elsa??",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "andsound",
+			"speed": 0.05,
+			"portrait": "and"
+		},
+		{
+			"expression": "talk",
+			"text": "Yeah!",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa"
+		},
+		{
+			"expression": "laugh",
+			"text": "Get ready!",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "elsasound",
+			"speed": 0.05,
+			"portrait": "elsa"
+		},
+		{
+			"sound": "sofiasound",
+			"speed": 0.05,
+			"portrait": "sofia",
+			"boxState": "normal",
+			"voiceline": false,
+			"expression": "laugh",
+			"text": "Ohh-"
+		},
+		{
+			"expression": "excited",
+			"text": "Boop!",
+			"voiceline": false,
+			"boxState": "normal",
+			"sound": "bfsound",
+			"speed": 0.05,
+			"portrait": "bf"
+		}
+	]
+}
